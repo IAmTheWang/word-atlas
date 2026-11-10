@@ -1,11 +1,11 @@
 # 部署 / Deployment
 
-`npm run build` 生成纯静态站点 `dist/`，可以放到任何静态托管（Nginx、Cloudflare Pages、Vercel、GitHub Pages）。
+`bun run build` 生成纯静态站点 `dist/`，可以放到任何静态托管（Nginx、Cloudflare Pages、Vercel、GitHub Pages）。
 
 ## 子路径
 
 ```bash
-ATLAS_BASE=/words/ npm run build
+ATLAS_BASE=/words/ bun run build
 ```
 
 ## Nginx 示例

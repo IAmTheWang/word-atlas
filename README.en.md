@@ -76,24 +76,24 @@ Listen to a sample: **abandon** — [UK](public/atlas/audio/uk/abandon.mp3) · [
 
 ## Quick start
 
-Requires **Node.js 20+** and npm. This repository includes the full image and audio collection, so the initial download can take time.
+Requires [**Bun 1.2+**](https://bun.sh) and **Node.js 20+** (Vite and the Playwright scripts still run on Node). This repository includes the full image and audio collection, so the initial download can take time.
 
 ```bash
 git clone --depth 1 https://github.com/designfuchen/word-atlas.git
 cd word-atlas
-npm ci
-npm run dev
+bun install --frozen-lockfile
+bun run dev
 ```
 
 Open **http://localhost:5188**.
 
 ```bash
-npm test             # Unit tests
-npm run check:atlas  # Dataset and media validation
-npm run build        # Production build in dist/
+bun run test         # Unit tests
+bun run check:atlas  # Dataset and media validation
+bun run build        # Production build in dist/
 ```
 
-For a subpath deployment: `ATLAS_BASE=/words/ npm run build`. See the [deployment guide](docs/deployment.md).
+For a subpath deployment: `ATLAS_BASE=/words/ bun run build`. See the [deployment guide](docs/deployment.md).
 
 **Stack:** React 19 · TypeScript · Vite · ts-fsrs · WebGL2
 

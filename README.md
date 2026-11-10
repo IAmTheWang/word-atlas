@@ -104,24 +104,24 @@
 
 ## 本地运行
 
-需要 **Node.js 20+** 和 npm。仓库含完整图片与录音，首次下载可能较久。
+需要 [**Bun 1.2+**](https://bun.sh) 和 **Node.js 20+**（Vite 与 Playwright 脚本仍在 Node 上运行）。仓库含完整图片与录音，首次下载可能较久。
 
 ```bash
 git clone --depth 1 https://github.com/designfuchen/word-atlas.git
 cd word-atlas
-npm ci
-npm run dev
+bun install --frozen-lockfile
+bun run dev
 ```
 
 打开 **http://localhost:5188**。
 
 ```bash
-npm test             # 单元测试
-npm run check:atlas  # 词库结构与媒体校验
-npm run build        # 构建到 dist/
+bun run test         # 单元测试
+bun run check:atlas  # 词库结构与媒体校验
+bun run build        # 构建到 dist/
 ```
 
-子路径部署：`ATLAS_BASE=/words/ npm run build`。完整说明见 [部署文档](docs/deployment.md)。
+子路径部署：`ATLAS_BASE=/words/ bun run build`。完整说明见 [部署文档](docs/deployment.md)。
 
 **技术栈**：React 19 · TypeScript · Vite · ts-fsrs · WebGL2
 

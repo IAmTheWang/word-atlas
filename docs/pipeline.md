@@ -8,7 +8,7 @@
 4. **发音** `gen_word_audio.py`：ElevenLabs，英音 Alice、美音 Sarah。
 5. **例句朗读** `gen_sentence_audio.py`：为 `ex[0]` 合成朗读，按学习路线顺序。
 6. **编译** `build_atlas.py`：清洗字段、排序、切块，生成 `public/atlas/` 与 `data/`。
-7. **校验** `npm run check:atlas`：结构、顺序、引用与媒体文件存在性。
+7. **校验** `bun run check:atlas`：结构、顺序、引用与媒体文件存在性。
 
 ```bash
 export SUB2_BASE_URL=... SUB2_API_KEY=... ELEVENLABS_API_KEY=...
@@ -17,7 +17,7 @@ python3 scripts/atlas/gen_images.py --workers 8 --follow
 python3 scripts/atlas/gen_word_audio.py
 python3 scripts/atlas/gen_sentence_audio.py --follow
 python3 scripts/atlas/build_atlas.py
-npm run check:atlas
+bun run check:atlas
 ```
 
 `SUB2_BASE_URL` 指向任意 OpenAI 兼容的接口。

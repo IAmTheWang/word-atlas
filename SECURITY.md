@@ -11,7 +11,7 @@ Word Atlas has no accounts, server-side storage, analytics or tracking. Progress
 网页运行不需要任何 API key。只有 `scripts/atlas/` 中的内容生成脚本需要调用模型服务，它们从环境变量（`SUB2_BASE_URL`、`SUB2_API_KEY`、`ELEVENLABS_API_KEY`）或仓库外的目录（`ATLAS_SECRETS`）读取凭据，不会写入仓库。
 
 - 不要使用 `VITE_*` 变量存放凭据，它们会被打包进浏览器代码。
-- 公开前运行 `npm run pack:public`，它会按白名单导出并扫描凭据和个人路径。扫描是辅助手段，不能替代人工检查。
+- 公开前运行 `bun run pack:public`，它会按白名单导出并扫描凭据和个人路径。扫描是辅助手段，不能替代人工检查。
 - 如果凭据意外泄露，请立刻在服务商处吊销或轮换。
 
 ## 报告问题 / Reporting

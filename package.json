@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --import tsx --test src/**/*.test.ts",
+    "test": "bun test src",
     "check:atlas": "node scripts/check-atlas.mjs",
     "build:atlas": "python3 scripts/atlas/build_atlas.py",
     "render:cards": "node scripts/render-cards.mjs",
@@ -28,10 +28,14 @@
     "@vitejs/plugin-react": "^4.7.0",
     "playwright": "^1.64.1",
     "prettier": "^3.9.10",
-    "tsx": "^4.23.15",
     "typescript": "~5.9.3",
     "vite": "^6.4.1"
   },
   "private": true,
+  "packageManager": "bun@1.3.14",
+  "engines": {
+    "bun": ">=1.2",
+    "node": ">=20"
+  },
   "license": "MIT"
 }

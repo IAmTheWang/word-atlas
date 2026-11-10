@@ -7,7 +7,7 @@
 最有价值的贡献是纠错。请在 Issue 中写明词条 `id`、问题和建议的改法，或直接提交 PR：
 
 1. 修改 `.local` 之外的源数据前，请先看 [docs/pipeline.md](docs/pipeline.md)。小修正可以直接改 `data/word-atlas.json` 与 `public/atlas/entries/` 中对应的条目，保持两处一致。
-2. 运行 `npm run check:atlas` 和 `npm test`。
+2. 运行 `bun run check:atlas` 和 `bun run test`。
 3. 在 PR 里说明修改理由，必要时附权威词典链接。
 
 ## 代码
@@ -15,7 +15,7 @@
 - TypeScript 严格模式，React 函数组件，不引入状态管理或 UI 框架依赖。
 - 保持“无账号、本地优先、无追踪”的方向。
 - 视觉改动请同时检查浅色、深色和 375px 手机宽度。
-- 提交前运行 `npm test`、`npm run check:atlas`、`npm run build`。
+- 提交前运行 `bun run test`、`bun run check:atlas`、`bun run build`。
 
 ## 新素材
 
