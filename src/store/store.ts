@@ -2,7 +2,7 @@ import { useSyncExternalStore } from "react";
 import type { Accent } from "../atlas/types";
 import type { CardState, Grade } from "./srs";
 
-export type QuizKind = "meaning" | "picture" | "listen" | "spell";
+export type QuizKind = "meaning" | "picture" | "listen" | "spell" | "cloze" | "define";
 export type Step = { id: string; kind: "intro" } | { id: string; kind: QuizKind; retry?: boolean; options?: string[] };
 
 export interface ActiveSession {
@@ -51,7 +51,11 @@ export interface Settings {
   autoplay: boolean;
   dailyNew: number;
   retention: number;
-  theme: "system" | "light" | "dark";
+  theme: "system" | "light" | "dark" | "quiet";
+  /** Work mode: nothing plays on its own and no listening questions (tapping a speaker still works). */
+  quiet: boolean;
+  /** Hide every illustration and skip picture questions, so the word itself is what sticks. */
+  noArt: boolean;
   sfx: boolean;
   spell: boolean;
   startLevel: number;
@@ -68,6 +72,8 @@ export const defaultSettings: Settings = {
   dailyNew: 10,
   retention: 0.9,
   theme: "dark",
+  quiet: false,
+  noArt: true,
   sfx: true,
   spell: true,
   startLevel: 0,
@@ -164,7 +170,9 @@ export function sanitizeSettings(v: unknown): Settings {
   if (typeof v.autoplay === "boolean") s.autoplay = v.autoplay;
   if (num(v.dailyNew, 0, 100)) s.dailyNew = Math.round(v.dailyNew as number);
   if (num(v.retention, 0.7, 0.97)) s.retention = v.retention as number;
-  if (v.theme === "system" || v.theme === "light" || v.theme === "dark") s.theme = v.theme;
+  if (v.theme === "system" || v.theme === "light" || v.theme === "dark" || v.theme === "quiet") s.theme = v.theme;
+  if (typeof v.quiet === "boolean") s.quiet = v.quiet;
+  if (typeof v.noArt === "boolean") s.noArt = v.noArt;
   if (typeof v.sfx === "boolean") s.sfx = v.sfx;
   if (typeof v.spell === "boolean") s.spell = v.spell;
   if (num(v.startLevel, 0, 5)) s.startLevel = Math.round(v.startLevel as number);
@@ -300,12 +308,12 @@ export function importBackup(text: string): { ok: true; cards: number } | { ok: 
   try {
     data = JSON.parse(text);
   } catch {
-    return { ok: false, error: "文件不是有效的 JSON。" };
+    return { ok: false, error: "ファイルが有効な JSON ではありません。" };
   }
   if (!isObj(data) || data.app !== "word-atlas" || data.version !== 2 || !isObj(data.progress))
-    return { ok: false, error: "这不是词光的学习备份。" };
+    return { ok: false, error: "これは Word Atlas の学習バックアップではありません。" };
   const id = state.progress.datasetId;
-  if (data.progress.datasetId !== id) return { ok: false, error: "备份来自另一个词库，请先切换到对应词库。" };
+  if (data.progress.datasetId !== id) return { ok: false, error: "バックアップは別の語彙データのものです。先に対応する語彙データへ切り替えてください。" };
   const progress = sanitizeProgress({ ...data.progress, session: null }, id);
   state = { ...state, progress, settings: { ...sanitizeSettings(data.settings), onboarded: true } };
   emit();

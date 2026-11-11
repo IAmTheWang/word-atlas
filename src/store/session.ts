@@ -37,36 +37,59 @@ export function todayPlan(atlas: Atlas, p: Progress, s: Settings) {
   return { due, fresh, minutes: Math.max(1, Math.round(due.length * 0.25 + fresh.length * 0.9)) };
 }
 
-function quizKind(ref: WordRef, p: Progress, s: Settings, salt: number): QuizKind {
+/** Weighted question mix per memory stage; kinds the learner switched off are dropped and the rest rescaled. */
+const MIX: Record<"young" | "mid" | "spell", [QuizKind, number][]> = {
+  young: [["meaning", 35], ["picture", 30], ["listen", 15], ["cloze", 12], ["define", 8]],
+  mid: [["listen", 30], ["picture", 25], ["cloze", 20], ["meaning", 15], ["define", 10]],
+  spell: [["spell", 65], ["cloze", 15], ["picture", 10], ["listen", 10]],
+};
+
+/** Which question kinds this learner can get: work mode drops listening, no-art drops pictures. */
+export function kindAllowed(kind: QuizKind, ref: Pick<WordRef, "media">, s: Pick<Settings, "quiet" | "noArt" | "spell">) {
+  if (kind === "listen") return !s.quiet;
+  if (kind === "picture") return !s.noArt && !!(ref.media & MEDIA.img);
+  if (kind === "spell") return s.spell;
+  return true;
+}
+
+export function quizKind(ref: WordRef, p: Progress, s: Pick<Settings, "quiet" | "noArt" | "spell">, salt: number): QuizKind {
   const c = p.cards[ref.id];
-  const hasImg = !!(ref.media & MEDIA.img);
   const roll = hashSeed(ref.id + salt) % 100;
-  if (!c || c.s < 2) {
-    if (hasImg && roll < 45) return "picture";
-    return roll < 80 ? "meaning" : "listen";
+  const stage = !c || c.s < 2 ? "young" : s.spell && (c.s >= 4 || roll < 35) ? "spell" : "mid";
+  const pool = MIX[stage].filter(([k]) => kindAllowed(k, ref, s));
+  const total = pool.reduce((n, [, w]) => n + w, 0);
+  let at = (roll / 100) * total;
+  for (const [k, w] of pool) {
+    if (at < w) return k;
+    at -= w;
   }
-  if (s.spell && (c.s >= 4 || roll < 35)) return roll < 75 ? "spell" : hasImg ? "picture" : "listen";
-  return roll < 50 ? "listen" : hasImg ? "picture" : "meaning";
+  return "meaning";
+}
+
+/** A different format for the second look at a word the learner just missed. */
+export function retryKind(step: QuizKind, ref: Pick<WordRef, "media">, s: Pick<Settings, "quiet" | "noArt" | "spell">): QuizKind {
+  const order: QuizKind[] = step === "meaning" ? ["picture", "listen", "cloze"] : ["meaning", "cloze", "define"];
+  return order.find((k) => k !== step && kindAllowed(k, ref, s)) ?? "meaning";
 }
 
 /** Distractors that look plausible: same level, similar spelling or length, different meaning. */
 export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: number) {
   const target = normalize(ref.word);
-  const zhCore = ref.zh.replace(/^[a-z.]+\s*/, "").split(/[；;，,]/)[0];
+  const jaCore = ref.ja.replace(/^[a-z.]+\s*/, "").split(/[；;、，,]/)[0];
   const scored: [number, WordRef][] = [];
   const pool = atlas.words;
   const start = Math.max(0, ref.order - 400);
   for (let i = start; i < Math.min(pool.length, ref.order + 400); i++) {
     const w = pool[i];
     if (w.id === ref.id || normalize(w.word) === target) continue;
-    if (zhCore && w.zh.includes(zhCore)) continue;
+    if (jaCore && w.ja.includes(jaCore)) continue;
     let score = hashSeed(w.id + seed) % 100;
     if (kind === "listen" || kind === "picture") {
       if (w.word[0]?.toLowerCase() === target[0]) score += 120;
       score += Math.max(0, 60 - Math.abs(w.word.length - target.length) * 20);
     } else {
       if (w.cefr === ref.cefr) score += 40;
-      if (w.zh.split(" ")[0] === ref.zh.split(" ")[0]) score += 60; // same part of speech
+      if (w.ja.split(" ")[0] === ref.ja.split(" ")[0]) score += 60; // same part of speech
     }
     scored.push([score, w]);
   }
@@ -74,7 +97,7 @@ export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: nu
   const seen = new Set<string>();
   const picks: string[] = [];
   for (const [, w] of scored) {
-    const key = kind === "meaning" ? w.zh : normalize(w.word);
+    const key = kind === "meaning" ? w.ja : normalize(w.word);
     if (seen.has(key)) continue;
     seen.add(key);
     picks.push(w.id);
@@ -83,11 +106,14 @@ export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: nu
   return shuffle([ref.id, ...picks], seed);
 }
 
-export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { ids?: string[]; reviewOnly?: boolean }): ActiveSession {
+/** A few-minute session: only the words most overdue for review, no new words. */
+export const QUICK_SIZE = 10;
+
+export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { ids?: string[]; reviewOnly?: boolean; quick?: boolean }): ActiveSession {
   const seed = Date.now();
   const plan = todayPlan(atlas, p, s);
-  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id]) : plan.due.slice(0, 120);
-  const newIds = opts?.ids ? opts.ids.filter((id) => !p.cards[id]) : opts?.reviewOnly ? [] : plan.fresh;
+  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id]) : plan.due.slice(0, opts?.quick ? QUICK_SIZE : 120);
+  const newIds = opts?.ids ? opts.ids.filter((id) => !p.cards[id]) : opts?.reviewOnly || opts?.quick ? [] : plan.fresh;
   const steps: Step[] = [];
   const quiz = (id: string, salt: number): Step => {
     const ref = atlas.byId.get(id)!;
@@ -138,7 +164,7 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
       const retries = steps.filter((x) => x.id === step.id && "retry" in x && x.retry).length;
       if (retries < 2) {
         const ref = atlas.byId.get(step.id)!;
-        const kind: QuizKind = step.kind === "meaning" ? (ref.media & MEDIA.img ? "picture" : "listen") : "meaning";
+        const kind = retryKind(step.kind, ref, settings);
         const at = Math.min(steps.length, sess.index + 4);
         steps.splice(at, 0, { id: step.id, kind, retry: true, options: distractors(atlas, ref, kind, Date.now()) });
         next = { ...next, session: { ...next.session!, steps } };

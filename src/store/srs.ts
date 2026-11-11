@@ -88,10 +88,10 @@ export function formatInterval(ms: number) {
   if (m < 1) return "<1分";
   if (m < 60) return `${m}分`;
   const h = Math.round(m / 60);
-  if (h < 24) return `${h}小时`;
+  if (h < 24) return `${h}時間`;
   const d = Math.round(h / 24);
-  if (d < 31) return `${d}天`;
+  if (d < 31) return `${d}日`;
   const mo = Math.round(d / 30);
-  if (mo < 12) return `${mo}个月`;
+  if (mo < 12) return `${mo}か月`;
   return `${(d / 365).toFixed(1)}年`;
 }

@@ -29,3 +29,13 @@ test("rejects other versions and unknown settings", () => {
   assert.equal(s.theme, "dark");
   assert.equal(s.retention, 0.9);
 });
+
+test("work-mode settings default to off and reject bad values", () => {
+  const d = sanitizeSettings({});
+  assert.equal(d.quiet, false);
+  assert.equal(d.noArt, true);
+  const s = sanitizeSettings({ quiet: "yes", noArt: false, theme: "quiet" });
+  assert.equal(s.quiet, false);
+  assert.equal(s.noArt, false);
+  assert.equal(s.theme, "quiet");
+});

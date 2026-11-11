@@ -17,22 +17,22 @@ TOPICS = [
     "nature", "daily", "emotion", "thinking", "sport", "history",
 ]
 
-SYSTEM = """You are the lead lexicographer of an open-source English vocabulary atlas for Chinese learners preparing for IELTS (band 5.5-7.5).
+SYSTEM = """You are the lead lexicographer of an open-source English vocabulary atlas for Japanese-speaking learners preparing for IELTS (band 5.5-7.5). All learner-facing explanations are in Japanese; never output Chinese.
 Write ORIGINAL content in your own words. The raw notes you receive are only a hint for which senses matter; never copy them.
-Accuracy beats creativity: IPA, part of speech, Chinese meanings and grammar must be correct. Prefer standard British IPA for ipa_uk and General American for ipa_us, with slashes.
+Accuracy beats creativity: IPA, part of speech, Japanese meanings and grammar must be correct. Prefer standard British IPA for ipa_uk and General American for ipa_us, with slashes.
 Return strict JSON only: {"entries":[...]} with one entry per input word, same order, using exactly this shape:
 {
  "w": headword exactly as given (fix only obvious typos, and then set "flag"),
  "uk": "/IPA/", "us": "/IPA/",
- "senses": [{"pos": "n.|v.|adj.|adv.|prep.|conj.|pron.|phr.|num.|int.|det.", "zh": "简洁中文释义，可用；分隔，≤14字", "en": "learner-friendly English definition, ≤12 words"}],  // 1-3 senses, most IELTS-useful first
+ "senses": [{"pos": "n.|v.|adj.|adv.|prep.|conj.|pron.|phr.|num.|int.|det.", "ja": "簡潔な日本語の語義。近い意味は「、」で区切る ≤20字", "en": "learner-friendly English definition, ≤12 words"}],  // 1-3 senses, most IELTS-useful first
  "ex": [
-   {"en": "Everyday sentence, 7-13 words, natural, vivid, uses the headword exactly or an inflected form", "zh": "自然的中文翻译"},
-   {"en": "IELTS-style sentence, 12-22 words, academic/discussion register on an IELTS topic", "zh": "自然的中文翻译"}
+   {"en": "Everyday sentence, 7-13 words, natural, vivid, uses the headword exactly or an inflected form", "ja": "自然な日本語訳"},
+   {"en": "IELTS-style sentence, 12-22 words, academic/discussion register on an IELTS topic", "ja": "自然な日本語訳"}
  ],
- "col": ["2-4 high-value collocations, each as 'english phrase｜中文'"],
+ "col": ["2-4 high-value collocations, each as 'english phrase｜日本語訳'"],
  "fam": ["0-4 word-family members as 'word (pos)'"],
  "syn": ["0-3 synonyms"], "ant": ["0-2 antonyms"],
- "tip": "≤36字中文：最有用的一条用法/辨析/记忆提示。不得编造词源；没有可靠词源就讲用法或易混词。",
+ "tip": "≤50字の日本語：最も役立つ用法・使い分け・覚え方を一つ。語源は捏造しない。確かな語源がなければ用法や紛らわしい語の説明にする。",
  "cefr": "A1|A2|B1|B2|C1|C2",
  "topic": one of [TOPICS],
  "scene": "Depicting the FIRST sense: one concrete, visually clear illustration idea (≤28 words, English) that makes the core meaning obvious at a glance: a single moment with people/objects/places. Abstract words become a clear metaphorical scene. Never mention text, letters, signs, labels or numbers.",

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useStore } from "../store/store";
 
 const HUES = ["#C4573A", "#7F9B77", "#D9A03A", "#5F7FA3", "#A86B8C", "#4E7C76"];
 
@@ -19,6 +20,8 @@ export function Illustration({
   alt?: string;
 }) {
   const [state, setState] = useState<"loading" | "ok" | "error">("loading");
+  const noArt = useStore((s) => s.settings.noArt);
+  if (noArt) return null;
   const showImg = src && state !== "error";
   return (
     <figure className={`illo ${showImg && state === "ok" ? "is-loaded" : ""} ${className}`}>

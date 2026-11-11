@@ -6,41 +6,54 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "图书馆；藏书室",
-    "en": "A place where people read or borrow books and other materials."
+    "ja": "図書館、図書室",
+    "en": "a place where people can read or borrow books and other materials",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "资料库；收藏",
-    "en": "An organised collection of books, recordings, or digital resources."
+    "ja": "蔵書、ライブラリー",
+    "en": "a collection of books, recordings or files kept for use",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "I borrowed three books from the library after school.",
-    "zh": "放学后，我从图书馆借了三本书。"
+    "ja": "放課後に図書館で本を3冊借りた。"
    },
    {
     "en": "Public libraries support lifelong learning by providing free access to books, digital resources, and quiet study spaces.",
-    "zh": "公共图书馆通过免费提供书籍、数字资源和安静的学习空间来支持终身学习。"
+    "ja": "公共図書館は、本やデジタル資料、静かな学習スペースを無料で提供し、生涯学習を支えている。"
    }
   ],
   "col": [
-   "public library｜公共图书馆",
-   "library card｜借书证",
-   "digital library｜数字图书馆",
-   "library resources｜图书馆资源"
+   "public library｜公共図書館",
+   "library card｜図書館の利用カード",
+   "digital library｜デジタル図書館",
+   "library resources｜図書館の資料"
   ],
   "fam": [
    "librarian (n.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "library是借阅书籍的图书馆，bookshop是售书的书店。",
+  "tip": "libraryは本を借りる所、本を売る店はbookshop(米ではbookstore)。",
   "cefr": "A1",
   "topic": "education",
   "note": "",
-  "id": "library"
+  "id": "library",
+  "syl": [
+   "li",
+   "brar",
+   "y"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "libraries"
+   }
+  ]
  },
  {
   "w": "Thursday",
@@ -49,33 +62,44 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "星期四",
-    "en": "the day after Wednesday and before Friday"
+    "ja": "木曜日",
+    "en": "the day of the week after Wednesday and before Friday",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "We usually meet for lunch at home on Thursday.",
-    "zh": "我们通常周四在家一起吃午饭。"
+    "ja": "私たちはたいてい木曜日に家で昼食をとりながら集まる。"
    },
    {
     "en": "The university will host a public discussion on sustainable transport next Thursday evening.",
-    "zh": "这所大学将于下周四晚举办一场关于可持续交通的公众讨论会。"
+    "ja": "大学は来週の木曜日の夜に、持続可能な交通についての公開討論会を開く。"
    }
   ],
   "col": [
-   "on Thursday｜在星期四",
-   "Thursday morning｜星期四上午",
-   "every Thursday｜每周四"
+   "on Thursday｜木曜日に",
+   "Thursday morning｜木曜日の午前",
+   "every Thursday｜毎週木曜日"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "星期名称首字母大写；具体某天前用on。",
+  "tip": "曜日名は大文字で書き始める。特定の日の前にはonを使う。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "thursday"
+  "id": "thursday",
+  "syl": [
+   "Thurs",
+   "day"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "Thursdays"
+   }
+  ]
  },
  {
   "w": "bedroom",
@@ -84,34 +108,45 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "卧室",
-    "en": "A room used mainly for sleeping."
+    "ja": "寝室",
+    "en": "a room in a house used mainly for sleeping",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My bedroom gets plenty of sunlight in the morning.",
-    "zh": "我的卧室早晨阳光很充足。"
+    "ja": "私の寝室は朝、日がたっぷり差し込む。"
    },
    {
     "en": "Children who share a bedroom may develop cooperation skills, but they also need sufficient privacy as they grow.",
-    "zh": "共用卧室的孩子可能会培养合作能力，但随着成长，他们也需要足够的隐私。"
+    "ja": "部屋を共有する子どもは協調性が育つかもしれないが、成長するにつれて十分なプライバシーも必要になる。"
    }
   ],
   "col": [
-   "share a bedroom｜共用卧室",
-   "main bedroom｜主卧",
-   "spare bedroom｜备用卧室",
-   "bedroom furniture｜卧室家具"
+   "share a bedroom｜寝室を共有する",
+   "main bedroom｜主寝室",
+   "spare bedroom｜予備の寝室",
+   "bedroom furniture｜寝室用の家具"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "可数名词；a two-bedroom flat指两居室公寓。",
+  "tip": "可算名詞。a two-bedroom flatは「寝室が2つある住戸」。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "bedroom"
+  "id": "bedroom",
+  "syl": [
+   "bed",
+   "room"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "bedrooms"
+   }
+  ]
  },
  {
   "w": "clothes",
@@ -120,25 +155,26 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "衣服；服装",
-    "en": "items worn to cover the body"
+    "ja": "衣服、服",
+    "en": "things that people wear, such as shirts, trousers and dresses",
+    "gram": "複数形"
    }
   ],
   "ex": [
    {
     "en": "Your clean clothes are drying outside in the sunshine.",
-    "zh": "你洗干净的衣服正在外面晒太阳。"
+    "ja": "あなたの洗濯した服は、外で日に当たって乾いているよ。"
    },
    {
     "en": "Buying durable clothes rather than frequently replacing cheap garments can reduce household waste and save resources.",
-    "zh": "购买耐穿的衣服，而不是频繁更换廉价服装，可以减少家庭垃圾并节约资源。"
+    "ja": "安い服を頻繁に買い替えず、長持ちする服を買えば、家庭のごみが減り、資源も節約できる。"
    }
   ],
   "col": [
-   "casual clothes｜休闲服",
-   "clean clothes｜干净衣物",
-   "change clothes｜换衣服",
-   "try on clothes｜试穿衣服"
+   "casual clothes｜普段着",
+   "clean clothes｜清潔な服",
+   "change clothes｜着替える",
+   "try on clothes｜服を試着する"
   ],
   "fam": [
    "clothe (v.)",
@@ -149,11 +185,14 @@
    "garments"
   ],
   "ant": [],
-  "tip": "只有复数形式；一件衣服用an item of clothing。",
+  "tip": "常に複数形で使う。服1着はan item of clothingと言う。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "clothes"
+  "id": "clothes",
+  "syl": [
+   "clothes"
+  ]
  },
  {
   "w": "strong",
@@ -162,35 +201,46 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "强壮的；有力的",
-    "en": "having great physical power or force"
+    "ja": "強い、力のある",
+    "en": "having great physical power or the ability to lift heavy things"
    },
    {
     "pos": "adj.",
-    "zh": "牢固的；结实的",
-    "en": "not easily broken or damaged"
+    "ja": "丈夫な、頑丈な",
+    "en": "hard to break, damage or destroy"
    },
    {
     "pos": "adj.",
-    "zh": "强烈的；充分的",
-    "en": "great in intensity, influence, or convincing power"
+    "ja": "強力な、確かな",
+    "en": "having great force, effect or clear support"
+   },
+   {
+    "pos": "adj.",
+    "ja": "得意な、優れた",
+    "en": "skilled or successful at something",
+    "note": "strong at や strong in の形で使う。"
+   },
+   {
+    "pos": "adj.",
+    "ja": "濃い、においや味が強い",
+    "en": "having a powerful taste, smell or colour"
    }
   ],
   "ex": [
    {
     "en": "My brother is strong enough to lift this sofa.",
-    "zh": "我哥哥力气很大，能抬起这张沙发。"
+    "ja": "兄はこのソファを持ち上げられるほど力が強い。"
    },
    {
     "en": "There is strong evidence that regular physical activity improves both mental health and academic performance.",
-    "zh": "有充分证据表明，规律的体育活动能改善心理健康并提高学业表现。"
+    "ja": "定期的な運動が心の健康と学業成績の両方を向上させるという強力な証拠がある。"
    }
   ],
   "col": [
-   "strong evidence｜有力的证据",
-   "strong winds｜强风",
-   "strong foundation｜牢固的基础",
-   "strong at maths｜擅长数学"
+   "strong evidence｜有力な証拠",
+   "strong winds｜強風",
+   "strong foundation｜堅固な土台",
+   "strong at maths｜数学が得意"
   ],
   "fam": [
    "strength (n.)",
@@ -204,11 +254,24 @@
   "ant": [
    "weak"
   ],
-  "tip": "strong at表示擅长；strong通常是形容词。",
+  "tip": "得意は strong at。形容詞で、比較級は stronger。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "strong"
+  "id": "strong",
+  "syl": [
+   "strong"
+  ],
+  "forms": [
+   {
+    "label": "比較級",
+    "form": "stronger"
+   },
+   {
+    "label": "最上級",
+    "form": "strongest"
+   }
+  ]
  },
  {
   "w": "body",
@@ -217,46 +280,61 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "身体；躯体",
-    "en": "The whole physical structure of a person or animal."
+    "ja": "体、身体、遺体",
+    "en": "the physical structure of a person or animal",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "团体；机构",
-    "en": "An organized group with a particular purpose."
+    "ja": "団体、組織",
+    "en": "an organized group of people with a shared purpose or authority",
+    "note": "governing body や public body などで使う",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "主体；主要部分",
-    "en": "The main or central part of something."
+    "ja": "本体、本文、大部分",
+    "en": "the main or central part of something",
+    "note": "a body of evidence は「まとまった量の証拠」",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My whole body aches after yesterday's long walk.",
-    "zh": "昨天走了很长一段路，现在我全身酸痛。"
+    "ja": "昨日たくさん歩いたので、全身が痛い。"
    },
    {
     "en": "An independent body should monitor water quality and publish its findings for the public.",
-    "zh": "应由一个独立机构监测水质，并向公众公布调查结果。"
+    "ja": "独立した機関が水質を監視し、その調査結果を公表すべきだ。"
    }
   ],
   "col": [
    "human body｜人体",
-   "governing body｜管理机构",
-   "a body of evidence｜一系列证据",
-   "the body of an essay｜文章正文"
+   "governing body｜運営機関",
+   "a body of evidence｜まとまった証拠",
+   "the body of an essay｜エッセイの本論"
   ],
   "fam": [
    "bodily (adj.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "body可指机构；文章的body指正文部分。",
+  "tip": "エッセイの body は序論と結論の間の本論部分で、IELTS でも重要。",
   "cefr": "A1",
   "topic": "health",
   "note": "",
-  "id": "body"
+  "id": "body",
+  "syl": [
+   "bod",
+   "y"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "bodies"
+   }
+  ]
  },
  {
   "w": "month",
@@ -265,36 +343,46 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "月；一个月",
-    "en": "one of twelve yearly divisions, or roughly four weeks"
+    "ja": "月、1か月",
+    "en": "one of the twelve parts of a year, or a period of about four weeks",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "I put aside a little money every month.",
-    "zh": "我每个月都会存下一点钱。"
+    "ja": "私は毎月少しずつお金を取っておく。"
    },
    {
     "en": "Offering employees one additional day off each month could improve wellbeing without significantly reducing overall productivity.",
-    "zh": "每月给员工额外一天假期，可以改善他们的身心状态，而不会显著降低整体生产效率。"
+    "ja": "従業員に毎月もう1日休みを与えれば、全体の生産性を大きく下げずに心身の健康を高められるかもしれない。"
    }
   ],
   "col": [
-   "last month｜上个月",
-   "next month｜下个月",
-   "once a month｜每月一次",
-   "per month｜每月"
+   "last month｜先月",
+   "next month｜来月",
+   "once a month｜月に1回",
+   "per month｜1か月あたり"
   ],
   "fam": [
    "monthly (adj.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "last、next、every month前通常不加介词。",
+  "tip": "last / next / every month の前に前置詞は付けない。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "month"
+  "id": "month",
+  "syl": [
+   "month"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "months"
+   }
+  ]
  },
  {
   "w": "let",
@@ -303,30 +391,35 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "允许；让",
-    "en": "To allow someone to do something or something to happen."
+    "ja": "させる、許す、〜させておく",
+    "en": "to allow someone or something to do something",
+    "note": "let + 人 + 動詞の原形。to は付けない",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "出租",
-    "en": "To allow someone to use property in exchange for rent."
+    "ja": "貸す、賃貸する",
+    "en": "to allow someone to use a room or property in return for rent",
+    "note": "英国では let a flat、米国では rent が一般的",
+    "gram": "他動詞",
+    "reg": "英"
    }
   ],
   "ex": [
    {
     "en": "Please let me know when you arrive home safely.",
-    "zh": "你平安到家后请告诉我。"
+    "ja": "家に無事着いたら知らせてください。"
    },
    {
     "en": "Schools should let students explore different subjects before requiring them to choose a specialist pathway.",
-    "zh": "学校应让学生先探索不同学科，再要求他们选择专业方向。"
+    "ja": "学校は、専門コースを選ばせる前に、生徒にさまざまな教科を体験させるべきだ。"
    }
   ],
   "col": [
-   "let someone know｜告知某人",
-   "let someone in｜让某人进来",
-   "let a flat｜出租公寓",
-   "let go of｜松开；放下"
+   "let someone know｜人に知らせる",
+   "let someone in｜人を中に入れる",
+   "let a flat｜アパートを貸す",
+   "let go of｜〜を手放す"
   ],
   "fam": [],
   "syn": [
@@ -336,11 +429,33 @@
   "ant": [
    "forbid"
   ],
-  "tip": "let sb do sth中不加to；过去式、过去分词均为let。",
+  "tip": "let は原形・過去形・過去分詞が同じ形。let sb do で to を付けない。",
   "cefr": "A1",
   "topic": "daily",
   "note": "",
-  "id": "let"
+  "id": "let",
+  "syl": [
+   "let"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "lets"
+   },
+   {
+    "label": "過去形",
+    "form": "let"
+   },
+   {
+    "label": "過去分詞",
+    "form": "let"
+   },
+   {
+    "label": "現在分詞",
+    "form": "letting"
+   }
+  ],
+  "gram": "原形・過去形・過去分詞がすべて let。現在分詞は t を重ねて letting。"
  },
  {
   "w": "born",
@@ -349,29 +464,30 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "出生",
-    "en": "Brought into the world as a baby"
+    "ja": "生まれる（be born の形で）",
+    "en": "brought into life at birth; used in the passive",
+    "gram": "受動態で多用"
    },
    {
     "pos": "adj.",
-    "zh": "天生的；有天赋的",
-    "en": "Having a natural ability for a particular activity"
+    "ja": "生まれつきの、天性の",
+    "en": "having a natural talent for a particular activity"
    }
   ],
   "ex": [
    {
     "en": "My little sister was born on a snowy morning.",
-    "zh": "我的小妹妹出生在一个下雪的早晨。"
+    "ja": "妹は雪の降る朝に生まれた。"
    },
    {
     "en": "Children born in rural areas may face greater difficulties accessing specialist healthcare than those in cities.",
-    "zh": "与城市儿童相比，出生在农村的儿童获得专科医疗服务可能更加困难。"
+    "ja": "農村部で生まれた子どもは、都市部の子どもより専門的な医療を受けにくいかもしれない。"
    }
   ],
   "col": [
-   "be born in｜出生于",
-   "be born into a family｜出生在某个家庭",
-   "a born leader｜天生的领导者"
+   "be born in｜～で生まれる",
+   "be born into a family｜ある家庭に生まれる",
+   "a born leader｜生まれながらのリーダー"
   ],
   "fam": [
    "bear (v.)",
@@ -379,11 +495,15 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "出生用be born；过去出生说was/were born。",
+  "tip": "「生まれた」は was/were born。born は bear の過去分詞の一つ。",
   "cefr": "A1",
   "topic": "society",
   "note": "",
-  "id": "born"
+  "id": "born",
+  "syl": [
+   "born"
+  ],
+  "gram": "bear の過去分詞だが、「生まれる」の意味では born、「産む」の受け身以外は borne。"
  },
  {
   "w": "paint",
@@ -392,35 +512,38 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "油漆；颜料",
-    "en": "a coloured substance spread on surfaces for protection or decoration"
+    "ja": "ペンキ、塗料、絵の具",
+    "en": "coloured liquid put on a surface to decorate or protect it",
+    "gram": "可算/不可算"
    },
    {
     "pos": "v.",
-    "zh": "刷漆；涂色",
-    "en": "to cover a surface with paint"
+    "ja": "（ペンキなどを）塗る",
+    "en": "to cover a surface with coloured liquid",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "用颜料绘画",
-    "en": "to create a picture using paint"
+    "ja": "（絵の具で）絵を描く",
+    "en": "to make a picture using colours and a brush",
+    "gram": "他動詞/自動詞"
    }
   ],
   "ex": [
    {
     "en": "There is blue paint all over your hands.",
-    "zh": "你的双手沾满了蓝色颜料。"
+    "ja": "あなたの手は青いペンキだらけだよ。"
    },
    {
     "en": "Schools should allow children to paint regularly, as creative activities can support emotional development and self-expression.",
-    "zh": "学校应让孩子经常绘画，因为创意活动有助于情感发展和自我表达。"
+    "ja": "創造的な活動は情緒の発達や自己表現を支えるので、学校は子どもたちが定期的に絵を描けるようにすべきだ。"
    }
   ],
   "col": [
-   "wet paint｜未干的油漆",
-   "a coat of paint｜一层油漆",
-   "paint a picture｜画一幅画",
-   "paint a wall｜刷墙"
+   "wet paint｜ペンキ塗りたて",
+   "a coat of paint｜ペンキの一塗り",
+   "paint a picture｜絵を描く",
+   "paint a wall｜壁を塗る"
   ],
   "fam": [
    "painter (n.)",
@@ -429,11 +552,32 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "paint多指用颜料画；draw多指用铅笔等画线条。",
+  "tip": "paint は絵の具で描く、draw は鉛筆やペンで線を描くのが基本。",
   "cefr": "A1",
   "topic": "arts",
   "note": "",
-  "id": "paint"
+  "id": "paint",
+  "syl": [
+   "paint"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "paints"
+   },
+   {
+    "label": "過去形",
+    "form": "painted"
+   },
+   {
+    "label": "過去分詞",
+    "form": "painted"
+   },
+   {
+    "label": "現在分詞",
+    "form": "painting"
+   }
+  ]
  },
  {
   "w": "use",
@@ -17492,30 +17636,35 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "学习；学会",
-    "en": "To gain knowledge or a skill through study or experience."
+    "ja": "学ぶ、習う、身につける",
+    "en": "to gain knowledge or a skill by study, practice or experience",
+    "note": "名詞、to do、how to do のいずれも後ろに続けられます",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "v.",
-    "zh": "得知；获悉",
-    "en": "To find out information about something."
+    "ja": "知る、聞き知る",
+    "en": "to find out about something, often news",
+    "note": "learn that ... / learn of ... の形でよく使います",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "My grandfather is learning to swim at the local pool.",
-    "zh": "我爷爷正在附近的游泳池学游泳。"
+    "ja": "祖父は近所のプールで泳ぎを習っている。"
    },
    {
     "en": "Students often learn more effectively when they apply new knowledge to practical problems rather than memorise isolated facts.",
-    "zh": "与死记零散知识相比，学生将新知识用于实际问题时，往往学得更有效。"
+    "ja": "学生は、バラバラの事実を暗記するよりも、新しい知識を実際の問題に応用するときのほうが、効果的に学べることが多い。"
    }
   ],
   "col": [
-   "learn to drive｜学开车",
-   "learn from mistakes｜从错误中学习",
-   "learn by heart｜背熟",
-   "learn about｜了解"
+   "learn to drive｜運転を習う",
+   "learn from mistakes｜失敗から学ぶ",
+   "learn by heart｜暗記する",
+   "learn about｜〜について知る"
   ],
   "fam": [
    "learner (n.)",
@@ -17523,11 +17672,35 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "learn to do表示学会做；过去式可用learnt或learned。",
+  "tip": "learn to do は「〜できるようになる」。過去形は learnt も learned も可。",
   "cefr": "A1",
   "topic": "education",
   "note": "",
-  "id": "learn"
+  "id": "learn",
+  "syl": [
+   "learn"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "learns"
+   },
+   {
+    "label": "現在分詞",
+    "form": "learning"
+   },
+   {
+    "label": "過去形",
+    "form": "learned",
+    "note": "英国英語では learnt も可"
+   },
+   {
+    "label": "過去分詞",
+    "form": "learned",
+    "note": "英国英語では learnt も可"
+   }
+  ],
+  "gram": "learned と learnt はどちらも使えますが、米国英語ではほぼ learned のみ。形容詞の learned は /ˈlɜːnɪd/ と読み、「博学な」という意味です。"
  },
  {
   "w": "south",
@@ -25330,35 +25503,54 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "银行",
-    "en": "an organisation that holds money and provides financial services"
+    "ja": "銀行",
+    "en": "an organisation that holds money and provides financial services",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "河岸；湖岸",
-    "en": "land along the edge of a river or lake"
+    "ja": "土手、川岸、岸",
+    "en": "land along the edge of a river or lake",
+    "note": "river bank は「川岸」、on the bank は「岸辺で」",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "貯蔵所、バンク",
+    "en": "a store of something kept ready for later use",
+    "note": "blood bank、food bank、data bank などで使われます",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "把钱存入银行",
-    "en": "put money into an account at a bank"
+    "ja": "預金する",
+    "en": "to put money into an account at a bank",
+    "note": "bank with 〜 は「〜に口座を持つ」という口語表現",
+    "gram": "他動詞/自動詞"
+   },
+   {
+    "pos": "v.",
+    "ja": "（飛行機が）傾いて旋回する",
+    "en": "to tilt to one side while turning in the air",
+    "gram": "自動詞",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "I went to the bank to open an account.",
-    "zh": "我去银行开了一个账户。"
+    "ja": "私は口座を開くために銀行へ行った。"
    },
    {
     "en": "Banks can support local economic development by offering affordable loans to small businesses and new entrepreneurs.",
-    "zh": "银行可以向小企业和初创创业者提供低成本贷款，以支持当地经济发展。"
+    "ja": "銀行は、小規模事業者や新しい起業家に低利の融資を行うことで、地域経済の発展を支えることができる。"
    }
   ],
   "col": [
-   "bank account｜银行账户",
-   "bank loan｜银行贷款",
-   "river bank｜河岸",
-   "bank statement｜银行对账单"
+   "bank account｜銀行口座",
+   "bank loan｜銀行ローン",
+   "river bank｜川岸",
+   "bank statement｜銀行取引明細書"
   ],
   "fam": [
    "banker (n.)",
@@ -25366,11 +25558,36 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "岸边用on the bank；银行里用at或in the bank。",
+  "tip": "川岸は on the bank、銀行の中は at / in the bank。",
   "cefr": "A1",
   "topic": "economy",
   "note": "",
-  "id": "bank"
+  "id": "bank",
+  "syl": [
+   "bank"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "banks"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "banks"
+   },
+   {
+    "label": "現在分詞",
+    "form": "banking"
+   },
+   {
+    "label": "過去形",
+    "form": "banked"
+   },
+   {
+    "label": "過去分詞",
+    "form": "banked"
+   }
+  ]
  },
  {
   "w": "classroom",
@@ -35255,34 +35472,38 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "云",
-    "en": "a visible mass of tiny water drops in the sky"
+    "ja": "雲",
+    "en": "a white or grey mass floating in the sky, made of tiny drops of water",
+    "gram": "可算/不可算"
    },
    {
     "pos": "n.",
-    "zh": "一团烟尘等",
-    "en": "a mass of smoke, dust, or similar material in air"
+    "ja": "(煙やほこりなどの)かたまり",
+    "en": "a large mass of smoke, dust or gas hanging in the air",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "使判断模糊；使困惑",
-    "en": "to make thoughts or judgment less clear"
+    "ja": "曇らせる、判断を鈍らせる",
+    "en": "to make something harder to see clearly or judge fairly",
+    "note": "judgmentやmindなどを目的語にとる",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "A dark cloud drifted slowly across the afternoon sky.",
-    "zh": "一朵乌云缓缓飘过午后的天空。"
+    "ja": "黒い雲が午後の空をゆっくりと流れていった。"
    },
    {
     "en": "Strong emotions can cloud public judgment when communities debate the benefits and risks of new technologies.",
-    "zh": "当社区讨论新技术的利弊时，强烈的情绪可能影响公众的判断。"
+    "ja": "新しい技術の利点とリスクを地域で議論するとき、強い感情が世論の判断を曇らせることがある。"
    }
   ],
   "col": [
-   "dark clouds｜乌云",
-   "a cloud of dust｜一团尘土",
-   "cloud someone's judgment｜影响某人的判断"
+   "dark clouds｜黒い雲",
+   "a cloud of dust｜もうもうとしたほこり",
+   "cloud someone's judgment｜人の判断を曇らせる"
   ],
   "fam": [
    "cloudy (adj.)",
@@ -35290,11 +35511,36 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "cloud作动词可指使判断不清，如cloud your judgment。",
+  "tip": "動詞のcloudは「判断を曇らせる」。cloud your judgmentの形で覚える。",
   "cefr": "A2",
   "topic": "nature",
   "note": "",
-  "id": "cloud"
+  "id": "cloud",
+  "syl": [
+   "cloud"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "clouds"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "clouds"
+   },
+   {
+    "label": "過去形",
+    "form": "clouded"
+   },
+   {
+    "label": "過去分詞",
+    "form": "clouded"
+   },
+   {
+    "label": "現在分詞",
+    "form": "clouding"
+   }
+  ]
  },
  {
   "w": "alive",
@@ -35303,30 +35549,32 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "活着的",
-    "en": "Living rather than dead"
+    "ja": "生きている",
+    "en": "living, not dead",
+    "note": "名詞の前ではなく、be動詞などの後で使う"
    },
    {
     "pos": "adj.",
-    "zh": "充满活力的；热闹的",
-    "en": "Full of energy, activity, or excitement"
+    "ja": "活気のある、生き生きした",
+    "en": "full of energy, activity or excitement",
+    "note": "alive withの形で「〜でにぎわう」"
    }
   ],
   "ex": [
    {
     "en": "The tiny plant is still alive after our holiday.",
-    "zh": "我们度假回来后，那株小植物还活着。"
+    "ja": "その小さな植物は、休暇のあともまだ生きている。"
    },
    {
     "en": "Protecting natural habitats helps keep endangered species alive and preserves the ecological balance of entire regions.",
-    "zh": "保护自然栖息地有助于让濒危物种存活，并维持整个地区的生态平衡。"
+    "ja": "自然の生息地を守ることは、絶滅危惧種を生かし、地域全体の生態系のバランスを保つのに役立つ。"
    }
   ],
   "col": [
-   "stay alive｜活下去",
-   "keep alive｜使存活；使延续",
-   "come alive｜活跃起来",
-   "alive with activity｜热闹非凡"
+   "stay alive｜生き延びる",
+   "keep alive｜生かしておく、存続させる",
+   "come alive｜活気づく",
+   "alive with activity｜活気にあふれた"
   ],
   "fam": [
    "live (v.)",
@@ -35339,11 +35587,15 @@
   "ant": [
    "dead"
   ],
-  "tip": "通常放在系动词后；“活鱼”说a live fish。",
+  "tip": "普通は動詞の後ろで使う。「生きた魚」はa live fishと言う。",
   "cefr": "A2",
   "topic": "nature",
   "note": "",
-  "id": "alive"
+  "id": "alive",
+  "syl": [
+   "a",
+   "live"
+  ]
  },
  {
   "w": "circle",
@@ -35352,46 +35604,75 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "圆；圆圈",
-    "en": "A round shape whose edge is equally distant from its centre."
+    "ja": "円、輪",
+    "en": "a perfectly round shape, or a ring of people or things",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "圈子；交际圈",
-    "en": "A group of people connected by friendship or shared interests."
+    "ja": "仲間、集まり",
+    "en": "a group of people who share an interest or know each other",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "环绕；圈出",
-    "en": "To move around something or draw a ring around it."
+    "ja": "円を描いて動く、丸で囲む",
+    "en": "to move in a ring around something, or to draw a ring around it",
+    "gram": "他動詞/自動詞"
    }
   ],
   "ex": [
    {
     "en": "The children sat in a circle on the grass.",
-    "zh": "孩子们在草地上围坐成一圈。"
+    "ja": "子どもたちは芝生の上で輪になって座った。"
    },
    {
     "en": "Joining community activities can help older adults expand their social circle and reduce feelings of isolation.",
-    "zh": "参加社区活动可以帮助老年人扩大社交圈，减少孤独感。"
+    "ja": "地域の活動に参加すると、高齢者は交友の輪を広げ、孤立感を和らげやすくなる。"
    }
   ],
   "col": [
-   "draw a circle｜画圆",
-   "in a circle｜围成一圈",
-   "social circle｜社交圈",
-   "circle overhead｜在上空盘旋"
+   "draw a circle｜円を描く",
+   "in a circle｜輪になって",
+   "social circle｜交友の輪",
+   "circle overhead｜上空を旋回する"
   ],
   "fam": [
    "circular (adj.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "circle是圆或圆圈；cycle才常指循环或周期。",
+  "tip": "circleは円や輪。循環や周期を指すときはcycleを使うことが多い。",
   "cefr": "A2",
   "topic": "daily",
   "note": "",
-  "id": "circle"
+  "id": "circle",
+  "syl": [
+   "cir",
+   "cle"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "circles"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "circles"
+   },
+   {
+    "label": "過去形",
+    "form": "circled"
+   },
+   {
+    "label": "過去分詞",
+    "form": "circled"
+   },
+   {
+    "label": "現在分詞",
+    "form": "circling"
+   }
+  ]
  },
  {
   "w": "pardon",
@@ -35400,34 +35681,49 @@
   "senses": [
    {
     "pos": "int.",
-    "zh": "请再说一遍",
-    "en": "Used politely to ask someone to repeat what they said."
+    "ja": "もう一度おっしゃってください",
+    "en": "a polite way to ask someone to repeat what they said",
+    "note": "語尾を上げて言う。くだけた場面では What? より丁寧。"
    },
    {
     "pos": "v.",
-    "zh": "原谅；赦免",
-    "en": "To forgive someone or officially release them from punishment."
+    "ja": "許す、容赦する",
+    "en": "to forgive someone or excuse a mistake or rudeness",
+    "gram": "他動詞"
+   },
+   {
+    "pos": "v.",
+    "ja": "赦免する、恩赦を与える",
+    "en": "to officially free someone from punishment for a crime",
+    "gram": "他動詞"
    },
    {
     "pos": "n.",
-    "zh": "赦免；宽恕",
-    "en": "Official forgiveness for a crime, or forgiveness for an offence."
+    "ja": "赦免、恩赦",
+    "en": "an official decision to free someone from punishment",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "許し、容赦",
+    "en": "forgiveness for a mistake or offence",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "Pardon? I couldn't hear you over the washing machine.",
-    "zh": "请再说一遍？洗衣机太吵，我没听清。"
+    "ja": "え？洗濯機の音で聞こえませんでした。"
    },
    {
     "en": "A legal pardon can help someone rebuild their life, although public acceptance may take longer.",
-    "zh": "法律上的赦免可以帮助一个人重建生活，但获得公众接纳可能需要更久。"
+    "ja": "法的な赦免はその人が人生をやり直す助けになるが、社会に受け入れられるにはもっと時間がかかるかもしれない。"
    }
   ],
   "col": [
-   "pardon me｜请原谅；劳驾",
-   "I beg your pardon｜请再说一遍；对不起",
-   "grant a pardon｜给予赦免"
+   "pardon me｜失礼ですが、すみません",
+   "I beg your pardon｜もう一度お願いします、失礼しました",
+   "grant a pardon｜赦免を与える"
   ],
   "fam": [
    "pardonable (adj.)",
@@ -35438,11 +35734,37 @@
    "excuse"
   ],
   "ant": [],
-  "tip": "没听清时可说Pardon?，语调通常上扬。",
+  "tip": "聞き取れないときは Pardon? と語尾を上げて言う。",
   "cefr": "A2",
   "topic": "daily",
   "note": "",
-  "id": "pardon"
+  "id": "pardon",
+  "syl": [
+   "par",
+   "don"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "pardons"
+   },
+   {
+    "label": "過去形",
+    "form": "pardoned"
+   },
+   {
+    "label": "過去分詞",
+    "form": "pardoned"
+   },
+   {
+    "label": "現在分詞",
+    "form": "pardoning"
+   },
+   {
+    "label": "複数形",
+    "form": "pardons"
+   }
+  ]
  },
  {
   "w": "succeed",
@@ -35451,29 +35773,31 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "成功；达成目标",
-    "en": "To achieve what you are trying to do."
+    "ja": "成功する、うまくいく",
+    "en": "to achieve what you wanted to do",
+    "gram": "自動詞"
    },
    {
     "pos": "v.",
-    "zh": "接替；继任",
-    "en": "To take someone's position after they leave it."
+    "ja": "後を継ぐ、後任となる",
+    "en": "to take over a position or title after someone else",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "After several attempts, I succeeded in fixing the lamp.",
-    "zh": "尝试了几次后，我终于把灯修好了。"
+    "ja": "何度か試して、私はランプの修理に成功した。"
    },
    {
     "en": "Students are more likely to succeed when schools provide consistent feedback and practical support.",
-    "zh": "学校持续提供反馈和实际支持时，学生更有可能取得成功。"
+    "ja": "学校が一貫したフィードバックと実践的な支援を与えれば、生徒は成功しやすくなる。"
    }
   ],
   "col": [
-   "succeed in doing something｜成功做成某事",
-   "succeed as a manager｜作为经理取得成功",
-   "succeed someone as chair｜接替某人担任主席"
+   "succeed in doing something｜〜することに成功する",
+   "succeed as a manager｜管理職として成功する",
+   "succeed someone as chair｜〜の後任として議長になる"
   ],
   "fam": [
    "success (n.)",
@@ -35485,11 +35809,38 @@
   "ant": [
    "fail"
   ],
-  "tip": "表示成功做成某事，用succeed in doing，不用to do。",
+  "tip": "「〜に成功する」は succeed in doing で、to 不定詞は使わない。",
   "cefr": "A2",
   "topic": "work",
   "note": "",
-  "id": "succeed"
+  "id": "succeed",
+  "syl": [
+   "suc",
+   "ceed"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "succeeds"
+   },
+   {
+    "label": "過去形",
+    "form": "succeeded"
+   },
+   {
+    "label": "過去分詞",
+    "form": "succeeded"
+   },
+   {
+    "label": "現在分詞",
+    "form": "succeeding"
+   },
+   {
+    "label": "名詞形",
+    "form": "success",
+    "note": "成功"
+   }
+  ]
  },
  {
   "w": "easily",
@@ -35498,35 +35849,37 @@
   "senses": [
    {
     "pos": "adv.",
-    "zh": "容易地；轻松地",
-    "en": "without difficulty or much effort"
+    "ja": "簡単に、楽に、すぐに",
+    "en": "without difficulty or effort"
    },
    {
     "pos": "adv.",
-    "zh": "无疑；远远",
-    "en": "by a clear margin, especially in comparisons"
+    "ja": "間違いなく、断然",
+    "en": "by a clear margin, used before a superlative",
+    "note": "easily the best のように最上級の前で使う"
    },
    {
     "pos": "adv.",
-    "zh": "很可能",
-    "en": "with a strong possibility of something happening"
+    "ja": "十分にありうる、おそらく",
+    "en": "very possibly",
+    "note": "can / could / may と一緒に使うことが多い"
    }
   ],
   "ex": [
    {
     "en": "This small suitcase fits easily beneath the train seat.",
-    "zh": "这个小行李箱轻轻松松就能放到火车座位下面。"
+    "ja": "この小さなスーツケースは電車の座席の下に楽に収まる。"
    },
    {
     "en": "Public information should be presented clearly so that people with different literacy levels can easily understand it.",
-    "zh": "公共信息应清晰呈现，让识字水平不同的人都能轻松理解。"
+    "ja": "情報は、読み書きの力が異なる人々にも容易に理解できるよう、分かりやすく示されるべきだ。"
    }
   ],
   "col": [
-   "easily accessible｜容易获取或到达的",
-   "easily understood｜容易理解的",
-   "easily the best｜无疑是最好的",
-   "could easily happen｜很可能发生"
+   "easily accessible｜容易にアクセスできる",
+   "easily understood｜容易に理解できる",
+   "easily the best｜断然最高の",
+   "could easily happen｜十分に起こりうる"
   ],
   "fam": [
    "easy (adj.)",
@@ -35540,11 +35893,16 @@
   "ant": [
    "laboriously"
   ],
-  "tip": "easily可修饰最高级：easily the best表示远胜其他。",
+  "tip": "easily the best は「他を大きく引き離して最高」の意味。最上級の強調に使える。",
   "cefr": "A2",
   "topic": "daily",
   "note": "",
-  "id": "easily"
+  "id": "easily",
+  "syl": [
+   "eas",
+   "i",
+   "ly"
+  ]
  },
  {
   "w": "bit",
@@ -35553,39 +35911,59 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "一点；少量；小块",
-    "en": "A small amount or piece of something."
+    "ja": "少し、少量、小片",
+    "en": "a small amount or piece of something",
+    "note": "a bit of のあとには不可算名詞が来ることが多い",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "比特；二进制位",
-    "en": "The smallest unit of information stored by a computer."
+    "ja": "ビット（情報の最小単位）",
+    "en": "the smallest unit of computer information, either 0 or 1",
+    "gram": "可算",
+    "reg": "専門"
+   },
+   {
+    "pos": "v.",
+    "ja": "bite の過去形",
+    "en": "past tense of the verb meaning to cut with the teeth",
+    "note": "動詞 bite の過去形"
    }
   ],
   "ex": [
    {
     "en": "There is a bit of cake left for you.",
-    "zh": "还给你留了一点蛋糕。"
+    "ja": "あなたの分のケーキが少し残っているよ。"
    },
    {
     "en": "Even a small bit of practical experience can help students understand difficult scientific concepts.",
-    "zh": "即使只有少量实践经验，也能帮助学生理解困难的科学概念。"
+    "ja": "ほんの少しの実地経験でも、学生が難しい科学概念を理解する助けになりうる。"
    }
   ],
   "col": [
-   "a bit of｜一点",
-   "a little bit｜一点点",
-   "bit by bit｜一点一点地",
-   "bits and pieces｜零碎物品"
+   "a bit of｜少しの〜",
+   "a little bit｜ほんの少し",
+   "bit by bit｜少しずつ",
+   "bits and pieces｜こまごましたもの"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "a bit of接名词；a bit可修饰形容词；bit也是bite过去式。",
+  "tip": "a bit of は名詞の前、a bit は形容詞の前に付ける。bit は bite の過去形でもある。",
   "cefr": "A2",
   "topic": "daily",
   "note": "",
-  "id": "bit"
+  "id": "bit",
+  "syl": [
+   "bit"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "bits"
+   }
+  ],
+  "gram": "動詞 bite の過去形 bit と同形。文の中で品詞を見分けよう。"
  },
  {
   "w": "typing",
@@ -35594,25 +35972,26 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "打字；键盘输入",
-    "en": "The activity of entering words using a keyboard."
+    "ja": "タイピング、キーボード入力",
+    "en": "the activity of entering text by pressing keys on a keyboard",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "My typing has become faster since I started practising.",
-    "zh": "开始练习以后，我的打字速度变快了。"
+    "ja": "練習を始めてから、私のタイピングは速くなった。"
    },
    {
     "en": "Although voice recognition is improving, accurate typing remains a valuable skill in many office jobs.",
-    "zh": "尽管语音识别技术正在进步，准确打字仍是许多办公室工作中的宝贵技能。"
+    "ja": "音声認識は向上しているが、正確なタイピングは多くの事務職で今も価値のある技能だ。"
    }
   ],
   "col": [
-   "typing speed｜打字速度",
-   "touch typing｜盲打",
-   "typing skills｜打字技能",
-   "typing error｜打字错误"
+   "typing speed｜タイピング速度",
+   "touch typing｜ブラインドタッチ",
+   "typing skills｜タイピング技能",
+   "typing error｜入力ミス"
   ],
   "fam": [
    "type (v.)",
@@ -35621,11 +36000,15 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "作名词时不可数；也是type的现在分词。",
+  "tip": "名詞では不可算。動詞 type の現在分詞（-ing 形）でもある。",
   "cefr": "A2",
   "topic": "technology",
   "note": "",
-  "id": "typing"
+  "id": "typing",
+  "syl": [
+   "typ",
+   "ing"
+  ]
  },
  {
   "w": "male",
@@ -35634,29 +36017,30 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "男性的；雄性的",
-    "en": "Relating to men or boys, or the sex that produces sperm."
+    "ja": "男性の、雄の",
+    "en": "belonging to the sex that cannot lay eggs or give birth"
    },
    {
     "pos": "n.",
-    "zh": "男性；雄性动物",
-    "en": "A male person or animal."
+    "ja": "男性、雄",
+    "en": "a person or animal of the sex that cannot give birth",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "The male duck has a shiny green head.",
-    "zh": "这只公鸭有一个亮闪闪的绿色脑袋。"
+    "ja": "雄のカモは頭が光沢のある緑色をしている。"
    },
    {
     "en": "Encouraging more male applicants to enter nursing could help address staff shortages and challenge gender stereotypes.",
-    "zh": "鼓励更多男性申请进入护理行业，有助于缓解人员短缺并打破性别刻板印象。"
+    "ja": "より多くの男性応募者に看護職を目指してもらうことは、人手不足の解消や性別の固定観念への挑戦につながりうる。"
    }
   ],
   "col": [
-   "male students｜男学生",
-   "male nurse｜男护士",
-   "male and female｜男性和女性；雄性和雌性"
+   "male students｜男子学生",
+   "male nurse｜男性看護師",
+   "male and female｜男性と女性、雄と雌"
   ],
   "fam": [
    "maleness (n.)"
@@ -35665,11 +36049,20 @@
   "ant": [
    "female"
   ],
-  "tip": "male可作形容词或名词；日常指男人通常用man。",
+  "tip": "形容詞にも名詞にもなる。日常で「男の人」は man を使うのが普通。",
   "cefr": "A2",
   "topic": "society",
   "note": "",
-  "id": "male"
+  "id": "male",
+  "syl": [
+   "male"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "males"
+   }
+  ]
  },
  {
   "w": "album",
@@ -35678,38 +36071,50 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "音乐专辑",
-    "en": "A collection of recorded music released as one product."
+    "ja": "アルバム、音楽アルバム",
+    "en": "a collection of songs released together on a disc or online",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "相册；集邮册",
-    "en": "A book for keeping photographs, stamps or similar collections."
+    "ja": "アルバム、写真帳、切手帳",
+    "en": "a book with pages for keeping photos, stamps or similar items",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "Her new album kept us singing all afternoon.",
-    "zh": "她的新专辑让我们跟着唱了整整一个下午。"
+    "ja": "彼女の新しいアルバムのおかげで、私たちは午後ずっと歌っていた。"
    },
    {
     "en": "Digital platforms allow independent musicians to release an album without relying on a traditional record company.",
-    "zh": "数字平台让独立音乐人无需依赖传统唱片公司就能发行专辑。"
+    "ja": "デジタル配信のおかげで、独立系の音楽家も従来のレコード会社に頼らずアルバムを発表できる。"
    }
   ],
   "col": [
-   "release an album｜发行专辑",
-   "debut album｜首张专辑",
-   "photo album｜相册"
+   "release an album｜アルバムを発売する",
+   "debut album｜デビューアルバム",
+   "photo album｜写真アルバム"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "音乐专辑用album；单曲用single。",
+  "tip": "曲が複数入ったものは album、1曲だけなら single と言い分ける。",
   "cefr": "A2",
   "topic": "arts",
   "note": "",
-  "id": "album"
+  "id": "album",
+  "syl": [
+   "al",
+   "bum"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "albums"
+   }
+  ]
  },
  {
   "w": "burn",
@@ -35718,35 +36123,38 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "燃烧；烧毁",
-    "en": "To produce flames, or destroy something with fire."
+    "ja": "燃える、燃やす、焼く",
+    "en": "to be on fire, or to destroy or damage something with fire",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "v.",
-    "zh": "烧伤；烫伤",
-    "en": "To damage skin or other material through heat."
+    "ja": "やけどする、やけどさせる",
+    "en": "to injure the skin or body with heat, fire or a hot object",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "n.",
-    "zh": "烧伤；烫伤",
-    "en": "An injury caused by heat, chemicals, or electricity."
+    "ja": "やけど、火傷",
+    "en": "an injury to the skin caused by heat, fire or chemicals",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "A small fire burned quietly in the fireplace.",
-    "zh": "壁炉里，一小团火静静地燃烧着。"
+    "ja": "小さな火が暖炉の中で静かに燃えていた。"
    },
    {
     "en": "Burning fossil fuels releases greenhouse gases, making cleaner energy sources essential for environmental protection.",
-    "zh": "燃烧化石燃料会释放温室气体，因此清洁能源对环境保护至关重要。"
+    "ja": "化石燃料を燃やすと温室効果ガスが排出されるため、環境保護にはよりクリーンなエネルギー源が不可欠だ。"
    }
   ],
   "col": [
-   "burn fossil fuels｜燃烧化石燃料",
-   "burn calories｜消耗热量",
-   "burn your hand｜烫伤手",
-   "a severe burn｜严重烧伤"
+   "burn fossil fuels｜化石燃料を燃やす",
+   "burn calories｜カロリーを消費する",
+   "burn your hand｜手をやけどする",
+   "a severe burn｜重いやけど"
   ],
   "fam": [
    "burning (adj.)",
@@ -35755,11 +36163,34 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "过去式和过去分词可用burnt或burned。",
+  "tip": "過去形・過去分詞は burnt と burned の両方がある（英では burnt が多い）。",
   "cefr": "A2",
   "topic": "daily",
   "note": "",
-  "id": "burn"
+  "id": "burn",
+  "syl": [
+   "burn"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "burns"
+   },
+   {
+    "label": "過去形",
+    "form": "burned",
+    "note": "英では burnt も可"
+   },
+   {
+    "label": "過去分詞",
+    "form": "burned",
+    "note": "英では burnt も可"
+   },
+   {
+    "label": "現在分詞",
+    "form": "burning"
+   }
+  ]
  },
  {
   "w": "knock",
@@ -81341,33 +81772,44 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "简陋小屋；棚屋",
-    "en": "A small, simple building, often made of wood or grass."
+    "ja": "小屋、粗末な家",
+    "en": "a small, simple building, usually made of wood or other basic materials",
+    "note": "山小屋や作業小屋など、簡素で素朴な建物を指す",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "We sheltered from the rain in a wooden hut.",
-    "zh": "我们躲进一间木屋避雨。"
+    "ja": "私たちは木造の小屋で雨宿りをした。"
    },
    {
     "en": "Mountain huts provide essential shelter for hikers, but their construction should minimise damage to fragile ecosystems.",
-    "zh": "山间小屋为徒步者提供必要的庇护，但建造时应尽量减少对脆弱生态系统的破坏。"
+    "ja": "山小屋はハイカーにとって欠かせない避難場所だが、その建設は繊細な生態系への被害を最小限に抑えるべきだ。"
    }
   ],
   "col": [
-   "wooden hut｜木屋",
-   "mountain hut｜山间小屋",
-   "thatched hut｜茅草屋"
+   "wooden hut｜木造の小屋",
+   "mountain hut｜山小屋",
+   "thatched hut｜わらぶき小屋"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "hut强调简小朴素，通常不是设施齐全的住宅。",
+  "tip": "hutは簡素で素朴な小屋。設備の整った住宅には普通使わない。",
   "cefr": "B1",
   "topic": "travel",
   "note": "",
-  "id": "hut"
+  "id": "hut",
+  "syl": [
+   "hut"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "huts"
+   }
+  ]
  },
  {
   "w": "sour",
@@ -81376,34 +81818,37 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "酸的；酸味的",
-    "en": "Having a sharp taste like a lemon."
+    "ja": "すっぱい、酸味のある",
+    "en": "having a sharp taste like that of a lemon or unripe fruit"
    },
    {
     "pos": "adj.",
-    "zh": "酸腐的；变质的",
-    "en": "Having an unpleasant taste or smell after becoming spoiled."
+    "ja": "腐った、傷んだ",
+    "en": "tasting or smelling unpleasant because it is no longer fresh",
+    "note": "牛乳などが傷んだ状態"
    },
    {
     "pos": "v.",
-    "zh": "变坏；使恶化",
-    "en": "To become less pleasant or make a relationship worse."
+    "ja": "悪くなる、悪化させる",
+    "en": "to become worse, or to make something become worse",
+    "note": "関係や気分が悪くなる場合に使う",
+    "gram": "他動詞/自動詞"
    }
   ],
   "ex": [
    {
     "en": "These grapes are too sour for my taste.",
-    "zh": "这些葡萄对我来说太酸了。"
+    "ja": "このぶどうは私の好みにはすっぱすぎる。"
    },
    {
     "en": "Disagreements over shared resources can sour relations between neighbouring countries and delay important environmental projects.",
-    "zh": "共享资源方面的分歧可能使邻国关系恶化，并延误重要的环境项目。"
+    "ja": "共有資源をめぐる対立は、隣国どうしの関係を悪化させ、重要な環境プロジェクトを遅らせかねない。"
    }
   ],
   "col": [
-   "sour taste｜酸味",
-   "go sour｜变酸；变质",
-   "sour relations｜使关系恶化"
+   "sour taste｜すっぱい味",
+   "go sour｜すっぱくなる、傷む",
+   "sour relations｜関係を悪化させる"
   ],
   "fam": [
    "sourness (n.)",
@@ -81413,11 +81858,40 @@
   "ant": [
    "sweet"
   ],
-  "tip": "go sour可指食物变质，也可指关系变坏。",
+  "tip": "go sourは食べ物が傷むことにも、関係が悪くなることにも使える。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "sour"
+  "id": "sour",
+  "syl": [
+   "sour"
+  ],
+  "forms": [
+   {
+    "label": "比較級",
+    "form": "sourer"
+   },
+   {
+    "label": "最上級",
+    "form": "sourest"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "sours"
+   },
+   {
+    "label": "過去形",
+    "form": "soured"
+   },
+   {
+    "label": "過去分詞",
+    "form": "soured"
+   },
+   {
+    "label": "現在分詞",
+    "form": "souring"
+   }
+  ]
  },
  {
   "w": "currency",
@@ -81426,39 +81900,54 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "货币；通货",
-    "en": "The money used in a particular country."
+    "ja": "通貨、貨幣",
+    "en": "the system of money used in a particular country",
+    "gram": "可算/不可算"
    },
    {
     "pos": "n.",
-    "zh": "流传；通行",
-    "en": "The state of being widely accepted or used."
+    "ja": "普及、流布",
+    "en": "the state of being widely accepted or used",
+    "note": "gain currencyの形で「広まる」の意味",
+    "gram": "不可算",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "We exchanged our money for local currency at the airport.",
-    "zh": "我们在机场把钱兑换成了当地货币。"
+    "ja": "私たちは空港で手持ちのお金を現地の通貨に両替した。"
    },
    {
     "en": "A weaker currency can attract international tourists by making accommodation and other services more affordable.",
-    "zh": "货币贬值可以降低住宿和其他服务的价格，从而吸引国际游客。"
+    "ja": "通貨安は、宿泊などのサービスを割安にすることで、海外からの旅行者を呼び込む場合がある。"
    }
   ],
   "col": [
-   "foreign currency｜外币",
-   "local currency｜当地货币",
-   "currency exchange｜货币兑换",
-   "gain currency｜逐渐流行"
+   "foreign currency｜外貨",
+   "local currency｜現地通貨",
+   "currency exchange｜通貨の両替",
+   "gain currency｜広まる"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "货币种类可数；泛指货币通常不可数。",
+  "tip": "通貨の種類を言うときは可算、通貨一般を指すときは不可算が多い。",
   "cefr": "B1",
   "topic": "economy",
   "note": "",
-  "id": "currency"
+  "id": "currency",
+  "syl": [
+   "cur",
+   "ren",
+   "cy"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "currencies"
+   }
+  ]
  },
  {
   "w": "qualification",
@@ -81467,35 +81956,41 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "学历；资格证书",
-    "en": "An official award showing successful completion of education or training."
+    "ja": "資格、学歴",
+    "en": "an exam passed or a course completed that shows you can do a job",
+    "note": "複数形で学歴・資格全般を指すことが多い",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "资历；资格条件",
-    "en": "A skill or quality making someone suitable for a role."
+    "ja": "適性、必要条件",
+    "en": "a skill or quality that makes someone suitable for a job or role",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "限定条件；保留意见",
-    "en": "A condition that limits the meaning or acceptance of something."
+    "ja": "条件、但し書き",
+    "en": "a statement that limits or adds a condition to something said",
+    "note": "without qualificationで「無条件に」",
+    "gram": "可算/不可算",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "This qualification helped me find work at a nursery.",
-    "zh": "这个资格证书帮助我在一家幼儿园找到了工作。"
+    "ja": "この資格のおかげで、私は保育所で仕事を見つけられた。"
    },
    {
     "en": "Employers increasingly value practical experience alongside formal qualifications when recruiting graduates for demanding professional roles.",
-    "zh": "招聘毕业生担任要求较高的专业岗位时，雇主越来越重视实际经验与正式学历。"
+    "ja": "雇用主は、難しい専門職の新卒者を採用する際、正式な資格に加えて実務経験をますます重視している。"
    }
   ],
   "col": [
-   "academic qualifications｜学历",
-   "professional qualification｜职业资格",
-   "entry qualifications｜入学资格",
-   "without qualification｜毫无保留地"
+   "academic qualifications｜学歴",
+   "professional qualification｜職業資格",
+   "entry qualifications｜入学資格",
+   "without qualification｜無条件に"
   ],
   "fam": [
    "qualify (v.)",
@@ -81507,11 +82002,24 @@
    "credential"
   ],
   "ant": [],
-  "tip": "谈学历或资历常用复数qualifications。",
+  "tip": "学歴や資格を言うときは複数形のqualificationsがよく使われる。",
   "cefr": "B1",
   "topic": "work",
   "note": "",
-  "id": "qualification"
+  "id": "qualification",
+  "syl": [
+   "qual",
+   "i",
+   "fi",
+   "ca",
+   "tion"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "qualifications"
+   }
+  ]
  },
  {
   "w": "issue",
@@ -81520,35 +82028,39 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "议题；重要问题",
-    "en": "An important subject or problem that needs discussion."
+    "ja": "問題、論点",
+    "en": "a subject or problem that people discuss or worry about",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "发布；发放",
-    "en": "To officially announce or give something to people."
+    "ja": "発表する、発行する",
+    "en": "to officially give out or announce something",
+    "note": "警告や声明、証明書などを目的語にとる",
+    "gram": "他動詞"
    },
    {
     "pos": "n.",
-    "zh": "报刊的一期",
-    "en": "One edition of a regularly published newspaper or magazine."
+    "ja": "(雑誌などの)号",
+    "en": "one copy or edition of a magazine or newspaper published at a given time",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "We discussed the parking issue at our neighbourhood meeting.",
-    "zh": "我们在邻里会议上讨论了停车问题。"
+    "ja": "私たちは町内会の集まりで駐車の問題について話し合った。"
    },
    {
     "en": "Governments must address the issue of housing affordability to ensure that young adults can live independently.",
-    "zh": "政府必须解决住房负担能力问题，确保年轻人能够独立生活。"
+    "ja": "政府は、若い成人が自立して暮らせるよう、住宅費の手ごろさという問題に取り組まなければならない。"
    }
   ],
   "col": [
-   "address an issue｜处理问题",
-   "a controversial issue｜有争议的议题",
-   "issue a warning｜发布警告",
-   "the latest issue｜最新一期"
+   "address an issue｜問題に取り組む",
+   "a controversial issue｜議論を呼ぶ問題",
+   "issue a warning｜警告を出す",
+   "the latest issue｜最新号"
   ],
   "fam": [
    "issuance (n.)",
@@ -81557,11 +82069,37 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "issue 作问题常指需讨论的议题，不一定是困难。",
+  "tip": "「問題」の意味では、議論すべき論点を指し、困りごととは限らない。",
   "cefr": "B1",
   "topic": "society",
   "note": "",
-  "id": "issue"
+  "id": "issue",
+  "syl": [
+   "is",
+   "sue"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "issues"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "issues"
+   },
+   {
+    "label": "過去形",
+    "form": "issued"
+   },
+   {
+    "label": "過去分詞",
+    "form": "issued"
+   },
+   {
+    "label": "現在分詞",
+    "form": "issuing"
+   }
+  ]
  },
  {
   "w": "indoors",
@@ -81570,24 +82108,25 @@
   "senses": [
    {
     "pos": "adv.",
-    "zh": "在室内；往室内",
-    "en": "Inside a building, or into a building."
+    "ja": "屋内で、屋内へ",
+    "en": "inside a building, or into a building",
+    "note": "位置にも方向にも使える"
    }
   ],
   "ex": [
    {
     "en": "We stayed indoors and played chess during the storm.",
-    "zh": "暴风雨期间，我们待在室内下棋。"
+    "ja": "嵐の間、私たちは家にこもってチェスをした。"
    },
    {
     "en": "Children who spend most of their time indoors may have fewer opportunities for physical activity.",
-    "zh": "大部分时间待在室内的孩子可能较少有机会进行体育活动。"
+    "ja": "ほとんどの時間を屋内で過ごす子どもは、体を動かす機会が少なくなるかもしれない。"
    }
   ],
   "col": [
-   "stay indoors｜待在室内",
-   "go indoors｜进入室内",
-   "keep pets indoors｜把宠物养在室内"
+   "stay indoors｜屋内にとどまる",
+   "go indoors｜屋内に入る",
+   "keep pets indoors｜ペットを室内で飼う"
   ],
   "fam": [
    "indoor (adj.)"
@@ -81598,11 +82137,15 @@
   "ant": [
    "outdoors"
   ],
-  "tip": "indoors是副词；修饰名词用indoor，如indoor sports。",
+  "tip": "indoorsは副詞。名詞を修飾するときはindoor sportsのようにindoorを使う。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "indoors"
+  "id": "indoors",
+  "syl": [
+   "in",
+   "doors"
+  ]
  },
  {
   "w": "amaze",
@@ -81611,24 +82154,25 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "使惊奇；使惊叹",
-    "en": "to surprise someone very much"
+    "ja": "ひどく驚かせる、感嘆させる",
+    "en": "to surprise someone very much, often in a pleasing way",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "The magician's clever tricks never fail to amaze the children.",
-    "zh": "魔术师巧妙的戏法总能让孩子们惊叹不已。"
+    "ja": "その手品師の巧みな技は、いつも子どもたちを驚かせる。"
    },
    {
     "en": "Advances in medical technology continue to amaze researchers and offer new hope to patients with complex conditions.",
-    "zh": "医疗技术的进步不断令研究人员惊叹，也为病情复杂的患者带来新的希望。"
+    "ja": "医療技術の進歩は研究者を驚かせ続け、複雑な病気の患者に新たな希望をもたらしている。"
    }
   ],
   "col": [
-   "never cease to amaze｜始终令人惊叹",
-   "amaze an audience｜令观众惊叹",
-   "be amazed at｜对…感到惊奇"
+   "never cease to amaze｜驚かせ続ける",
+   "amaze an audience｜観客を驚嘆させる",
+   "be amazed at｜〜に驚く"
   ],
   "fam": [
    "amazed (adj.)",
@@ -81641,11 +82185,33 @@
    "astound"
   ],
   "ant": [],
-  "tip": "人感到惊奇用amazed；事物令人惊奇用amazing。",
+  "tip": "人が驚くときはamazed、驚かせる物事にはamazingを使う。",
   "cefr": "B1",
   "topic": "emotion",
   "note": "",
-  "id": "amaze"
+  "id": "amaze",
+  "syl": [
+   "a",
+   "maze"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "amazes"
+   },
+   {
+    "label": "過去形",
+    "form": "amazed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "amazed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "amazing"
+   }
+  ]
  },
  {
   "w": "maker",
@@ -81654,24 +82220,38 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "制造者；制造商",
-    "en": "A person or company that produces something."
+    "ja": "作り手、製作者",
+    "en": "a person who makes things, especially by hand or skill",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "メーカー、製造会社",
+    "en": "a company that produces goods, especially in large quantities",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "〜を行う人、〜を生み出すもの",
+    "en": "a person or thing that brings about something, used after another noun",
+    "note": "decision maker や peacemaker のように複合語を作る。",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "The furniture maker carved a beautiful chair from oak.",
-    "zh": "这位家具工匠用橡木雕出了一把漂亮的椅子。"
+    "ja": "家具職人は樫の木から美しい椅子を彫り出した。"
    },
    {
     "en": "Car makers are investing in cleaner technologies to meet stricter environmental standards and changing consumer expectations.",
-    "zh": "汽车制造商正在投资更清洁的技术，以满足更严格的环保标准和不断变化的消费者期望。"
+    "ja": "自動車メーカーは、より厳しい環境基準と消費者の期待の変化に応えるため、よりクリーンな技術に投資している。"
    }
   ],
   "col": [
-   "furniture maker｜家具制造商",
-   "car maker｜汽车制造商",
-   "decision maker｜决策者"
+   "furniture maker｜家具職人、家具メーカー",
+   "car maker｜自動車メーカー",
+   "decision maker｜意思決定者"
   ],
   "fam": [
    "make (v.)",
@@ -81682,11 +82262,21 @@
    "producer"
   ],
   "ant": [],
-  "tip": "常与产品名搭配；决策者用decision maker。",
+  "tip": "製品名と組み合わせて使う。意思決定者は decision maker。",
   "cefr": "B1",
   "topic": "work",
   "note": "",
-  "id": "maker"
+  "id": "maker",
+  "syl": [
+   "mak",
+   "er"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "makers"
+   }
+  ]
  },
  {
   "w": "solution",
@@ -81695,30 +82285,39 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "解决办法；解答",
-    "en": "a way to solve a problem or answer a question"
+    "ja": "解決策、解決法",
+    "en": "a way of dealing with a problem or difficult situation",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "溶液",
-    "en": "a liquid containing a substance dissolved in it"
+    "ja": "解答、答え",
+    "en": "the correct answer to a puzzle or question",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "溶液",
+    "en": "a liquid in which another substance has been dissolved",
+    "gram": "可算/不可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "Adding another shelf was a simple solution to the clutter.",
-    "zh": "再加一个架子是解决杂乱问题的简单办法。"
+    "ja": "棚をもう一つ足すのが、散らかりの簡単な解決策だった。"
    },
    {
     "en": "Investment in renewable energy offers a long-term solution to the environmental problems caused by fossil fuels.",
-    "zh": "投资可再生能源为化石燃料造成的环境问题提供了长期解决方案。"
+    "ja": "再生可能エネルギーへの投資は、化石燃料が引き起こす環境問題への長期的な解決策となる。"
    }
   ],
   "col": [
-   "a solution to a problem｜问题的解决办法",
-   "find a solution｜找到解决办法",
-   "a practical solution｜切实可行的办法",
-   "a salt solution｜盐溶液"
+   "a solution to a problem｜問題の解決策",
+   "find a solution｜解決策を見つける",
+   "a practical solution｜実用的な解決策",
+   "a salt solution｜食塩水"
   ],
   "fam": [
    "solve (v.)",
@@ -81730,11 +82329,22 @@
    "remedy"
   ],
   "ant": [],
-  "tip": "表示“……的解决办法”用solution to，不用solution of。",
+  "tip": "「〜の解決策」は solution to で表し、solution of は使わない。",
   "cefr": "B1",
   "topic": "thinking",
   "note": "",
-  "id": "solution"
+  "id": "solution",
+  "syl": [
+   "so",
+   "lu",
+   "tion"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "solutions"
+   }
+  ]
  },
  {
   "w": "therefore",
@@ -81743,24 +82353,25 @@
   "senses": [
    {
     "pos": "adv.",
-    "zh": "因此；所以",
-    "en": "as a result of what has just been stated"
+    "ja": "したがって、それゆえ",
+    "en": "used to show that something is the result of what was just said",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "The shop was closed; therefore, we went home empty-handed.",
-    "zh": "商店关门了，因此我们空手回了家。"
+    "ja": "店は閉まっていた。それで私たちは手ぶらで帰った。"
    },
    {
     "en": "Public parks encourage physical activity and social interaction; therefore, cities should invest in maintaining accessible green spaces.",
-    "zh": "公共公园有助于促进体育活动和社交互动，因此城市应投入资金维护方便使用的绿地。"
+    "ja": "公園は運動や人との交流を促す。したがって、都市は誰でも使える緑地の維持に投資すべきだ。"
    }
   ],
   "col": [
-   "therefore conclude｜因此得出结论",
-   "therefore necessary｜因此有必要",
-   "and therefore｜因而"
+   "therefore conclude｜したがって結論づける",
+   "therefore necessary｜それゆえ必要な",
+   "and therefore｜したがって"
   ],
   "fam": [],
   "syn": [
@@ -81769,11 +82380,15 @@
    "hence"
   ],
   "ant": [],
-  "tip": "是副词，不能仅用逗号连接两个完整句子。",
+  "tip": "副詞なので、コンマだけで二つの文をつなぐことはできない。",
   "cefr": "B1",
   "topic": "thinking",
   "note": "",
-  "id": "therefore"
+  "id": "therefore",
+  "syl": [
+   "there",
+   "fore"
+  ]
  },
  {
   "w": "routine",
@@ -81782,46 +82397,59 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "惯例；日常安排",
-    "en": "A regular way of doing things in a particular order."
+    "ja": "日課、決まった手順",
+    "en": "the usual series of things that a person does regularly",
+    "gram": "可算/不可算"
    },
    {
     "pos": "adj.",
-    "zh": "例行的；常规的",
-    "en": "Done regularly as part of the usual process."
+    "ja": "日常の、型どおりの",
+    "en": "done regularly as part of a normal procedure; not special or unusual"
    },
    {
     "pos": "n.",
-    "zh": "一套表演动作",
-    "en": "A planned sequence of movements in a performance."
+    "ja": "一連の演技、ルーティン",
+    "en": "a fixed series of movements or jokes in a performance",
+    "note": "ダンスや体操、お笑いの持ちネタなどに使う。",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "A short walk is part of my morning routine.",
-    "zh": "短距离散步是我每天早晨的固定安排之一。"
+    "ja": "短い散歩は私の朝の日課の一部だ。"
    },
    {
     "en": "Maintaining a regular sleep routine can improve concentration and help students cope with academic pressure.",
-    "zh": "保持规律的睡眠作息能提高注意力，帮助学生应对学业压力。"
+    "ja": "規則正しい睡眠の習慣を保つことは、集中力を高め、学生が学業のプレッシャーに対処するのに役立つ。"
    }
   ],
   "col": [
-   "daily routine｜日常安排",
-   "routine check｜例行检查",
-   "exercise routine｜一套锻炼动作",
-   "establish a routine｜建立固定规律"
+   "daily routine｜日課",
+   "routine check｜定期検査",
+   "exercise routine｜運動の一連のメニュー",
+   "establish a routine｜習慣を確立する"
   ],
   "fam": [
    "routinely (adv.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "名词指固定安排；形容词指按惯例进行的。",
+  "tip": "名詞は決まった習慣、形容詞は「いつもどおりの」という意味。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "routine"
+  "id": "routine",
+  "syl": [
+   "rou",
+   "tine"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "routines"
+   }
+  ]
  },
  {
   "w": "claim",
@@ -81830,35 +82458,46 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "声称；宣称",
-    "en": "to say something is true, often without providing proof"
+    "ja": "主張する、言い張る",
+    "en": "to say that something is true, often without proof",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "索取；认领",
-    "en": "to ask for or take something you believe is yours"
+    "ja": "請求する、受け取りを求める",
+    "en": "to ask for something that you believe belongs to you",
+    "gram": "他動詞"
    },
    {
     "pos": "n.",
-    "zh": "说法；索赔要求",
-    "en": "a statement of truth or a request for something owed"
+    "ja": "主張、請求",
+    "en": "a statement that something is true, or a demand for money or rights",
+    "gram": "可算"
+   },
+   {
+    "pos": "v.",
+    "ja": "命を奪う",
+    "en": "to cause the death of someone",
+    "note": "災害や病気が主語になる。",
+    "gram": "他動詞",
+    "reg": "文語"
    }
   ],
   "ex": [
    {
     "en": "He claims he can fix my bike by lunchtime.",
-    "zh": "他声称能在午饭前修好我的自行车。"
+    "ja": "彼は昼までに私の自転車を直せると言っている。"
    },
    {
     "en": "Some researchers claim that access to green spaces can improve mental health and strengthen community relationships.",
-    "zh": "一些研究人员认为，能够使用绿地有助于改善心理健康并加强社区联系。"
+    "ja": "緑地に触れることが心の健康を高め、地域の人間関係を強めると主張する研究者もいる。"
    }
   ],
   "col": [
-   "claim that｜声称……",
-   "claim responsibility for｜宣称对……负责",
-   "claim compensation｜索赔",
-   "make a claim｜提出说法或索赔要求"
+   "claim that｜〜だと主張する",
+   "claim responsibility for｜〜の犯行声明を出す、責任を認める",
+   "claim compensation｜補償を請求する",
+   "make a claim｜主張する、請求を行う"
   ],
   "fam": [
    "claimant (n.)",
@@ -81869,11 +82508,37 @@
    "maintain"
   ],
   "ant": [],
-  "tip": "claim强调某人的说法，不代表已得到证实。",
+  "tip": "claim は本人の主張を表すだけで、事実とは限らない。",
   "cefr": "B1",
   "topic": "thinking",
   "note": "",
-  "id": "claim"
+  "id": "claim",
+  "syl": [
+   "claim"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "claims"
+   },
+   {
+    "label": "過去形",
+    "form": "claimed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "claimed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "claiming"
+   },
+   {
+    "label": "複数形",
+    "form": "claims",
+    "note": "名詞の複数形"
+   }
+  ]
  },
  {
   "w": "confidence",
@@ -81882,30 +82547,39 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "自信；信心",
-    "en": "Belief in your abilities or in a successful outcome."
+    "ja": "自信、確信",
+    "en": "a feeling that you can do something well or that you are right",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "信任；信赖",
-    "en": "Trust that someone or something is reliable."
+    "ja": "信頼、信用",
+    "en": "trust in the ability or honesty of a person or thing",
+    "gram": "不可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "内緒、秘密",
+    "en": "a state of trust in which private information is kept secret",
+    "note": "in confidence の形で使う。",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "Practising with friends gave me confidence before the interview.",
-    "zh": "和朋友一起练习让我在面试前有了信心。"
+    "ja": "友達と練習したおかげで、面接の前に自信がついた。"
    },
    {
     "en": "Supportive feedback can build students' confidence and encourage them to participate more actively in classroom discussions.",
-    "zh": "鼓励性的反馈可以增强学生的自信，促使他们更积极地参与课堂讨论。"
+    "ja": "支えとなるフィードバックは、学生の自信を育て、授業での議論により積極的に参加するよう促す。"
    }
   ],
   "col": [
-   "build confidence｜建立信心",
-   "confidence in someone｜对某人的信任",
-   "lack confidence｜缺乏信心",
-   "in confidence｜私下保密地"
+   "build confidence｜自信をつける",
+   "confidence in someone｜人への信頼",
+   "lack confidence｜自信がない",
+   "in confidence｜内密に"
   ],
   "fam": [
    "confident (adj.)",
@@ -81920,11 +82594,23 @@
    "doubt",
    "insecurity"
   ],
-  "tip": "对某人或某事有信心用confidence in。",
+  "tip": "人や物への信頼は confidence in で表す。",
   "cefr": "B1",
   "topic": "emotion",
   "note": "",
-  "id": "confidence"
+  "id": "confidence",
+  "syl": [
+   "con",
+   "fi",
+   "dence"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "confidences",
+    "note": "「打ち明け話」の意味のとき"
+   }
+  ]
  },
  {
   "w": "volunteer",
@@ -81933,30 +82619,38 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "志愿者；义工",
-    "en": "someone who freely offers to help, usually without payment"
+    "ja": "ボランティア、志願者",
+    "en": "a person who offers to do something without being paid or forced",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "自愿做；主动提供",
-    "en": "to freely offer to do something or give information"
+    "ja": "進んで引き受ける、申し出る",
+    "en": "to offer to do something without being asked or forced",
+    "gram": "他動詞/自動詞"
+   },
+   {
+    "pos": "v.",
+    "ja": "自分から話す、自発的に教える",
+    "en": "to give information without being asked for it",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "A volunteer helped us carry the boxes upstairs.",
-    "zh": "一位志愿者帮我们把箱子搬上了楼。"
+    "ja": "ボランティアの人が荷物を二階へ運ぶのを手伝ってくれた。"
    },
    {
     "en": "Universities can encourage students to volunteer in their communities by offering flexible schedules and practical support.",
-    "zh": "大学可以通过提供灵活的时间安排和实际支持，鼓励学生参与社区志愿服务。"
+    "ja": "大学は、柔軟な時間割と実践的な支援を提供することで、学生が地域でボランティア活動をするよう促せる。"
    }
   ],
   "col": [
-   "volunteer work｜志愿工作",
-   "volunteer to help｜主动提出帮忙",
-   "volunteer for a charity｜为慈善机构做义工",
-   "recruit volunteers｜招募志愿者"
+   "volunteer work｜ボランティア活動",
+   "volunteer to help｜進んで手伝いを申し出る",
+   "volunteer for a charity｜慈善団体のボランティアをする",
+   "recruit volunteers｜ボランティアを募集する"
   ],
   "fam": [
    "voluntary (adj.)",
@@ -81964,11 +82658,39 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "自愿做某事用volunteer to do；voluntary是常用形容词。",
+  "tip": "進んで〜する は volunteer to do。形容詞は voluntary。",
   "cefr": "B1",
   "topic": "society",
   "note": "",
-  "id": "volunteer"
+  "id": "volunteer",
+  "syl": [
+   "vol",
+   "un",
+   "teer"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "volunteers"
+   },
+   {
+    "label": "過去形",
+    "form": "volunteered"
+   },
+   {
+    "label": "過去分詞",
+    "form": "volunteered"
+   },
+   {
+    "label": "現在分詞",
+    "form": "volunteering"
+   },
+   {
+    "label": "複数形",
+    "form": "volunteers",
+    "note": "名詞の複数形"
+   }
+  ]
  },
  {
   "w": "switch",
@@ -81977,44 +82699,79 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "开关",
-    "en": "A device used to turn equipment on or off."
+    "ja": "スイッチ、開閉器",
+    "en": "a small control that turns a device on or off",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "转换；改变",
-    "en": "To change from one thing to another."
+    "ja": "切り替える、乗り換える",
+    "en": "to change from one thing to another",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "n.",
-    "zh": "转换；改变",
-    "en": "A change from one thing to another."
+    "ja": "切り替え、転換",
+    "en": "a change from one thing to another",
+    "gram": "可算"
+   },
+   {
+    "pos": "v.",
+    "ja": "入れ替える、交換する",
+    "en": "to exchange one thing or person for another",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "The light switch is just behind the kitchen door.",
-    "zh": "电灯开关就在厨房门后。"
+    "ja": "照明のスイッチは台所のドアのすぐ後ろにある。"
    },
    {
     "en": "Governments can encourage households to switch to renewable energy by offering financial support.",
-    "zh": "政府可以提供经济支持，鼓励家庭改用可再生能源。"
+    "ja": "政府は、財政支援を行うことで、家庭が再生可能エネルギーに切り替えるよう後押しできる。"
    }
   ],
   "col": [
-   "light switch｜电灯开关",
-   "switch off｜关闭",
-   "switch to｜改用；转向",
-   "make the switch｜作出转换"
+   "light switch｜照明のスイッチ",
+   "switch off｜スイッチを切る",
+   "switch to｜〜に切り替える",
+   "make the switch｜切り替えを行う"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "switch on/off表示开关设备；switch to表示改用。",
+  "tip": "switch on/off は機器の操作、switch to は「〜へ切り替える」。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "switch"
+  "id": "switch",
+  "syl": [
+   "switch"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "switches"
+   },
+   {
+    "label": "過去形",
+    "form": "switched"
+   },
+   {
+    "label": "過去分詞",
+    "form": "switched"
+   },
+   {
+    "label": "現在分詞",
+    "form": "switching"
+   },
+   {
+    "label": "複数形",
+    "form": "switches",
+    "note": "名詞の複数形"
+   }
+  ]
  },
  {
   "w": "block",
@@ -82023,35 +82780,40 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "大块；块状物",
-    "en": "A solid piece of material with fairly flat sides."
+    "ja": "かたまり、ブロック",
+    "en": "a large solid piece of something with flat sides",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "阻挡；堵塞",
-    "en": "To stop movement or prevent something from happening."
+    "ja": "ふさぐ、妨げる、遮る",
+    "en": "to stop movement or passage through a place",
+    "gram": "他動詞"
    },
    {
     "pos": "n.",
-    "zh": "街区；大楼",
-    "en": "An area between streets, or a large building."
+    "ja": "区画、ビル、棟",
+    "en": "a group of buildings between streets, or a large building divided into units",
+    "note": "a block of flats は英国で集合住宅を指す",
+    "gram": "可算",
+    "reg": "英"
    }
   ],
   "ex": [
    {
     "en": "The sculptor carved a bird from a block of wood.",
-    "zh": "雕刻家用一块木头雕出了一只鸟。"
+    "ja": "彫刻家は一個の木材の塊から鳥を彫り出した。"
    },
    {
     "en": "Poorly parked vehicles can block access to public buildings, creating difficulties for wheelchair users.",
-    "zh": "停放不当的车辆可能堵住公共建筑的入口，给轮椅使用者带来困难。"
+    "ja": "駐車の仕方が悪い車は公共施設への出入りをふさぎ、車いす利用者に不便を強いることがある。"
    }
   ],
   "col": [
-   "a block of flats｜一栋公寓楼",
-   "block the entrance｜堵住入口",
-   "a block of ice｜一大块冰",
-   "city block｜城市街区"
+   "a block of flats｜集合住宅の1棟",
+   "block the entrance｜入り口をふさぐ",
+   "a block of ice｜氷の塊",
+   "city block｜市街の1区画"
   ],
   "fam": [
    "blockage (n.)",
@@ -82059,11 +82821,36 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "a block of flats指公寓楼，是英式常用表达。",
+  "tip": "a block of flats は英国式で、米国では apartment building と言うことが多い。",
   "cefr": "B1",
   "topic": "city",
   "note": "",
-  "id": "block"
+  "id": "block",
+  "syl": [
+   "block"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "blocks"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "blocks"
+   },
+   {
+    "label": "過去形",
+    "form": "blocked"
+   },
+   {
+    "label": "過去分詞",
+    "form": "blocked"
+   },
+   {
+    "label": "現在分詞",
+    "form": "blocking"
+   }
+  ]
  },
  {
   "w": "mild",
@@ -82072,35 +82859,38 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "轻微的；不严重的",
-    "en": "Not severe or strong in effect"
+    "ja": "軽い、軽度の",
+    "en": "not serious or severe",
+    "note": "症状や病気、反応の程度が重くないことを表す"
    },
    {
     "pos": "adj.",
-    "zh": "温和的；不寒冷的",
-    "en": "Pleasantly warm rather than cold"
+    "ja": "穏やかな、温暖な",
+    "en": "gentle and not too cold, especially of weather",
+    "note": "気候や性格について使う"
    },
    {
     "pos": "adj.",
-    "zh": "味淡的；不辣的",
-    "en": "Not strong or spicy in flavour"
+    "ja": "まろやかな、刺激の少ない",
+    "en": "not strong or sharp in taste",
+    "note": "食べ物や飲み物の味について使う"
    }
   ],
   "ex": [
    {
     "en": "I have a mild headache, so I'll rest briefly.",
-    "zh": "我有点头痛，所以要稍微休息一下。"
+    "ja": "軽い頭痛があるので、少し休むことにする。"
    },
    {
     "en": "Even mild air pollution can affect vulnerable groups, making regular monitoring essential in densely populated cities.",
-    "zh": "即使轻度空气污染也会影响易受伤害的群体，因此人口密集的城市必须定期监测空气质量。"
+    "ja": "軽度の大気汚染でも弱い立場の人々に影響しうるため、人口の密集した都市では継続的な監視が欠かせない。"
    }
   ],
   "col": [
-   "mild symptoms｜轻微症状",
-   "mild weather｜温和的天气",
-   "mild flavour｜清淡的味道",
-   "mild headache｜轻微头痛"
+   "mild symptoms｜軽い症状",
+   "mild weather｜穏やかな天気",
+   "mild flavour｜やさしい味",
+   "mild headache｜軽い頭痛"
   ],
   "fam": [
    "mildly (adv.)",
@@ -82114,11 +82904,24 @@
    "severe",
    "harsh"
   ],
-  "tip": "mild 可形容症状、天气和味道，不等于“无害”。",
+  "tip": "mild は「軽度」であって「無害」ではない。比較級は milder、最上級は mildest。",
   "cefr": "B1",
   "topic": "health",
   "note": "",
-  "id": "mild"
+  "id": "mild",
+  "syl": [
+   "mild"
+  ],
+  "forms": [
+   {
+    "label": "比較級",
+    "form": "milder"
+   },
+   {
+    "label": "最上級",
+    "form": "mildest"
+   }
+  ]
  },
  {
   "w": "hostel",
@@ -82127,38 +82930,52 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "廉价旅舍；青年旅舍",
-    "en": "An inexpensive place to stay, often with shared rooms."
+    "ja": "ホステル、簡易宿泊所",
+    "en": "a cheap place to stay where guests often share rooms",
+    "note": "youth hostel は若い旅行者向けの安い宿",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "临时收容所",
-    "en": "A place providing temporary accommodation for people needing support."
+    "ja": "保護施設、宿泊施設",
+    "en": "a place that gives temporary shelter to people in need",
+    "gram": "可算",
+    "reg": "英"
    }
   ],
   "ex": [
    {
     "en": "We shared a room with other travellers at the hostel.",
-    "zh": "我们在旅舍和其他旅行者合住一个房间。"
+    "ja": "私たちはホステルで他の旅行者と同じ部屋に泊まった。"
    },
    {
     "en": "Youth hostels make international travel more affordable for students while encouraging interaction between people from different backgrounds.",
-    "zh": "青年旅舍让学生更能负担国际旅行，同时促进不同背景的人之间的交流。"
+    "ja": "ユースホステルは学生の海外旅行を手頃にし、さまざまな背景を持つ人々の交流も促す。"
    }
   ],
   "col": [
-   "youth hostel｜青年旅舍",
-   "stay in a hostel｜住旅舍",
-   "hostel accommodation｜旅舍住宿"
+   "youth hostel｜ユースホステル",
+   "stay in a hostel｜ホステルに泊まる",
+   "hostel accommodation｜ホステルの宿泊"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "hostel常有多人间，hotel通常提供独立客房。",
+  "tip": "hostel は相部屋が多く、hotel は個室が基本。名前が似ているので注意。",
   "cefr": "B1",
   "topic": "travel",
   "note": "",
-  "id": "hostel"
+  "id": "hostel",
+  "syl": [
+   "hos",
+   "tel"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "hostels"
+   }
+  ]
  },
  {
   "w": "inch",
@@ -82167,38 +82984,67 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "英寸",
-    "en": "a unit of length equal to 2.54 centimetres"
+    "ja": "インチ",
+    "en": "a unit of length equal to about 2.5 centimetres",
+    "note": "1インチは約2.54センチ",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "缓慢移动",
-    "en": "to move very slowly over a short distance"
+    "ja": "少しずつ進む",
+    "en": "to move forward very slowly and in small steps",
+    "note": "渋滞や混雑で動く様子に使う",
+    "gram": "自動詞"
    }
   ],
   "ex": [
    {
     "en": "The shelf is an inch wider than the cupboard.",
-    "zh": "这个架子比橱柜宽一英寸。"
+    "ja": "その棚は戸棚より1インチ幅が広い。"
    },
    {
     "en": "During rush hour, buses inch through crowded streets, making public transport less attractive to commuters.",
-    "zh": "高峰时段，公交车在拥挤的街道上缓慢行驶，降低了公共交通对通勤者的吸引力。"
+    "ja": "ラッシュ時にはバスが混雑した道路をのろのろと進むため、通勤者にとって公共交通機関の魅力が下がる。"
    }
   ],
   "col": [
-   "an inch thick｜一英寸厚",
-   "inch forward｜缓慢向前移动",
-   "inch by inch｜一点一点地"
+   "an inch thick｜厚さ1インチの",
+   "inch forward｜じりじり前進する",
+   "inch by inch｜少しずつ"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "英寸符号为″；作动词表示一点点移动。",
+  "tip": "inch は名詞でも動詞でも使える。inch by inch は「ほんの少しずつ」。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "inch"
+  "id": "inch",
+  "syl": [
+   "inch"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "inches"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "inches"
+   },
+   {
+    "label": "過去形",
+    "form": "inched"
+   },
+   {
+    "label": "過去分詞",
+    "form": "inched"
+   },
+   {
+    "label": "現在分詞",
+    "form": "inching"
+   }
+  ]
  },
  {
   "w": "sister-in-law",
@@ -82207,32 +83053,51 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "姑嫂；妯娌；妻子的姐妹",
-    "en": "your spouse's sister, or your sibling's or spouse's sibling's wife"
+    "ja": "義姉、義妹",
+    "en": "the sister of your husband or wife, or the wife of your brother",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "義理の姉妹（配偶者の兄弟の妻）",
+    "en": "the woman married to the brother of your husband or wife",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My sister-in-law brought homemade soup when I was ill.",
-    "zh": "我生病时，嫂子送来了她自己做的汤。"
+    "ja": "私が病気のとき、義姉が手作りのスープを持って来てくれた。"
    },
    {
     "en": "Sharing childcare with a sister-in-law can help working parents balance professional responsibilities and family life.",
-    "zh": "与姑嫂分担育儿工作，可以帮助在职父母平衡工作责任与家庭生活。"
+    "ja": "義姉妹と育児を分担すれば、働く親が仕事と家庭生活の両立をしやすくなる。"
    }
   ],
   "col": [
-   "future sister-in-law｜未来的嫂子或弟媳",
-   "my sister-in-law's family｜我姑嫂的家人"
+   "future sister-in-law｜将来の義姉（義妹）",
+   "my sister-in-law's family｜私の義姉（義妹）の家族"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "指姻亲姐妹，不是继姐妹；复数sisters-in-law。",
+  "tip": "姻戚の姉妹を指し、継姉妹ではない。複数形は sisters-in-law。",
   "cefr": "B1",
   "topic": "society",
   "note": "",
-  "id": "sister-in-law"
+  "id": "sister-in-law",
+  "syl": [
+   "sis",
+   "ter",
+   "in",
+   "law"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "sisters-in-law"
+   }
+  ]
  },
  {
   "w": "rope",
@@ -82241,41 +83106,64 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "绳；绳索",
-    "en": "a thick, strong cord made from twisted fibres"
+    "ja": "縄、ロープ",
+    "en": "a thick, strong cord made by twisting fibres together",
+    "gram": "可算/不可算"
    },
    {
     "pos": "v.",
-    "zh": "用绳捆绑",
-    "en": "to tie or secure something with rope"
+    "ja": "縄で縛る、縄で囲む",
+    "en": "to tie or fasten something with a thick cord",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "We tied the boat to a post with rope.",
-    "zh": "我们用绳子把船系在一根柱子上。"
+    "ja": "私たちはボートをロープで杭につないだ。"
    },
    {
     "en": "Climbers should inspect their ropes regularly because damaged equipment can put the entire group at risk.",
-    "zh": "登山者应定期检查绳索，因为损坏的装备可能危及整个团队。"
+    "ja": "登山者は、傷んだ道具が全員を危険にさらしかねないので、ロープを定期的に点検すべきだ。"
    }
   ],
   "col": [
-   "a length of rope｜一段绳子",
-   "climbing rope｜攀登绳",
-   "skip rope｜跳绳",
-   "rope off an area｜用绳围起一片区域"
+   "a length of rope｜一本のロープ",
+   "climbing rope｜登山用ロープ",
+   "skip rope｜縄跳び",
+   "rope off an area｜ロープで区域を仕切る"
   ],
   "fam": [],
   "syn": [
    "cord"
   ],
   "ant": [],
-  "tip": "材料泛指用rope；一根绳可说a rope。",
+  "tip": "素材としては不可算、1本ずつ数えるときは a rope と言える。",
   "cefr": "B1",
   "topic": "daily",
   "note": "",
-  "id": "rope"
+  "id": "rope",
+  "syl": [
+   "rope"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "ropes"
+   },
+   {
+    "label": "過去形",
+    "form": "roped"
+   },
+   {
+    "label": "過去分詞",
+    "form": "roped"
+   },
+   {
+    "label": "現在分詞",
+    "form": "roping"
+   }
+  ]
  },
  {
   "w": "pour",
@@ -117616,35 +118504,54 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "带领；引导；导致",
-    "en": "To guide people or cause something to happen"
+    "ja": "導く、案内する、〜につながる",
+    "en": "to guide people, or to cause something to happen",
+    "note": "lead to の後ろには結果が来ます: lead to problems",
+    "gram": "他動詞/自動詞"
+   },
+   {
+    "pos": "v.",
+    "ja": "先頭に立つ、リードする",
+    "en": "to be ahead of others in a race or competition",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "n.",
-    "zh": "领先地位；优势",
-    "en": "The position of being ahead of others"
+    "ja": "首位、リード、優位",
+    "en": "the position of being ahead of others",
+    "note": "take / have / hold と一緒によく使われます",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "铅",
-    "en": "A soft, heavy, grey metal that can be poisonous"
+    "ja": "主役、主演",
+    "en": "the main part in a play or film, or the person who plays it",
+    "note": "lead role は「主役」",
+    "gram": "可算"
+   },
+   {
+    "pos": "n.",
+    "ja": "鉛",
+    "en": "a soft, heavy, grey metal that can be poisonous",
+    "note": "発音は /led/。動詞の lead /liːd/ とは綴りが同じで発音が違います",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "Our guide led us safely through the forest.",
-    "zh": "向导带着我们安全地穿过了森林。"
+    "ja": "ガイドは私たちを無事に森の中へ案内してくれた。"
    },
    {
     "en": "Poor access to public transport can lead to greater dependence on private cars.",
-    "zh": "公共交通不便可能导致人们更加依赖私家车。"
+    "ja": "公共交通機関の便が悪いと、自家用車への依存が高まるおそれがある。"
    }
   ],
   "col": [
-   "lead to｜导致",
-   "lead a team｜带领团队",
-   "take the lead｜取得领先",
-   "lead poisoning｜铅中毒"
+   "lead to｜〜につながる、〜を引き起こす",
+   "lead a team｜チームを率いる",
+   "take the lead｜主導権を握る、リードする",
+   "lead poisoning｜鉛中毒"
   ],
   "fam": [
    "leader (n.)",
@@ -117655,11 +118562,33 @@
    "guide"
   ],
   "ant": [],
-  "tip": "铅读/led/；动词读/liːd/，过去式和过去分词为led。",
+  "tip": "名詞「鉛」は /led/、動詞は /liːd/。過去形・過去分詞 led は /led/。",
   "cefr": "B1",
   "topic": "work",
   "note": "",
-  "id": "lead"
+  "id": "lead",
+  "syl": [
+   "lead"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "leads"
+   },
+   {
+    "label": "現在分詞",
+    "form": "leading"
+   },
+   {
+    "label": "過去形",
+    "form": "led"
+   },
+   {
+    "label": "過去分詞",
+    "form": "led"
+   }
+  ],
+  "gram": "動詞は /liːd/、不規則変化の led は /led/ で、名詞「鉛」と同じ発音になります。"
  },
  {
   "w": "ignore",
@@ -147048,29 +147977,32 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "激励；激发积极性",
-    "en": "to make someone eager to do something"
+    "ja": "やる気を起こさせる、動機づける",
+    "en": "to make someone want to do something or work harder",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "成为……的动机",
-    "en": "to provide the reason for someone's actions"
+    "ja": "〜の動機となる",
+    "en": "to be the reason why someone does something",
+    "note": "受け身でbe motivated byの形が多い",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "Training with a friend motivates me to exercise regularly.",
-    "zh": "和朋友一起训练能激励我坚持锻炼。"
+    "ja": "友達と一緒に練習すると、定期的に運動しようという気持ちになる。"
    },
    {
     "en": "Teachers can motivate students to explore difficult subjects by connecting classroom lessons with everyday experiences.",
-    "zh": "教师可以把课堂内容与日常经历联系起来，激励学生探索难学的科目。"
+    "ja": "教師は、教室での学びを日常の経験と結びつけることで、生徒が難しい分野に取り組む意欲を引き出せる。"
    }
   ],
   "col": [
-   "motivate someone to do something｜激励某人做某事",
-   "highly motivated｜积极性很高的",
-   "be motivated by｜出于……的动机"
+   "motivate someone to do something｜人に〜する意欲を起こさせる",
+   "highly motivated｜意欲の高い",
+   "be motivated by｜〜が動機である"
   ],
   "fam": [
    "motivation (n.)",
@@ -147086,11 +148018,38 @@
    "discourage",
    "demotivate"
   ],
-  "tip": "常用motivate sb to do；by后可接动机。",
+  "tip": "motivate 人 to doの形で使い、動機はbyで示す。",
   "cefr": "B2",
   "topic": "education",
   "note": "",
-  "id": "motivate"
+  "id": "motivate",
+  "syl": [
+   "mo",
+   "ti",
+   "vate"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "motivates"
+   },
+   {
+    "label": "過去形",
+    "form": "motivated"
+   },
+   {
+    "label": "過去分詞",
+    "form": "motivated"
+   },
+   {
+    "label": "現在分詞",
+    "form": "motivating"
+   },
+   {
+    "label": "名詞形",
+    "form": "motivation"
+   }
+  ]
  },
  {
   "w": "irritation",
@@ -147099,29 +148058,32 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "恼怒；烦躁",
-    "en": "the feeling of being annoyed"
+    "ja": "いらだち、苛立ち",
+    "en": "a feeling of being slightly angry or annoyed",
+    "gram": "可算/不可算"
    },
    {
     "pos": "n.",
-    "zh": "刺激；发炎不适",
-    "en": "soreness or discomfort in a part of the body"
+    "ja": "(皮膚などの)炎症、刺激",
+    "en": "a sore or uncomfortable feeling in part of the body",
+    "note": "目や皮膚、喉などの不快な症状",
+    "gram": "可算/不可算"
    }
   ],
   "ex": [
    {
     "en": "He sighed with irritation when the phone rang again.",
-    "zh": "电话又响了，他烦躁地叹了口气。"
+    "ja": "電話がまた鳴ると、彼はいらだってため息をついた。"
    },
    {
     "en": "Exposure to household cleaning products may cause skin irritation, especially among people with sensitive skin.",
-    "zh": "接触家用清洁产品可能引起皮肤刺激，皮肤敏感者尤其如此。"
+    "ja": "家庭用の洗剤にさらされると、特に敏感肌の人は皮膚に炎症が起きることがある。"
    }
   ],
   "col": [
-   "skin irritation｜皮肤刺激",
-   "eye irritation｜眼部刺激",
-   "a source of irritation｜令人恼火的事物"
+   "skin irritation｜皮膚の炎症",
+   "eye irritation｜目の炎症",
+   "a source of irritation｜いらだちの種"
   ],
   "fam": [
    "irritate (v.)",
@@ -147133,11 +148095,23 @@
    "annoyance"
   ],
   "ant": [],
-  "tip": "既可指情绪上的恼怒，也可指皮肤等受到刺激。",
+  "tip": "感情のいらだちにも、体の炎症にも使える。",
   "cefr": "B2",
   "topic": "health",
   "note": "",
-  "id": "irritation"
+  "id": "irritation",
+  "syl": [
+   "ir",
+   "ri",
+   "ta",
+   "tion"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "irritations"
+   }
+  ]
  },
  {
   "w": "pit",
@@ -147146,35 +148120,40 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "坑；深洞",
-    "en": "A large hole in the ground"
+    "ja": "穴、くぼみ",
+    "en": "a large hole in the ground, either dug on purpose or formed naturally",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "赛车维修区",
-    "en": "An area where racing cars stop for servicing"
+    "ja": "ピット(レースの整備区画)",
+    "en": "the area beside a race track where cars are repaired and refuelled",
+    "note": "通常the pitsの形で使う",
+    "gram": "複数形"
    },
    {
     "pos": "n.",
-    "zh": "果核",
-    "en": "The hard central part of certain fruits"
+    "ja": "(桃などの)種",
+    "en": "the hard seed in the middle of a fruit such as a peach or cherry",
+    "gram": "可算",
+    "reg": "米"
    }
   ],
   "ex": [
    {
     "en": "We dug a shallow pit for the new tree.",
-    "zh": "我们挖了一个浅坑，准备栽这棵新树。"
+    "ja": "私たちは新しい木のために浅い穴を掘った。"
    },
    {
     "en": "Abandoned mining pits can threaten local ecosystems unless restoration projects stabilise the soil and improve water quality.",
-    "zh": "废弃矿坑可能威胁当地生态系统，除非修复项目能稳固土壤并改善水质。"
+    "ja": "放棄された採掘跡の穴は、土壌を安定させて水質を改善する再生事業が行われない限り、地域の生態系を脅かすおそれがある。"
    }
   ],
   "col": [
-   "dig a pit｜挖坑",
-   "a deep pit｜深坑",
-   "a pit stop｜赛车进站检修",
-   "a peach pit｜桃核"
+   "dig a pit｜穴を掘る",
+   "a deep pit｜深い穴",
+   "a pit stop｜ピットイン",
+   "a peach pit｜桃の種"
   ],
   "fam": [],
   "syn": [
@@ -147182,11 +148161,36 @@
    "hollow"
   ],
   "ant": [],
-  "tip": "维修区常用the pits；果核义主要用于美式英语。",
+  "tip": "レースの整備区画はthe pits。果実の種の意味は主に米国用法。",
   "cefr": "B2",
   "topic": "nature",
   "note": "",
-  "id": "pit"
+  "id": "pit",
+  "syl": [
+   "pit"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "pits"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "pits"
+   },
+   {
+    "label": "過去形",
+    "form": "pitted"
+   },
+   {
+    "label": "過去分詞",
+    "form": "pitted"
+   },
+   {
+    "label": "現在分詞",
+    "form": "pitting"
+   }
+  ]
  },
  {
   "w": "philosophy",
@@ -147195,29 +148199,31 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "哲学",
-    "en": "The study of knowledge, existence, reality, and moral values"
+    "ja": "哲学",
+    "en": "the study of basic questions about life, knowledge, right and wrong",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "人生观；指导理念",
-    "en": "A set of beliefs that guides actions and decisions"
+    "ja": "人生観、基本方針",
+    "en": "a set of beliefs or ideas that guides how someone lives or works",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My sister studies philosophy and enjoys discussing difficult questions.",
-    "zh": "我姐姐学习哲学，喜欢讨论难解的问题。"
+    "ja": "私の姉は哲学を学んでいて、難しい問いについて議論するのが好きだ。"
    },
    {
     "en": "Studying philosophy can help students question assumptions and develop stronger arguments about complex ethical issues.",
-    "zh": "学习哲学有助于学生质疑既有假设，并就复杂的伦理问题提出更有力的论证。"
+    "ja": "哲学を学ぶと、学生は前提を疑い、複雑な倫理問題についてより説得力のある議論を組み立てられるようになる。"
    }
   ],
   "col": [
-   "study philosophy｜学习哲学",
-   "moral philosophy｜道德哲学",
-   "personal philosophy｜个人处世哲学",
+   "study philosophy｜哲学を学ぶ",
+   "moral philosophy｜道徳哲学",
+   "personal philosophy｜個人の人生観",
    "philosophy of education｜教育哲学"
   ],
   "fam": [
@@ -147227,11 +148233,23 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "指学科通常不可数；指某套理念可用a philosophy。",
+  "tip": "学問は不可算。ある考え方や方針を指すときはa philosophyとなる。",
   "cefr": "B2",
   "topic": "thinking",
   "note": "",
-  "id": "philosophy"
+  "id": "philosophy",
+  "syl": [
+   "phi",
+   "los",
+   "o",
+   "phy"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "philosophies"
+   }
+  ]
  },
  {
   "w": "errand",
@@ -147240,33 +148258,44 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "跑腿的差事",
-    "en": "A short trip to buy, collect, or deliver something"
+    "ja": "用事、使い走り",
+    "en": "a short trip to do a small job, such as buying something or posting a letter",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "I ran an errand before meeting you for lunch.",
-    "zh": "和你见面吃午饭前，我出去办了点事。"
+    "ja": "昼食で会う前に、私は用事を一つ済ませた。"
    },
    {
     "en": "Reliable neighbourhood transport helps older residents run errands independently and maintain regular contact with their communities.",
-    "zh": "可靠的社区交通能帮助老年居民独立外出办事，并与社区保持日常联系。"
+    "ja": "近所の交通手段が確実だと、高齢の住民は自力で用事を足し、地域との定期的なつながりを保てる。"
    }
   ],
   "col": [
-   "run errands｜外出办事",
-   "send someone on an errand｜派某人跑腿",
-   "a quick errand｜很快能办完的差事"
+   "run errands｜用事を足しに行く",
+   "send someone on an errand｜人を使いに出す",
+   "a quick errand｜すぐ済む用事"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "通常指外出办小事；常搭配run errands。",
+  "tip": "外出して済ませる小さな用事を指す。run errandsの形でよく使う。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "errand"
+  "id": "errand",
+  "syl": [
+   "er",
+   "rand"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "errands"
+   }
+  ]
  },
  {
   "w": "stunning",
@@ -147275,30 +148304,33 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "美极的；令人惊艳的",
-    "en": "extremely beautiful or impressive"
+    "ja": "息をのむほど美しい",
+    "en": "extremely beautiful or attractive",
+    "note": "景色や人の外見をほめるときに使う",
+    "reg": "称賛"
    },
    {
     "pos": "adj.",
-    "zh": "令人震惊的",
-    "en": "causing great surprise or shock"
+    "ja": "驚くべき、衝撃的な",
+    "en": "so surprising or impressive that people are shocked",
+    "note": "成果や勝利、ニュースなどに使う"
    }
   ],
   "ex": [
    {
     "en": "We enjoyed a stunning view from the hilltop.",
-    "zh": "我们在山顶欣赏了绝美的景色。"
+    "ja": "私たちは丘の上からすばらしい眺めを楽しんだ。"
    },
    {
     "en": "The region's stunning coastal scenery attracts visitors, but increased tourism places pressure on fragile ecosystems.",
-    "zh": "该地区绝美的海岸风光吸引着游客，但旅游业增长也给脆弱的生态系统带来压力。"
+    "ja": "その地域の息をのむような海岸の景色は観光客を引きつけるが、観光の増加は繊細な生態系に負担をかけている。"
    }
   ],
   "col": [
-   "stunning scenery｜绝美的风景",
-   "a stunning achievement｜惊人的成就",
-   "a stunning victory｜令人震惊的胜利",
-   "look stunning｜看起来美极了"
+   "stunning scenery｜息をのむ景色",
+   "a stunning achievement｜驚くべき成果",
+   "a stunning victory｜衝撃的な勝利",
+   "look stunning｜とても美しく見える"
   ],
   "fam": [
    "stun (v.)",
@@ -147310,11 +148342,15 @@
    "spectacular"
   ],
   "ant": [],
-  "tip": "stunning形容事物令人惊叹；stunned形容人惊呆了。",
+  "tip": "stunningは物事が人を驚かせる側、stunnedは人が呆然とする側。",
   "cefr": "B2",
   "topic": "travel",
   "note": "",
-  "id": "stunning"
+  "id": "stunning",
+  "syl": [
+   "stun",
+   "ning"
+  ]
  },
  {
   "w": "syrup",
@@ -147323,41 +148359,54 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "糖浆",
-    "en": "a thick sweet liquid made from dissolved sugar"
+    "ja": "シロップ、糖蜜",
+    "en": "a thick sweet liquid made from sugar or fruit juice",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "糖浆剂",
-    "en": "a sweet thick liquid containing medicine"
+    "ja": "シロップ剤",
+    "en": "a sweet liquid medicine, often taken for a cough",
+    "gram": "可算/不可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "She poured a little syrup over her warm pancakes.",
-    "zh": "她在热乎乎的煎饼上浇了一点糖浆。"
+    "ja": "彼女は温かいパンケーキにシロップを少しかけた。"
    },
    {
     "en": "Fruit preserved in syrup often contains more added sugar than fresh fruit, which may concern health-conscious consumers.",
-    "zh": "糖浆保存的水果通常比新鲜水果含有更多添加糖，这可能让注重健康的消费者担忧。"
+    "ja": "シロップ漬けの果物は生の果物より添加糖が多いことが多く、健康志向の消費者には気になるかもしれない。"
    }
   ],
   "col": [
-   "maple syrup｜枫糖浆",
-   "cough syrup｜止咳糖浆",
-   "fruit in syrup｜糖水水果",
-   "sugar syrup｜糖浆"
+   "maple syrup｜メープルシロップ",
+   "cough syrup｜咳止めシロップ",
+   "fruit in syrup｜シロップ漬けの果物",
+   "sugar syrup｜砂糖シロップ"
   ],
   "fam": [
    "syrupy (adj.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "通常不可数；止咳糖浆说cough syrup。",
+  "tip": "ふつうは不可算。咳止めシロップは cough syrup と言う。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "syrup"
+  "id": "syrup",
+  "syl": [
+   "syr",
+   "up"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "syrups"
+   }
+  ]
  },
  {
   "w": "forecast",
@@ -147366,30 +148415,32 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "预测；预报",
-    "en": "A statement about what is likely to happen in the future."
+    "ja": "予報、予測",
+    "en": "a statement about what is likely to happen, especially with weather or the economy",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "预测；预报",
-    "en": "To say what will probably happen, using available information."
+    "ja": "予報する、予測する",
+    "en": "to say what you think will happen in the future",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "The weather forecast says we should expect snow tonight.",
-    "zh": "天气预报说今晚可能会下雪。"
+    "ja": "天気予報によれば、今夜は雪が降りそうだ。"
    },
    {
     "en": "Economists forecast slower growth next year as rising energy costs place greater pressure on businesses.",
-    "zh": "经济学家预测，随着能源成本上涨给企业带来更大压力，明年的经济增长将放缓。"
+    "ja": "エネルギー価格の上昇が企業への圧力を強めるため、経済学者は来年の成長が鈍ると予測している。"
    }
   ],
   "col": [
-   "weather forecast｜天气预报",
-   "economic forecast｜经济预测",
-   "forecast growth｜预测增长",
-   "forecast demand｜预测需求"
+   "weather forecast｜天気予報",
+   "economic forecast｜経済予測",
+   "forecast growth｜成長を予測する",
+   "forecast demand｜需要を予測する"
   ],
   "fam": [
    "forecaster (n.)",
@@ -147400,11 +148451,41 @@
    "predict"
   ],
   "ant": [],
-  "tip": "过去式和过去分词通常用forecast，也可用forecasted。",
+  "tip": "過去形・過去分詞は forecast が一般的。forecasted も可。",
   "cefr": "B2",
   "topic": "science",
   "note": "",
-  "id": "forecast"
+  "id": "forecast",
+  "syl": [
+   "fore",
+   "cast"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "forecasts"
+   },
+   {
+    "label": "過去形",
+    "form": "forecast",
+    "note": "forecasted も可"
+   },
+   {
+    "label": "過去分詞",
+    "form": "forecast",
+    "note": "forecasted も可"
+   },
+   {
+    "label": "現在分詞",
+    "form": "forecasting"
+   },
+   {
+    "label": "複数形",
+    "form": "forecasts",
+    "note": "名詞の複数形"
+   }
+  ],
+  "gram": "過去形・過去分詞は原形と同形。forecasted も使われる。"
  },
  {
   "w": "puff",
@@ -147413,44 +148494,80 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "一小团气烟；一阵气流",
-    "en": "A small amount of air, smoke, or steam released suddenly."
+    "ja": "ひと吹き、ぷっという息や煙",
+    "en": "a short, light burst of air, smoke or steam",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "喘粗气",
-    "en": "To breathe quickly and noisily after physical effort."
+    "ja": "息を切らす、ぜいぜいと息をする",
+    "en": "to breathe quickly and loudly after hard effort",
+    "gram": "自動詞"
    },
    {
     "pos": "v.",
-    "zh": "喷出气烟；鼓起",
-    "en": "To release air or smoke, or swell with air."
+    "ja": "ぷっと吹く、ふかす",
+    "en": "to send out smoke or steam in short bursts",
+    "gram": "他動詞/自動詞"
+   },
+   {
+    "pos": "v.",
+    "ja": "膨らむ、膨らませる",
+    "en": "to swell or make something swell, often with air",
+    "note": "puff up の形でよく使う。",
+    "gram": "他動詞/自動詞"
    }
   ],
   "ex": [
    {
     "en": "A puff of steam escaped from the kettle.",
-    "zh": "一小团蒸汽从水壶里冒了出来。"
+    "ja": "やかんから蒸気がぷっと噴き出した。"
    },
    {
     "en": "Older buses release puffs of dark smoke, highlighting the need for cleaner public transport in cities.",
-    "zh": "老旧公交车排出一团团黑烟，凸显了城市发展更清洁公共交通的必要性。"
+    "ja": "古いバスは黒い煙をもくもくと吐き出し、都市にはよりクリーンな公共交通が必要だと痛感させる。"
    }
   ],
   "col": [
-   "a puff of smoke｜一团烟",
-   "huff and puff｜气喘吁吁",
-   "puff up｜膨胀；鼓起",
-   "puff out your cheeks｜鼓起腮帮子"
+   "a puff of smoke｜ひと吹きの煙",
+   "huff and puff｜ぜいぜい息を切らす",
+   "puff up｜膨らむ、膨らませる",
+   "puff out your cheeks｜頬を膨らませる"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "一团烟用a puff of smoke；puff也可表示喘粗气。",
+  "tip": "煙のひと吹きは a puff of smoke。息切れの意味もある。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "puff"
+  "id": "puff",
+  "syl": [
+   "puff"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "puffs"
+   },
+   {
+    "label": "過去形",
+    "form": "puffed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "puffed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "puffing"
+   },
+   {
+    "label": "複数形",
+    "form": "puffs",
+    "note": "名詞の複数形"
+   }
+  ]
  },
  {
   "w": "trademark",
@@ -147459,44 +148576,77 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "商标",
-    "en": "A legally protected name or symbol identifying a company's products."
+    "ja": "商標、トレードマーク",
+    "en": "a name or symbol legally registered to show a product belongs to one company",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "标志性特征",
-    "en": "A distinctive feature strongly associated with someone or something."
+    "ja": "特徴、トレードマーク",
+    "en": "a quality or feature that people strongly connect with a person",
+    "note": "人の持ち味や得意技を表す比喩的な用法。",
+    "gram": "可算",
+    "reg": "比喩"
    },
    {
     "pos": "v.",
-    "zh": "将……注册为商标",
-    "en": "To register a name or symbol for legal protection."
+    "ja": "商標登録する",
+    "en": "to register a name or symbol as legally owned by a company",
+    "gram": "他動詞",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "The bakery's trademark is a tiny golden wheat stalk.",
-    "zh": "这家面包店的商标是一株小小的金色麦穗。"
+    "ja": "そのパン屋の商標は、小さな金色の麦の穂だ。"
    },
    {
     "en": "Registering a trademark helps small businesses protect their identity and distinguish their products from those of competitors.",
-    "zh": "注册商标有助于小企业保护自身品牌形象，并使其产品区别于竞争对手的产品。"
+    "ja": "商標を登録することで、小規模事業者は自らの個性を守り、競合他社の製品と区別しやすくなる。"
    }
   ],
   "col": [
-   "registered trademark｜注册商标",
-   "trademark protection｜商标保护",
-   "trademark infringement｜商标侵权",
-   "trademark smile｜标志性笑容"
+   "registered trademark｜登録商標",
+   "trademark protection｜商標保護",
+   "trademark infringement｜商標権侵害",
+   "trademark smile｜トレードマークの笑顔"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "商标用trademark；版权用copyright，保护对象不同。",
+  "tip": "商標は trademark、著作権は copyright。保護の対象が違う。",
   "cefr": "B2",
   "topic": "economy",
   "note": "",
-  "id": "trademark"
+  "id": "trademark",
+  "syl": [
+   "trade",
+   "mark"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "trademarks"
+   },
+   {
+    "label": "過去形",
+    "form": "trademarked"
+   },
+   {
+    "label": "過去分詞",
+    "form": "trademarked"
+   },
+   {
+    "label": "現在分詞",
+    "form": "trademarking"
+   },
+   {
+    "label": "複数形",
+    "form": "trademarks",
+    "note": "名詞の複数形"
+   }
+  ]
  },
  {
   "w": "cosmetics",
@@ -147505,24 +148655,25 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "化妆品",
-    "en": "Products applied to the face or body to improve appearance."
+    "ja": "化粧品",
+    "en": "products such as lipstick and face cream that people put on to improve their appearance",
+    "gram": "複数形"
    }
   ],
   "ex": [
    {
     "en": "She keeps her cosmetics in a small bathroom drawer.",
-    "zh": "她把化妆品放在浴室的一个小抽屉里。"
+    "ja": "彼女は化粧品を洗面所の小さな引き出しにしまっている。"
    },
    {
     "en": "Consumers increasingly expect cosmetics manufacturers to disclose ingredients clearly and reduce unnecessary packaging to limit environmental damage.",
-    "zh": "消费者越来越希望化妆品制造商明确公开成分，并减少不必要的包装以降低环境危害。"
+    "ja": "消費者は、化粧品メーカーが成分を明確に開示し、環境への悪影響を抑えるため不要な包装を減らすことをますます求めている。"
    }
   ],
   "col": [
-   "cosmetics industry｜化妆品行业",
-   "cosmetics manufacturer｜化妆品制造商",
-   "buy cosmetics｜购买化妆品"
+   "cosmetics industry｜化粧品業界",
+   "cosmetics manufacturer｜化粧品メーカー",
+   "buy cosmetics｜化粧品を買う"
   ],
   "fam": [
    "cosmetic (adj.)",
@@ -147530,11 +148681,16 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "通常用复数；cosmetic作形容词也指表面的。",
+  "tip": "ふつう複数形で使う。形容詞 cosmetic は「見かけだけの」の意味も。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "cosmetics"
+  "id": "cosmetics",
+  "syl": [
+   "cos",
+   "met",
+   "ics"
+  ]
  },
  {
   "w": "approachable",
@@ -147543,29 +148699,31 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "亲切友善的；易于交谈的",
-    "en": "friendly and easy to talk to"
+    "ja": "親しみやすい、話しかけやすい",
+    "en": "friendly and easy to talk to",
+    "note": "人や態度について使い、頼み事をしやすい印象を表す"
    },
    {
     "pos": "adj.",
-    "zh": "易懂的；容易欣赏的",
-    "en": "easy to understand or enjoy without special knowledge"
+    "ja": "分かりやすい、取っつきやすい",
+    "en": "easy to understand or enjoy, not too difficult",
+    "note": "文体や作品、学問などについて使う"
    }
   ],
   "ex": [
    {
     "en": "Our new teacher seems approachable, so I asked for help.",
-    "zh": "我们的新老师看起来很亲切，所以我向老师求助了。"
+    "ja": "新しい先生は話しかけやすそうだったので、助けを求めた。"
    },
    {
     "en": "Approachable healthcare professionals may encourage patients to discuss sensitive concerns before their conditions become more serious.",
-    "zh": "亲切的医护人员可能促使患者在病情加重前谈及难以启齿的顾虑。"
+    "ja": "話しかけやすい医療従事者であれば、症状が重くなる前に患者が繊細な悩みを打ち明けやすくなるかもしれない。"
    }
   ],
   "col": [
-   "an approachable teacher｜亲切的老师",
-   "friendly and approachable｜友善且平易近人的",
-   "an approachable style｜浅显易懂的风格"
+   "an approachable teacher｜話しかけやすい先生",
+   "friendly and approachable｜親切で取っつきやすい",
+   "an approachable style｜分かりやすい文体"
   ],
   "fam": [
    "approach (v.)",
@@ -147579,11 +148737,17 @@
   "ant": [
    "unapproachable"
   ],
-  "tip": "形容人时重在容易交谈、让人敢于求助。",
+  "tip": "人には「気軽に相談できる」、作品には「難しすぎない」という意味で使う。",
   "cefr": "B2",
   "topic": "society",
   "note": "",
-  "id": "approachable"
+  "id": "approachable",
+  "syl": [
+   "ap",
+   "proach",
+   "a",
+   "ble"
+  ]
  },
  {
   "w": "release",
@@ -147592,44 +148756,70 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "释放；放出",
-    "en": "To let someone or something go free or escape."
+    "ja": "放す、解放する、放出する",
+    "en": "to let a person, animal or substance go free",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "发布；发行",
-    "en": "To make information or a product available to the public."
+    "ja": "公開する、発売する",
+    "en": "to make a report, film, product or piece of information available to the public",
+    "gram": "他動詞"
    },
    {
     "pos": "n.",
-    "zh": "释放；发布；发行物",
-    "en": "The act of freeing or publishing; something newly made available."
+    "ja": "解放、釈放、発表、新作",
+    "en": "the act of freeing or publishing something, or the thing published",
+    "note": "a press release は報道機関向けの発表文",
+    "gram": "可算/不可算"
    }
   ],
   "ex": [
    {
     "en": "We released the butterfly outside after checking its wings.",
-    "zh": "检查过蝴蝶的翅膀后，我们把它放到了室外。"
+    "ja": "羽を確かめてから、チョウを外に放してやった。"
    },
    {
     "en": "Governments should release reliable environmental data so that citizens can evaluate the effectiveness of climate policies.",
-    "zh": "政府应公布可靠的环境数据，让公民能够评估气候政策的成效。"
+    "ja": "市民が気候政策の効果を判断できるよう、政府は信頼できる環境データを公表すべきだ。"
    }
   ],
   "col": [
-   "release a report｜发布报告",
-   "release a prisoner｜释放囚犯",
-   "release gases｜释放气体",
-   "a press release｜新闻稿"
+   "release a report｜報告書を公表する",
+   "release a prisoner｜囚人を釈放する",
+   "release gases｜ガスを放出する",
+   "a press release｜報道発表"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "release可指释放，也可指公开发布报告或产品。",
+  "tip": "「放す」と「公開する」の2つの核を覚える。製品や映画の発売・公開にも使える。",
   "cefr": "B2",
   "topic": "media",
   "note": "",
-  "id": "release"
+  "id": "release",
+  "syl": [
+   "re",
+   "lease"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "releases"
+   },
+   {
+    "label": "過去形",
+    "form": "released"
+   },
+   {
+    "label": "過去分詞",
+    "form": "released"
+   },
+   {
+    "label": "現在分詞",
+    "form": "releasing"
+   }
+  ]
  },
  {
   "w": "touching",
@@ -147638,29 +148828,31 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "感人的；动人的",
-    "en": "making you feel affection, sympathy, or gentle sadness"
+    "ja": "心を打つ、感動的な",
+    "en": "causing a warm, sad or tender emotional response",
+    "note": "悲しさを含む温かい感動を表すことが多い"
    },
    {
     "pos": "v.",
-    "zh": "触摸；碰（现在分词）",
-    "en": "putting a hand or another body part against something"
+    "ja": "touch の現在分詞",
+    "en": "present participle of the verb meaning to put a hand on something",
+    "note": "動詞 touch の -ing 形"
    }
   ],
   "ex": [
    {
     "en": "Her touching farewell brought tears to my eyes.",
-    "zh": "她感人的道别让我热泪盈眶。"
+    "ja": "彼女の心のこもった別れの言葉に、私は涙ぐんだ。"
    },
    {
     "en": "The documentary offers a touching account of volunteers helping older residents overcome loneliness in urban communities.",
-    "zh": "这部纪录片动人地讲述了志愿者帮助城市社区的老年居民克服孤独的故事。"
+    "ja": "そのドキュメンタリーは、ボランティアが都市部の高齢者の孤独を和らげる姿を感動的に描いている。"
    }
   ],
   "col": [
-   "a touching story｜感人的故事",
-   "a touching gesture｜暖心的举动",
-   "a touching tribute｜感人的致敬"
+   "a touching story｜心を打つ話",
+   "a touching gesture｜心温まる振る舞い",
+   "a touching tribute｜感動的な賛辞"
   ],
   "fam": [
    "touch (v.)",
@@ -147671,11 +148863,15 @@
    "heartwarming"
   ],
   "ant": [],
-  "tip": "touching形容事情感人；touched形容人受到感动。",
+  "tip": "touching は出来事が感動的、touched は人が感動した状態。混同に注意。",
   "cefr": "B2",
   "topic": "emotion",
   "note": "",
-  "id": "touching"
+  "id": "touching",
+  "syl": [
+   "touch",
+   "ing"
+  ]
  },
  {
   "w": "novice",
@@ -147684,24 +148880,26 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "新手；初学者",
-    "en": "someone with little experience in a particular activity"
+    "ja": "初心者、新人、未熟者",
+    "en": "a person who is new to an activity or skill and has little experience",
+    "note": "expert や veteran の反対に近い語",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "As a gardening novice, I often forget to water seedlings.",
-    "zh": "作为园艺新手，我常常忘记给幼苗浇水。"
+    "ja": "私は園芸の初心者なので、苗に水をやるのをよく忘れる。"
    },
    {
     "en": "Structured mentoring can help a novice develop the confidence needed to manage a classroom effectively.",
-    "zh": "有系统的指导能帮助新手建立有效管理课堂所需的信心。"
+    "ja": "きちんとした指導体制があれば、新人は教室を適切に運営するために必要な自信を育てやすくなる。"
    }
   ],
   "col": [
-   "a complete novice｜完全的新手",
-   "a novice driver｜新手司机",
-   "a novice at｜……方面的新手"
+   "a complete novice｜まったくの初心者",
+   "a novice driver｜初心運転者",
+   "a novice at｜〜の初心者"
   ],
   "fam": [],
   "syn": [
@@ -147712,11 +148910,21 @@
    "expert",
    "veteran"
   ],
-  "tip": "表示某方面的新手，常用a novice at/in。",
+  "tip": "「〜の初心者」は a novice at / in 〜 で表す。beginner よりやや硬めの語。",
   "cefr": "B2",
   "topic": "education",
   "note": "",
-  "id": "novice"
+  "id": "novice",
+  "syl": [
+   "nov",
+   "ice"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "novices"
+   }
+  ]
  },
  {
   "w": "decent",
@@ -147725,29 +148933,31 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "尚好的；像样的",
-    "en": "of a satisfactory or reasonably good standard"
+    "ja": "まずまずの、十分な、きちんとした",
+    "en": "of a good enough standard or quality",
+    "note": "「素晴らしい」ほどではなく、基準を満たすという意味"
    },
    {
     "pos": "adj.",
-    "zh": "正派的；得体的",
-    "en": "honest, kind, or socially acceptable"
+    "ja": "まともな、礼儀正しい、善良な",
+    "en": "honest, fair and respectable in behaviour",
+    "note": "人柄や行いについて使う"
    }
   ],
   "ex": [
    {
     "en": "We finally found a decent flat near the station.",
-    "zh": "我们终于在车站附近找到了一套像样的公寓。"
+    "ja": "私たちはついに駅の近くでまずまずのアパートを見つけた。"
    },
    {
     "en": "Every worker should earn enough to afford decent housing and meet their basic needs.",
-    "zh": "每位劳动者都应有足够的收入，住上像样的住房并满足基本需求。"
+    "ja": "すべての労働者は、きちんとした住居を借りて基本的な生活を送れるだけの収入を得るべきだ。"
    }
   ],
   "col": [
-   "decent housing｜像样的住房",
-   "a decent salary｜不错的薪水",
-   "a decent person｜正派的人"
+   "decent housing｜まともな住居",
+   "a decent salary｜そこそこの給料",
+   "a decent person｜まっとうな人"
   ],
   "fam": [
    "decency (n.)",
@@ -147761,11 +148971,26 @@
   "ant": [
    "indecent"
   ],
-  "tip": "表示质量时是“还不错”，不等于“极好”。",
+  "tip": "質を表すときは「悪くない」程度で、excellent ほど強くない。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "decent"
+  "id": "decent",
+  "syl": [
+   "de",
+   "cent"
+  ],
+  "forms": [
+   {
+    "label": "比較級",
+    "form": "more decent",
+    "note": "decenter とは言わない"
+   },
+   {
+    "label": "最上級",
+    "form": "most decent"
+   }
+  ]
  },
  {
   "w": "nursery",
@@ -147774,44 +148999,59 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "托儿所；幼儿园",
-    "en": "a place where young children are cared for"
+    "ja": "保育所、託児所",
+    "en": "a place where very young children are looked after and taught",
+    "gram": "可算",
+    "reg": "英"
    },
    {
     "pos": "n.",
-    "zh": "苗圃",
-    "en": "a place where young plants are grown for sale"
+    "ja": "苗木畑、種苗園",
+    "en": "a place where young plants are grown for sale or planting",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "婴儿室；儿童房",
-    "en": "a room in a home for a baby or young child"
+    "ja": "子ども部屋、育児室",
+    "en": "a room in a home for a baby or young children",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My daughter painted a bright yellow duck at nursery.",
-    "zh": "我女儿在幼儿园画了一只鲜黄色的鸭子。"
+    "ja": "娘は保育園で明るい黄色のアヒルの絵を描いた。"
    },
    {
     "en": "Affordable nursery places allow more parents to return to work while their children receive professional care.",
-    "zh": "价格可负担的托幼名额能让更多父母重返职场，同时让孩子得到专业照护。"
+    "ja": "手頃な料金で通える保育施設が増えれば、子どもが専門的な保育を受ける間に、より多くの親が仕事に復帰できる。"
    }
   ],
   "col": [
-   "nursery school｜幼儿园",
-   "nursery staff｜托幼工作人员",
-   "plant nursery｜苗圃",
-   "nursery rhyme｜童谣"
+   "nursery school｜保育園",
+   "nursery staff｜保育スタッフ",
+   "plant nursery｜種苗園",
+   "nursery rhyme｜童謡"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "英式英语中at nursery常指在托儿所。",
+  "tip": "英国では at nursery で「保育園に通っている」。冠詞は付けない。",
   "cefr": "B2",
   "topic": "education",
   "note": "",
-  "id": "nursery"
+  "id": "nursery",
+  "syl": [
+   "nurs",
+   "er",
+   "y"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "nurseries"
+   }
+  ]
  },
  {
   "w": "scholar",
@@ -147820,29 +149060,32 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "学者",
-    "en": "A person with deep knowledge of an academic subject."
+    "ja": "学者、研究者",
+    "en": "an expert who studies a subject in great depth",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "奖学金获得者",
-    "en": "A student awarded money to study because of their abilities."
+    "ja": "奨学生",
+    "en": "a student who has been given money to study",
+    "note": "主に英国で使われる",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "The scholar carefully examined an old book in the library.",
-    "zh": "这位学者在图书馆仔细研究一本古书。"
+    "ja": "学者は図書館で古い本を丹念に調べていた。"
    },
    {
     "en": "Scholars increasingly argue that access to early education can reduce social inequality over the long term.",
-    "zh": "越来越多学者认为，获得早期教育的机会能够长期减少社会不平等。"
+    "ja": "学者の間では、幼児教育を受けやすくすれば長期的に社会的不平等を減らせるという主張が増えている。"
    }
   ],
   "col": [
-   "a leading scholar｜杰出学者",
-   "a visiting scholar｜访问学者",
-   "a distinguished scholar｜著名学者"
+   "a leading scholar｜第一線の学者",
+   "a visiting scholar｜客員研究員",
+   "a distinguished scholar｜著名な学者"
   ],
   "fam": [
    "scholarly (adj.)",
@@ -147852,11 +149095,21 @@
    "academic"
   ],
   "ant": [],
-  "tip": "scholar通常指学者，不是普通学生。",
+  "tip": "scholar は研究に深く携わる人。ふつうの学生は student と言う。",
   "cefr": "B2",
   "topic": "education",
   "note": "",
-  "id": "scholar"
+  "id": "scholar",
+  "syl": [
+   "schol",
+   "ar"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "scholars"
+   }
+  ]
  },
  {
   "w": "rally",
@@ -147865,34 +149118,38 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "公众集会",
-    "en": "A large public meeting supporting a cause or expressing opinions."
+    "ja": "集会、大会",
+    "en": "a large public meeting held to show support for a cause",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "集结；团结支持",
-    "en": "To gather people together to support someone or something."
+    "ja": "結集する、支持を集める",
+    "en": "to bring people together to support a person or cause",
+    "gram": "他動詞/自動詞"
    },
    {
     "pos": "v.",
-    "zh": "恢复；振作；回升",
-    "en": "To regain strength or improve after a difficult period."
+    "ja": "持ち直す、回復する",
+    "en": "to recover strength, health or value after a weak period",
+    "note": "株価や体調が回復する場面で使う",
+    "gram": "自動詞"
    }
   ],
   "ex": [
    {
     "en": "Hundreds attended a peaceful rally in the town square.",
-    "zh": "数百人参加了镇广场上的和平集会。"
+    "ja": "町の広場で開かれた平和的な集会に数百人が参加した。"
    },
    {
     "en": "Community leaders rallied support for a public library, arguing that free access to information benefits everyone.",
-    "zh": "社区领袖争取大家支持建设公共图书馆，认为免费获取信息能让所有人受益。"
+    "ja": "地域の指導者たちは、情報への自由なアクセスは万人の利益になると主張し、公立図書館への支持を集めた。"
    }
   ],
   "col": [
-   "hold a rally｜举行集会",
-   "rally support｜争取支持",
-   "rally around someone｜团结起来支持某人"
+   "hold a rally｜集会を開く",
+   "rally support｜支持を集める",
+   "rally around someone｜団結して人を支える"
   ],
   "fam": [],
   "syn": [
@@ -147901,11 +149158,37 @@
    "recover"
   ],
   "ant": [],
-  "tip": "rally support for表示“为……争取支持”。",
+  "tip": "rally support for 〜 で「〜のための支持を集める」。",
   "cefr": "B2",
   "topic": "society",
   "note": "",
-  "id": "rally"
+  "id": "rally",
+  "syl": [
+   "ral",
+   "ly"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "rallies"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "rallies"
+   },
+   {
+    "label": "過去形",
+    "form": "rallied"
+   },
+   {
+    "label": "過去分詞",
+    "form": "rallied"
+   },
+   {
+    "label": "現在分詞",
+    "form": "rallying"
+   }
+  ]
  },
  {
   "w": "consistency",
@@ -147914,29 +149197,33 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "一致性；稳定性",
-    "en": "The quality of staying similar in behaviour, standards, or results."
+    "ja": "一貫性、安定性",
+    "en": "the quality of always behaving or performing in the same way",
+    "note": "品質や成績が安定していることを表す",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "稠度；黏稠度",
-    "en": "How thick, firm, or smooth a substance is."
+    "ja": "濃度、硬さ、質感",
+    "en": "how thick, smooth or firm a mixture is",
+    "note": "料理の生地やソースの状態を表す",
+    "gram": "可算/不可算"
    }
   ],
   "ex": [
    {
     "en": "Our coach values consistency more than occasional brilliant performances.",
-    "zh": "我们的教练更看重稳定发挥，而不是偶尔的出色表现。"
+    "ja": "私たちのコーチは、たまの見事な活躍よりも安定した成績を重んじる。"
    },
    {
     "en": "Greater consistency in marking standards would help ensure that students receive fair results across different examination centres.",
-    "zh": "提高评分标准的一致性，有助于确保不同考点的学生获得公平的成绩。"
+    "ja": "採点基準の一貫性が高まれば、試験会場が違っても生徒が公平な結果を得られるようになるだろう。"
    }
   ],
   "col": [
-   "consistency in quality｜质量的稳定性",
-   "maintain consistency｜保持一致性",
-   "a smooth consistency｜细腻均匀的质地"
+   "consistency in quality｜品質の安定",
+   "maintain consistency｜一貫性を保つ",
+   "a smooth consistency｜なめらかな質感"
   ],
   "fam": [
    "consistent (adj.)",
@@ -147950,11 +149237,23 @@
   "ant": [
    "inconsistency"
   ],
-  "tip": "表示某方面的一致性用 consistency in。",
+  "tip": "「〜における一貫性」は consistency in / of 〜。形容詞は consistent。",
   "cefr": "B2",
   "topic": "thinking",
   "note": "",
-  "id": "consistency"
+  "id": "consistency",
+  "syl": [
+   "con",
+   "sis",
+   "ten",
+   "cy"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "consistencies"
+   }
+  ]
  },
  {
   "w": "reference",
@@ -147963,45 +149262,62 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "提及；涉及",
-    "en": "a mention of someone or something"
+    "ja": "言及、触れること",
+    "en": "a mention of someone or something in speech or writing",
+    "note": "make reference to の形でよく使う",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "参考；引文出处",
-    "en": "consultation for information, or a source used in writing"
+    "ja": "参照、参考文献、出典",
+    "en": "the act of consulting a source, or a source cited in writing",
+    "note": "論文では引用元の記載を指す",
+    "gram": "可算/不可算"
    },
    {
     "pos": "n.",
-    "zh": "推荐信；证明人",
-    "en": "a recommendation or someone who recommends you for work"
+    "ja": "推薦状、身元保証人",
+    "en": "a letter or person that confirms someone's character or ability",
+    "note": "就職や入学の応募で求められる",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "Her speech included a warm reference to her grandmother.",
-    "zh": "她在演讲中温情地提到了祖母。"
+    "ja": "彼女のスピーチには、祖母への温かい言及があった。"
    },
    {
     "en": "Academic essays should include accurate references so readers can locate the original sources of information.",
-    "zh": "学术文章应包含准确的引文出处，以便读者找到信息的原始来源。"
+    "ja": "学術的なエッセイでは、読者が情報の元の出典を探せるよう、正確な参考文献を示すべきだ。"
    }
   ],
   "col": [
-   "make reference to｜提及",
-   "for future reference｜供日后参考",
-   "provide a reference｜提供推荐信"
+   "make reference to｜〜に言及する",
+   "for future reference｜今後の参考のために",
+   "provide a reference｜推薦状を提出する"
   ],
   "fam": [
    "refer (v.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "reference to表示提及；for reference表示供参考。",
+  "tip": "with reference to 〜 は「〜に関して」の硬い表現。for reference は「参考までに」。",
   "cefr": "B2",
   "topic": "education",
   "note": "",
-  "id": "reference"
+  "id": "reference",
+  "syl": [
+   "ref",
+   "er",
+   "ence"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "references"
+   }
+  ]
  },
  {
   "w": "optimism",
@@ -148010,24 +149326,26 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "乐观；乐观态度",
-    "en": "The belief that good things will happen."
+    "ja": "楽観、楽観主義",
+    "en": "a hopeful attitude that things will turn out well",
+    "note": "反意語は pessimism",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "Her optimism helped us stay cheerful during the storm.",
-    "zh": "暴风雨期间，她的乐观让我们保持了好心情。"
+    "ja": "彼女の前向きさのおかげで、嵐の間も私たちは明るくいられた。"
    },
    {
     "en": "Despite economic uncertainty, many graduates express optimism about their chances of finding meaningful employment.",
-    "zh": "尽管经济形势不明朗，许多毕业生仍对找到有意义的工作持乐观态度。"
+    "ja": "経済の先行きが不透明でも、多くの卒業生は意義のある仕事に就けるだろうと楽観している。"
    }
   ],
   "col": [
-   "cautious optimism｜谨慎乐观",
-   "optimism about the future｜对未来的乐观态度",
-   "grounds for optimism｜乐观的理由"
+   "cautious optimism｜慎重な楽観",
+   "optimism about the future｜将来への楽観",
+   "grounds for optimism｜楽観できる根拠"
   ],
   "fam": [
    "optimist (n.)",
@@ -148040,11 +149358,16 @@
   "ant": [
    "pessimism"
   ],
-  "tip": "不可数名词；对某事乐观常用optimism about。",
+  "tip": "不可算名詞。〜について楽観するは optimism about 〜。形容詞は optimistic。",
   "cefr": "B2",
   "topic": "emotion",
   "note": "",
-  "id": "optimism"
+  "id": "optimism",
+  "syl": [
+   "op",
+   "ti",
+   "mism"
+  ]
  },
  {
   "w": "principle",
@@ -148053,30 +149376,32 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "原则；行为准则",
-    "en": "A belief or rule that guides decisions and behaviour."
+    "ja": "原則、信条、行動の指針",
+    "en": "a personal rule or belief that guides how someone behaves",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "原理；基本法则",
-    "en": "A basic truth explaining how something works."
+    "ja": "原理、基本法則",
+    "en": "a basic idea or rule that explains how something works or is organised",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "I refused the extra money as a matter of principle.",
-    "zh": "出于原则，我拒绝了那笔额外的钱。"
+    "ja": "私は原則の問題として、その追加の報酬を断った。"
    },
    {
     "en": "The principle of equal opportunity should guide policies designed to improve access to higher education.",
-    "zh": "旨在改善高等教育入学机会的政策应以机会平等原则为指导。"
+    "ja": "機会均等の原則は、高等教育への門戸を広げるための政策の指針となるべきだ。"
    }
   ],
   "col": [
-   "basic principle｜基本原则；基本原理",
-   "in principle｜原则上；理论上",
-   "on principle｜出于原则",
-   "guiding principle｜指导原则"
+   "basic principle｜基本原則、基本原理",
+   "in principle｜原則として、理論上は",
+   "on principle｜主義として",
+   "guiding principle｜指導原則"
   ],
   "fam": [
    "principled (adj.)",
@@ -148088,11 +149413,22 @@
    "doctrine"
   ],
   "ant": [],
-  "tip": "勿混principal：它可指“主要的”或“校长”。",
+  "tip": "principal（主要な、校長）と綴りが紛らわしい。「原則」は -ple で終わる。",
   "cefr": "B2",
   "topic": "thinking",
   "note": "",
-  "id": "principle"
+  "id": "principle",
+  "syl": [
+   "prin",
+   "ci",
+   "ple"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "principles"
+   }
+  ]
  },
  {
   "w": "bouquet",
@@ -148101,38 +149437,51 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "花束",
-    "en": "A group of flowers arranged together, usually as a gift."
+    "ja": "花束、ブーケ",
+    "en": "flowers tied together in an attractive bunch, often given as a gift",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "酒香",
-    "en": "The characteristic pleasant smell of a wine."
+    "ja": "（ワインの）芳香、香り",
+    "en": "the pleasant smell of a fine wine",
+    "gram": "可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "She brought a bright bouquet to her grandmother's birthday dinner.",
-    "zh": "她带着一束鲜艳的花来参加祖母的生日晚餐。"
+    "ja": "彼女は祖母の誕生日の夕食に、鮮やかな花束を持ってきた。"
    },
    {
     "en": "Choosing a bouquet of locally grown flowers can reduce the environmental impact associated with long-distance transport.",
-    "zh": "选择一束本地种植的鲜花，可以减少长途运输带来的环境影响。"
+    "ja": "地元で育てられた花の花束を選べば、長距離輸送に伴う環境への負荷を減らせる。"
    }
   ],
   "col": [
-   "a bouquet of flowers｜一束鲜花",
-   "bridal bouquet｜新娘捧花",
-   "a bouquet of roses｜一束玫瑰"
+   "a bouquet of flowers｜花束",
+   "bridal bouquet｜ウェディングブーケ",
+   "a bouquet of roses｜バラの花束"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "末尾t不发音；一束花用a bouquet of flowers。",
+  "tip": "フランス語由来で、語末の t は発音しない（/buˈkeɪ/ に近い）。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "bouquet"
+  "id": "bouquet",
+  "syl": [
+   "bou",
+   "quet"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "bouquets"
+   }
+  ]
  },
  {
   "w": "implement",
@@ -148141,40 +149490,67 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "实施；执行",
-    "en": "to put a plan or decision into action"
+    "ja": "実施する、実行する",
+    "en": "to put a plan, decision or system into action",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    },
    {
     "pos": "n.",
-    "zh": "工具；器具",
-    "en": "a tool used for a particular task"
+    "ja": "道具、用具",
+    "en": "a tool or simple instrument used for a particular task",
+    "gram": "可算",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Our team will implement the new schedule next week.",
-    "zh": "我们团队下周将实行新的时间表。"
+    "ja": "私たちのチームは来週、新しいスケジュールを実施する。"
    },
    {
     "en": "Governments should implement policies that make public transport more affordable for people on low incomes.",
-    "zh": "政府应实施相关政策，让低收入人群更负担得起公共交通。"
+    "ja": "政府は、低所得者にとって公共交通をより手頃にする政策を実施すべきだ。"
    }
   ],
   "col": [
-   "implement a policy｜实施政策",
-   "implement a plan｜执行计划",
-   "agricultural implements｜农具"
+   "implement a policy｜政策を実施する",
+   "implement a plan｜計画を実行する",
+   "agricultural implements｜農具"
   ],
   "fam": [
    "implementation (n.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "动词重音在首音节；名词末音节读/mənt/。",
+  "tip": "動詞は語末を弱めずはっきり発音し、名詞は語末を /mənt/ と弱く読む傾向がある。",
   "cefr": "B2",
   "topic": "government",
   "note": "",
-  "id": "implement"
+  "id": "implement",
+  "syl": [
+   "im",
+   "ple",
+   "ment"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "implements"
+   },
+   {
+    "label": "過去形",
+    "form": "implemented"
+   },
+   {
+    "label": "過去分詞",
+    "form": "implemented"
+   },
+   {
+    "label": "現在分詞",
+    "form": "implementing"
+   }
+  ]
  },
  {
   "w": "ensure",
@@ -148183,24 +149559,25 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "确保；保证",
-    "en": "To make certain that something happens or is true"
+    "ja": "確実にする、保証する",
+    "en": "to make certain that something happens or is true",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "Please ensure that all windows are closed before leaving.",
-    "zh": "离开前请确保所有窗户都已关好。"
+    "ja": "退出する前に、すべての窓が閉まっていることを確認してください。"
    },
    {
     "en": "Governments should ensure that affordable public transport is available to residents in both urban and rural areas.",
-    "zh": "政府应确保城市和农村居民都能享有价格实惠的公共交通。"
+    "ja": "政府は、都市部でも農村部でも、住民が手頃な公共交通を利用できるようにすべきだ。"
    }
   ],
   "col": [
-   "ensure safety｜确保安全",
-   "ensure access｜确保能够获得",
-   "ensure that｜确保"
+   "ensure safety｜安全を確保する",
+   "ensure access｜利用できるようにする",
+   "ensure that｜～であるように確実にする"
   ],
   "fam": [],
   "syn": [
@@ -148208,11 +149585,33 @@
    "make sure"
   ],
   "ant": [],
-  "tip": "ensure接名词或that从句；insure指投保。",
+  "tip": "名詞か that 節を取る。insure は保険をかける意味で使い分ける。",
   "cefr": "B2",
   "topic": "government",
   "note": "",
-  "id": "ensure"
+  "id": "ensure",
+  "syl": [
+   "en",
+   "sure"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "ensures"
+   },
+   {
+    "label": "過去形",
+    "form": "ensured"
+   },
+   {
+    "label": "過去分詞",
+    "form": "ensured"
+   },
+   {
+    "label": "現在分詞",
+    "form": "ensuring"
+   }
+  ]
  },
  {
   "w": "species",
@@ -148221,34 +149620,48 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "物种",
-    "en": "A biological group whose members can usually breed with one another."
+    "ja": "種、生物の種",
+    "en": "a group of living things that can breed with each other",
+    "gram": "可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "Several species of butterfly visit our garden each summer.",
-    "zh": "每年夏天都有几种蝴蝶来到我们的花园。"
+    "ja": "毎年夏になると、数種類のチョウが私たちの庭にやって来る。"
    },
    {
     "en": "Protecting natural habitats is essential for preventing the extinction of species threatened by human activity.",
-    "zh": "保护自然栖息地对于防止受人类活动威胁的物种灭绝至关重要。"
+    "ja": "自然の生息地を守ることは、人間の活動に脅かされる種の絶滅を防ぐために欠かせない。"
    }
   ],
   "col": [
-   "endangered species｜濒危物种",
-   "native species｜本地物种",
-   "invasive species｜入侵物种",
-   "species diversity｜物种多样性"
+   "endangered species｜絶滅危惧種",
+   "native species｜在来種",
+   "invasive species｜侵略的外来種",
+   "species diversity｜種の多様性"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "单复数同形：one species，many species。",
+  "tip": "単数も複数も species。one species, many species と覚える。",
   "cefr": "B2",
   "topic": "nature",
   "note": "",
-  "id": "species"
+  "id": "species",
+  "syl": [
+   "spe",
+   "cies"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "species",
+    "note": "単数形と同形"
+   }
+  ],
+  "gram": "単数形と複数形が同じ形。-s を付けて単数にしないよう注意。"
  },
  {
   "w": "extent",
@@ -148257,24 +149670,25 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "程度；范围",
-    "en": "How much something happens or how far it reaches."
+    "ja": "程度、範囲、広がり",
+    "en": "how large, serious or far-reaching something is",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "We only discovered the extent of the leak yesterday.",
-    "zh": "我们昨天才发现漏水有多严重。"
+    "ja": "私たちは昨日になって、ようやく漏れの規模を把握した。"
    },
    {
     "en": "The extent to which public transport reduces pollution depends on passenger numbers and energy sources.",
-    "zh": "公共交通能在多大程度上减少污染，取决于乘客数量和能源来源。"
+    "ja": "公共交通が汚染をどの程度減らすかは、乗客数とエネルギー源によって決まる。"
    }
   ],
   "col": [
-   "to some extent｜在某种程度上",
-   "the full extent of｜……的全部程度或范围",
-   "to a large extent｜在很大程度上"
+   "to some extent｜ある程度は",
+   "the full extent of｜～の全容",
+   "to a large extent｜大部分は"
   ],
   "fam": [
    "extend (v.)",
@@ -148284,11 +149698,15 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "表示“在某种程度上”用to some extent。",
+  "tip": "「ある程度」は to some extent。to which ～の形で「どの程度」も表す。",
   "cefr": "B2",
   "topic": "thinking",
   "note": "",
-  "id": "extent"
+  "id": "extent",
+  "syl": [
+   "ex",
+   "tent"
+  ]
  },
  {
   "w": "claw",
@@ -148297,45 +149715,69 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "爪；爪子",
-    "en": "a sharp, curved nail on an animal's foot"
+    "ja": "爪（動物の鋭い爪）",
+    "en": "a sharp curved nail on the foot of an animal or bird",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "螯；钳",
-    "en": "a jointed gripping part on a crab or similar animal"
+    "ja": "はさみ（カニ・エビなどの）",
+    "en": "the pincer-like part on the limbs of a crab or lobster",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "用爪抓；用力抓挠",
-    "en": "to scratch or pull at something with claws or fingers"
+    "ja": "爪で引っかく、かきむしる",
+    "en": "to scratch or tear at something with sharp nails or fingers",
+    "gram": "他動詞/自動詞"
    }
   ],
   "ex": [
    {
     "en": "The cat caught my sleeve with one sharp claw.",
-    "zh": "猫用一只尖爪钩住了我的袖子。"
+    "ja": "猫の鋭い爪が、私の袖に引っかかった。"
    },
    {
     "en": "Sharp claws help many predators catch prey, while other animals use them to climb or dig.",
-    "zh": "锋利的爪子帮助许多捕食者捕获猎物，而其他动物则用爪子攀爬或挖掘。"
+    "ja": "鋭い爪は多くの捕食動物が獲物を捕まえるのに役立ち、木に登ったり穴を掘ったりするのに使う動物もいる。"
    }
   ],
   "col": [
-   "sharp claws｜锋利的爪子",
-   "crab claws｜蟹螯",
-   "claw at something｜使劲抓挠某物"
+   "sharp claws｜鋭い爪",
+   "crab claws｜カニのはさみ",
+   "claw at something｜～を引っかく"
   ],
   "fam": [
    "clawed (adj.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "claw是尖爪；paw指猫狗等动物的整个脚掌。",
+  "tip": "claw は鋭く曲がった爪。paw は猫や犬の足先全体を指す。",
   "cefr": "B2",
   "topic": "nature",
   "note": "",
-  "id": "claw"
+  "id": "claw",
+  "syl": [
+   "claw"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "claws"
+   },
+   {
+    "label": "過去形",
+    "form": "clawed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "clawed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "clawing"
+   }
+  ]
  },
  {
   "w": "dawn",
@@ -148344,35 +149786,39 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "黎明；拂晓",
-    "en": "the early morning when daylight first appears"
+    "ja": "夜明け、明け方",
+    "en": "the time of day when light first appears in the sky",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "开端；萌芽",
-    "en": "the beginning of a new period or development"
+    "ja": "始まり、幕開け",
+    "en": "the first beginning of a period or development",
+    "gram": "単数形",
+    "reg": "文語"
    },
    {
     "pos": "v.",
-    "zh": "开始明白；破晓",
-    "en": "to become understood, or to begin growing light"
+    "ja": "夜が明ける、（考えが）ふと浮かぶ",
+    "en": "to begin to be light; or to become clear to someone",
+    "gram": "自動詞"
    }
   ],
   "ex": [
    {
     "en": "We left at dawn to avoid the heavy traffic.",
-    "zh": "我们黎明时就出发了，以避开拥堵的交通。"
+    "ja": "私たちは渋滞を避けるため、夜明けに出発した。"
    },
    {
     "en": "The dawn of digital communication has transformed how people maintain relationships across national borders.",
-    "zh": "数字通信时代的到来改变了人们跨国维系人际关系的方式。"
+    "ja": "デジタル通信の登場により、人々は国境を越えて人間関係を維持する方法を一変させた。"
    }
   ],
   "col": [
-   "at dawn｜在黎明时分",
-   "from dawn to dusk｜从早到晚",
-   "the dawn of a new era｜新时代的开端",
-   "dawn on someone｜使某人开始明白"
+   "at dawn｜夜明けに",
+   "from dawn to dusk｜朝から晩まで",
+   "the dawn of a new era｜新時代の幕開け",
+   "dawn on someone｜（人）にふと分かってくる"
   ],
   "fam": [],
   "syn": [
@@ -148381,11 +149827,32 @@
   "ant": [
    "dusk"
   ],
-  "tip": "It dawned on me that…表示“我开始明白……”。",
+  "tip": "It dawned on me that ～は「～だとふと気づいた」の意味。",
   "cefr": "B2",
   "topic": "nature",
   "note": "",
-  "id": "dawn"
+  "id": "dawn",
+  "syl": [
+   "dawn"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "dawns"
+   },
+   {
+    "label": "過去形",
+    "form": "dawned"
+   },
+   {
+    "label": "過去分詞",
+    "form": "dawned"
+   },
+   {
+    "label": "現在分詞",
+    "form": "dawning"
+   }
+  ]
  },
  {
   "w": "transparent",
@@ -148394,34 +149861,36 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "透明的",
-    "en": "Allowing light through so objects behind can be seen clearly."
+    "ja": "透明な、透き通った",
+    "en": "clear enough to let you see through it"
    },
    {
     "pos": "adj.",
-    "zh": "公开透明的",
-    "en": "Open and clear about decisions, actions, or methods."
+    "ja": "透明性のある、公開された",
+    "en": "open and honest, with nothing hidden from the public",
+    "reg": "比喩"
    },
    {
     "pos": "adj.",
-    "zh": "显而易见的；易识破的",
-    "en": "Easy to recognise or understand, especially as false."
+    "ja": "見え透いた、明白な",
+    "en": "so obvious that nobody could be deceived by it",
+    "reg": "比喩"
    }
   ],
   "ex": [
    {
     "en": "She keeps her buttons in a transparent plastic box.",
-    "zh": "她把纽扣放在一个透明塑料盒里。"
+    "ja": "彼女はボタンを透明なプラスチックの箱に入れている。"
    },
    {
     "en": "Public institutions need transparent recruitment procedures to ensure fairness and maintain the trust of local communities.",
-    "zh": "公共机构需要公开透明的招聘程序，以确保公平并维持当地社区的信任。"
+    "ja": "公的機関は、公平性を確保し地域社会の信頼を保つために、透明性のある採用手続きを必要とする。"
    }
   ],
   "col": [
-   "transparent glass｜透明玻璃",
-   "transparent process｜透明的流程",
-   "transparent excuse｜一眼就能识破的借口"
+   "transparent glass｜透明なガラス",
+   "transparent process｜透明性のある手続き",
+   "transparent excuse｜見え透いた言い訳"
   ],
   "fam": [
    "transparency (n.)",
@@ -148434,11 +149903,16 @@
   "ant": [
    "opaque"
   ],
-  "tip": "透明强调看得清；translucent指透光但看不清。",
+  "tip": "向こうが見えるのが transparent。光は通すが見えないのは translucent。",
   "cefr": "B2",
   "topic": "daily",
   "note": "",
-  "id": "transparent"
+  "id": "transparent",
+  "syl": [
+   "trans",
+   "par",
+   "ent"
+  ]
  },
  {
   "w": "upbringing",
@@ -148447,35 +149921,41 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "抚育；家庭教养",
-    "en": "The way parents care for and teach a child"
+    "ja": "育ち、しつけ、養育",
+    "en": "the way a child is cared for and taught while growing up",
+    "gram": "単数形"
    }
   ],
   "ex": [
    {
     "en": "Her upbringing taught her to share with others.",
-    "zh": "她从小受到的家庭教育让她懂得与人分享。"
+    "ja": "彼女は育ちのおかげで、他人と分け合うことを学んだ。"
    },
    {
     "en": "A supportive upbringing can help children develop confidence and cope more effectively with challenges at school.",
-    "zh": "充满支持的家庭养育有助于孩子建立自信，更有效地应对学校里的挑战。"
+    "ja": "支えのある家庭環境で育つと、子どもは自信を持ち、学校での困難にもうまく対処しやすくなる。"
    }
   ],
   "col": [
-   "a strict upbringing｜严格的家庭教育",
-   "a sheltered upbringing｜备受呵护的成长经历",
-   "a privileged upbringing｜优越的成长环境"
+   "a strict upbringing｜厳しい家庭教育",
+   "a sheltered upbringing｜大事に守られた育ち",
+   "a privileged upbringing｜恵まれた生い立ち"
   ],
   "fam": [
    "bring up (v.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "指童年养育及家庭教育，不等同于学校教育。",
+  "tip": "子ども時代の養育や家庭でのしつけを指し、学校教育とは別。",
   "cefr": "B2",
   "topic": "society",
   "note": "",
-  "id": "upbringing"
+  "id": "upbringing",
+  "syl": [
+   "up",
+   "bring",
+   "ing"
+  ]
  },
  {
   "w": "psychology",
@@ -149225,40 +150705,71 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "鸽子",
-    "en": "a bird often associated with peace"
+    "ja": "ハト（鳩）",
+    "en": "a small plump bird, often used as a symbol of peace",
+    "note": "白いハトは平和の象徴としてよく使われます",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "主和派人士",
-    "en": "someone who favours peaceful solutions rather than military action"
+    "ja": "ハト派、穏健派",
+    "en": "a person who prefers talks and compromise to military force",
+    "note": "政治用語。強硬派の hawk（タカ派）の反対",
+    "gram": "可算",
+    "reg": "比喩"
+   },
+   {
+    "pos": "n.",
+    "ja": "心優しく純真な人、愛する人",
+    "en": "a gentle, innocent person, or a loving name for someone",
+    "note": "文学作品や愛称で見られ、現代の会話ではまれ",
+    "gram": "可算",
+    "reg": "古風"
+   },
+   {
+    "pos": "v.",
+    "ja": "dive の過去形（米）",
+    "en": "the US past tense of dive: jumped or plunged head first",
+    "note": "英国英語では dived が一般的",
+    "gram": "他動詞/自動詞",
+    "reg": "米"
    }
   ],
   "ex": [
    {
     "en": "A white dove landed gently on our garden wall.",
-    "zh": "一只白鸽轻轻落在我们花园的围墙上。"
+    "ja": "白いハトが庭の塀にそっと降り立った。"
    },
    {
     "en": "Political doves argue that international disputes should be resolved through negotiation rather than military intervention.",
-    "zh": "政治上的主和派认为，国际争端应通过谈判而非军事干预解决。"
+    "ja": "政治的なハト派は、国際紛争は軍事介入ではなく交渉で解決すべきだと主張する。"
    }
   ],
   "col": [
-   "a white dove｜白鸽",
-   "a symbol of peace｜和平的象征",
-   "a political dove｜政治上的主和派人士"
+   "a white dove｜白いハト",
+   "a symbol of peace｜平和の象徴",
+   "a political dove｜政治的なハト派"
   ],
   "fam": [],
   "syn": [],
   "ant": [
    "hawk"
   ],
-  "tip": "指主和派时，与主张强硬手段的hawk相对。",
+  "tip": "政治では、強硬策を主張する hawk（タカ派）の反対語。",
   "cefr": "B2",
   "topic": "nature",
   "note": "",
-  "id": "dove"
+  "id": "dove",
+  "syl": [
+   "dove"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "doves"
+   }
+  ],
+  "gram": "動詞の dove は dive の米国式の過去形（He dove into the pool.）。英国英語やフォーマルな文では dived を使います。"
  },
  {
   "w": "rewarding",
@@ -242744,24 +244255,25 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "有凝聚力的；紧密结合的",
-    "en": "united or closely connected as a whole"
+    "ja": "結束した、まとまりのある",
+    "en": "firmly united, with all the parts fitting or working well together",
+    "note": "人の集団にも文章や議論にも使う"
    }
   ],
   "ex": [
    {
     "en": "Regular practice helped us become a more cohesive team.",
-    "zh": "定期练习帮助我们成为一支更有凝聚力的队伍。"
+    "ja": "定期的に練習したおかげで、私たちはよりまとまりのあるチームになった。"
    },
    {
     "en": "Shared public spaces can help build cohesive communities by encouraging interaction among people from different backgrounds.",
-    "zh": "共享公共空间可以促进不同背景的人交流，从而帮助建设有凝聚力的社区。"
+    "ja": "共有の公共空間は、さまざまな背景の人々の交流を促し、結束した地域社会づくりに役立つ。"
    }
   ],
   "col": [
-   "cohesive team｜有凝聚力的团队",
-   "cohesive society｜团结的社会",
-   "cohesive argument｜衔接紧密的论证"
+   "cohesive team｜結束したチーム",
+   "cohesive society｜まとまりのある社会",
+   "cohesive argument｜筋の通った論証"
   ],
   "fam": [
    "cohesion (n.)",
@@ -242776,11 +244288,16 @@
    "fragmented",
    "divided"
   ],
-  "tip": "cohesive强调紧密结合；coherent强调条理清楚。",
+  "tip": "cohesiveは「緊密に結びついている」、coherentは「筋道が通っている」。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "cohesive"
+  "id": "cohesive",
+  "syl": [
+   "co",
+   "he",
+   "sive"
+  ]
  },
  {
   "w": "hull",
@@ -242789,44 +244306,73 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "船体",
-    "en": "The main outer body of a ship or boat."
+    "ja": "船体",
+    "en": "the main body of a ship or boat, not including the masts or engines",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "谷壳；果实外壳",
-    "en": "The outer covering of a seed or fruit."
+    "ja": "殻、さや",
+    "en": "the hard outer covering of a seed or grain",
+    "note": "米や豆の外側の殻",
+    "gram": "可算"
    },
    {
     "pos": "v.",
-    "zh": "去壳；去果蒂",
-    "en": "To remove the outer covering or leafy top of food."
+    "ja": "殻やへたを取る",
+    "en": "to remove the outer covering or green top from fruit or seeds",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "We painted the boat's hull blue before launching it.",
-    "zh": "我们把船体漆成蓝色，然后才将船下水。"
+    "ja": "私たちは進水させる前に、ボートの船体を青く塗った。"
    },
    {
     "en": "Improved hull designs can reduce fuel consumption by allowing ships to move through water with less resistance.",
-    "zh": "改进船体设计可以减小船舶在水中航行的阻力，从而降低燃料消耗。"
+    "ja": "船体の設計が改善されれば、船は水の抵抗が少なく進めるので、燃料消費を減らせる。"
    }
   ],
   "col": [
-   "a ship's hull｜船体",
-   "a steel hull｜钢制船体",
-   "rice hulls｜稻壳",
-   "hull strawberries｜去除草莓果蒂"
+   "a ship's hull｜船の船体",
+   "a steel hull｜鋼鉄製の船体",
+   "rice hulls｜もみ殻",
+   "hull strawberries｜いちごのへたを取る"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "船体是hull；整艘船用ship或boat。",
+  "tip": "hullは船の本体部分。船全体を指すときはshipやboatを使う。",
   "cefr": "C1",
   "topic": "travel",
   "note": "",
-  "id": "hull"
+  "id": "hull",
+  "syl": [
+   "hull"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "hulls"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "hulls"
+   },
+   {
+    "label": "過去形",
+    "form": "hulled"
+   },
+   {
+    "label": "過去分詞",
+    "form": "hulled"
+   },
+   {
+    "label": "現在分詞",
+    "form": "hulling"
+   }
+  ]
  },
  {
   "w": "prospectus",
@@ -242835,38 +244381,53 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "招生简章",
-    "en": "a document describing a school or university for potential students"
+    "ja": "大学案内、募集要項",
+    "en": "a booklet describing a school or university, its courses and its fees",
+    "note": "主に英国で学校や大学が発行する冊子",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "招股说明书；项目介绍书",
-    "en": "a document explaining an investment or business opportunity"
+    "ja": "目論見書",
+    "en": "an official document that gives details of a company or investment to possible buyers",
+    "gram": "可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "I checked the college prospectus for photography courses.",
-    "zh": "我查看了学院的招生简章，寻找摄影课程。"
+    "ja": "私は大学案内で写真のコースを確認した。"
    },
    {
     "en": "A university prospectus should provide accurate information about tuition fees, course content, and available student support.",
-    "zh": "大学招生简章应准确介绍学费、课程内容及可获得的学生支持服务。"
+    "ja": "大学案内には、授業料、授業内容、利用できる学生支援について正確な情報が載っているべきだ。"
    }
   ],
   "col": [
-   "university prospectus｜大学招生简章",
-   "request a prospectus｜索取招生简章",
-   "issue a prospectus｜发布招股说明书"
+   "university prospectus｜大学案内",
+   "request a prospectus｜大学案内を請求する",
+   "issue a prospectus｜目論見書を発行する"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "教育语境常指招生简章，金融语境可指招股说明书。",
+  "tip": "教育の場面では大学案内、金融の場面では目論見書を指す。",
   "cefr": "C1",
   "topic": "education",
   "note": "",
-  "id": "prospectus"
+  "id": "prospectus",
+  "syl": [
+   "pro",
+   "spec",
+   "tus"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "prospectuses"
+   }
+  ]
  },
  {
   "w": "sonnet",
@@ -242875,33 +244436,45 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "十四行诗",
-    "en": "A fourteen-line poem following a particular rhyme and rhythm pattern."
+    "ja": "ソネット、十四行詩",
+    "en": "a poem of fourteen lines with a fixed pattern of rhyme",
+    "note": "シェイクスピア風、ペトラルカ風など、韻の型がいくつかある。",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "She read a sonnet aloud beside the open window.",
-    "zh": "她在敞开的窗边朗读了一首十四行诗。"
+    "ja": "彼女は開いた窓のそばでソネットを朗読した。"
    },
    {
     "en": "Studying a sonnet helps students understand how formal constraints can encourage creative expression in literature.",
-    "zh": "学习十四行诗有助于学生理解形式上的限制如何促进文学中的创造性表达。"
+    "ja": "ソネットを学ぶと、形式上の制約がどのように創造的な表現を促すのかを、学生が理解しやすくなる。"
    }
   ],
   "col": [
-   "write a sonnet｜写十四行诗",
-   "sonnet sequence｜十四行组诗",
-   "sonnet form｜十四行诗体"
+   "write a sonnet｜ソネットを書く",
+   "sonnet sequence｜連作ソネット",
+   "sonnet form｜ソネット形式"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "sonnet固定为十四行，但押韵格式不只一种。",
+  "tip": "行数は必ず14行だが、韻の踏み方は一つではない。",
   "cefr": "C1",
   "topic": "arts",
   "note": "",
-  "id": "sonnet"
+  "id": "sonnet",
+  "syl": [
+   "son",
+   "net"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "sonnets"
+   }
+  ]
  },
  {
   "w": "coeducation",
@@ -242910,24 +244483,25 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "男女同校教育",
-    "en": "The education of boys and girls together in the same institution."
+    "ja": "男女共学",
+    "en": "a system in which boys and girls are taught together in the same school",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "My grandparents first experienced coeducation at their village school.",
-    "zh": "我的祖父母在村里的学校首次接受了男女同校教育。"
+    "ja": "祖父母は村の学校で初めて男女共学を経験した。"
    },
    {
     "en": "Supporters of coeducation argue that learning together helps boys and girls develop mutual respect.",
-    "zh": "支持男女同校教育的人认为，共同学习有助于男孩和女孩培养相互尊重的态度。"
+    "ja": "男女共学の支持者は、一緒に学ぶことで男子も女子も互いへの敬意が育つと主張する。"
    }
   ],
   "col": [
-   "benefits of coeducation｜男女同校教育的益处",
-   "support coeducation｜支持男女同校教育",
-   "introduce coeducation｜实行男女同校教育"
+   "benefits of coeducation｜男女共学の利点",
+   "support coeducation｜男女共学を支持する",
+   "introduce coeducation｜男女共学を導入する"
   ],
   "fam": [
    "coeducational (adj.)"
@@ -242938,11 +244512,18 @@
   "ant": [
    "single-sex education"
   ],
-  "tip": "不可数名词；形容词形式为coeducational。",
+  "tip": "不可算名詞。形容詞は coeducational（男女共学の）。",
   "cefr": "C1",
   "topic": "education",
   "note": "",
-  "id": "coeducation"
+  "id": "coeducation",
+  "syl": [
+   "co",
+   "ed",
+   "u",
+   "ca",
+   "tion"
+  ]
  },
  {
   "w": "consul",
@@ -242951,24 +244532,25 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "领事",
-    "en": "An official abroad who assists citizens and represents national interests"
+    "ja": "領事",
+    "en": "an official sent to live in a foreign city to help and protect citizens of their own country",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "The consul helped us after we lost our passports.",
-    "zh": "我们丢失护照后，领事给我们提供了帮助。"
+    "ja": "パスポートをなくしたとき、領事が助けてくれた。"
    },
    {
     "en": "A consul may support citizens facing difficulties overseas and help strengthen commercial links between countries.",
-    "zh": "领事可以为在海外遇到困难的本国公民提供支持，并帮助加强国家间的商业联系。"
+    "ja": "領事は、海外で困っている自国民を支援し、国同士の商業的なつながりを強める役割を担うことがある。"
    }
   ],
   "col": [
-   "consul general｜总领事",
-   "honorary consul｜名誉领事",
-   "vice consul｜副领事"
+   "consul general｜総領事",
+   "honorary consul｜名誉領事",
+   "vice consul｜副領事"
   ],
   "fam": [
    "consular (adj.)",
@@ -242976,11 +244558,21 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "consul是领事；consulate是领事馆，勿混淆。",
+  "tip": "consul は領事、consulate は領事館。混同しないこと。",
   "cefr": "C1",
   "topic": "government",
   "note": "",
-  "id": "consul"
+  "id": "consul",
+  "syl": [
+   "con",
+   "sul"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "consuls"
+   }
+  ]
  },
  {
   "w": "manipulation",
@@ -242989,29 +244581,33 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "操纵；控制",
-    "en": "Controlling people or situations unfairly for personal advantage."
+    "ja": "操作、巧みな操り",
+    "en": "clever or unfair control of a person or situation for one's own benefit",
+    "note": "人に対して使うと否定的な響きが強い。",
+    "gram": "不可算",
+    "reg": "軽蔑"
    },
    {
     "pos": "n.",
-    "zh": "操作；处理",
-    "en": "Moving or adjusting something carefully, often using hands or tools."
+    "ja": "取り扱い、操作",
+    "en": "the skilled handling or adjusting of an object, tool or information",
+    "gram": "不可算"
    }
   ],
   "ex": [
    {
     "en": "She recognised his emotional manipulation and refused to feel guilty.",
-    "zh": "她识破了他的情感操控，拒绝为此感到内疚。"
+    "ja": "彼女は彼の感情的な操作に気づき、罪悪感を抱くことを拒んだ。"
    },
    {
     "en": "The manipulation of survey results can mislead policymakers and reduce public trust in scientific research.",
-    "zh": "操纵调查结果可能误导政策制定者，并降低公众对科学研究的信任。"
+    "ja": "調査結果の操作は、政策立案者を誤らせ、科学的研究への社会の信頼を損なうおそれがある。"
    }
   ],
   "col": [
-   "emotional manipulation｜情感操控",
-   "data manipulation｜数据处理；数据篡改",
-   "market manipulation｜市场操纵"
+   "emotional manipulation｜感情の操作",
+   "data manipulation｜データの加工、データの改ざん",
+   "market manipulation｜市場操作"
   ],
   "fam": [
    "manipulate (v.)",
@@ -243020,11 +244616,24 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "指操控人时常含贬义；指操作工具时可中性。",
+  "tip": "人を操る意味では悪い印象。道具や情報の扱いなら中立的。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "manipulation"
+  "id": "manipulation",
+  "syl": [
+   "ma",
+   "nip",
+   "u",
+   "la",
+   "tion"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "manipulations"
+   }
+  ]
  },
  {
   "w": "concurrent",
@@ -243033,24 +244642,25 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "同时发生的；并行的",
-    "en": "Happening or existing at the same time"
+    "ja": "同時に起こる、並行する",
+    "en": "happening or existing at the same time",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Two concurrent meetings meant I had to choose one.",
-    "zh": "两个会议同时举行，我只能选择参加其中一个。"
+    "ja": "会議が二つ同時に開かれていたので、どちらかを選ぶしかなかった。"
    },
    {
     "en": "Concurrent improvements in housing and public transport can make urban development more inclusive and sustainable.",
-    "zh": "同步改善住房和公共交通，可以使城市发展更具包容性和可持续性。"
+    "ja": "住宅と公共交通の同時並行的な改善は、都市開発をより包摂的で持続可能なものにしうる。"
    }
   ],
   "col": [
-   "concurrent events｜同时发生的事件",
-   "concurrent sessions｜同期举行的分会",
-   "concurrent with｜与…同时发生"
+   "concurrent events｜同時に起こる出来事",
+   "concurrent sessions｜並行して行われる分科会",
+   "concurrent with｜〜と同時に"
   ],
   "fam": [
    "concurrently (adv.)",
@@ -243062,11 +244672,16 @@
   "ant": [
    "sequential"
   ],
-  "tip": "强调时间重叠；表示“与…同时”可用concurrent with。",
+  "tip": "時間の重なりを強調する語。「〜と同時に」は concurrent with。",
   "cefr": "C1",
   "topic": "work",
   "note": "",
-  "id": "concurrent"
+  "id": "concurrent",
+  "syl": [
+   "con",
+   "cur",
+   "rent"
+  ]
  },
  {
   "w": "flatter",
@@ -243075,34 +244690,38 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "奉承；讨好",
-    "en": "Praise someone, often insincerely, to gain their favour."
+    "ja": "お世辞を言う、へつらう",
+    "en": "to praise someone too much, often to please them or gain something",
+    "gram": "他動詞"
    },
    {
     "pos": "v.",
-    "zh": "使感到荣幸或高兴",
-    "en": "Make someone feel pleased or honoured through attention or praise."
+    "ja": "うれしがらせる、光栄に思わせる",
+    "en": "to make someone feel pleased and proud",
+    "note": "be flattered の形でよく使う。",
+    "gram": "受動態で多用"
    },
    {
     "pos": "v.",
-    "zh": "使显得更好看",
-    "en": "Make someone look more attractive than they otherwise would."
+    "ja": "実物より良く見せる、似合う",
+    "en": "to make someone or something look more attractive",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "That blue jacket really flatters you in this light.",
-    "zh": "在这样的光线下，那件蓝色夹克真的很衬你。"
+    "ja": "この光の下だと、その青いジャケットは本当にあなたに似合っている。"
    },
    {
     "en": "Advertisements often flatter consumers by suggesting that choosing a particular product demonstrates intelligence or good taste.",
-    "zh": "广告常常暗示选择某种产品代表聪明或品位好，以此讨好消费者。"
+    "ja": "広告は、特定の商品を選べば知性や良い趣味を示せると匂わせて、消費者の気分を持ち上げることが多い。"
    }
   ],
   "col": [
-   "flatter someone's ego｜满足某人的虚荣心",
-   "feel flattered｜感到荣幸",
-   "flatter yourself｜自以为是"
+   "flatter someone's ego｜人の自尊心をくすぐる",
+   "feel flattered｜光栄に感じる",
+   "flatter yourself｜うぬぼれる"
   ],
   "fam": [
    "flattery (n.)",
@@ -243112,11 +244731,33 @@
   ],
   "syn": [],
   "ant": [],
-  "tip": "be flattered常指受宠若惊，不一定含贬义。",
+  "tip": "be flattered は「光栄だ」の意で、必ずしも悪い意味ではない。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "flatter"
+  "id": "flatter",
+  "syl": [
+   "flat",
+   "ter"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "flatters"
+   },
+   {
+    "label": "過去形",
+    "form": "flattered"
+   },
+   {
+    "label": "過去分詞",
+    "form": "flattered"
+   },
+   {
+    "label": "現在分詞",
+    "form": "flattering"
+   }
+  ]
  },
  {
   "w": "meddle",
@@ -243125,23 +244766,25 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "干涉；管闲事",
-    "en": "Interfere in other people's affairs without being invited."
+    "ja": "干渉する、おせっかいを焼く",
+    "en": "to get involved in other people's affairs when it is not welcome",
+    "gram": "自動詞",
+    "reg": "軽蔑"
    }
   ],
   "ex": [
    {
     "en": "Please don't meddle in how I arrange my room.",
-    "zh": "请别干涉我如何布置自己的房间。"
+    "ja": "私の部屋の片づけ方に口を出さないで。"
    },
    {
     "en": "Parents who constantly meddle in their children's decisions may prevent them from developing confidence and independence.",
-    "zh": "不断干涉孩子决定的父母可能会阻碍他们培养自信和独立性。"
+    "ja": "子どもの決定に絶えず干渉する親は、子どもが自信と自立心を育てる妨げになるかもしれない。"
    }
   ],
   "col": [
-   "meddle in someone's affairs｜干涉某人的私事",
-   "meddle with something｜擅自摆弄某物"
+   "meddle in someone's affairs｜人の事に干渉する",
+   "meddle with something｜物を勝手にいじる"
   ],
   "fam": [
    "meddling (adj.)",
@@ -243151,11 +244794,33 @@
    "interfere"
   ],
   "ant": [],
-  "tip": "常接in表示干涉事务；接with表示擅自摆弄。",
+  "tip": "事柄への干渉は meddle in、物をいじるなら meddle with。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "meddle"
+  "id": "meddle",
+  "syl": [
+   "med",
+   "dle"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "meddles"
+   },
+   {
+    "label": "過去形",
+    "form": "meddled"
+   },
+   {
+    "label": "過去分詞",
+    "form": "meddled"
+   },
+   {
+    "label": "現在分詞",
+    "form": "meddling"
+   }
+  ]
  },
  {
   "w": "contemplation",
@@ -243164,29 +244829,33 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "沉思；深思",
-    "en": "the act of thinking deeply and quietly about something"
+    "ja": "熟考、瞑想",
+    "en": "the act of thinking deeply and quietly about something",
+    "gram": "不可算"
    },
    {
     "pos": "n.",
-    "zh": "考虑；打算",
-    "en": "the act of considering a possible future action"
+    "ja": "考慮、予定",
+    "en": "the act of thinking about doing something in the future",
+    "note": "in contemplation of や under contemplation の形で使う。",
+    "gram": "不可算",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "He sat by the lake in quiet contemplation.",
-    "zh": "他坐在湖边，静静地沉思。"
+    "ja": "彼は湖のほとりで静かに物思いにふけっていた。"
    },
    {
     "en": "Public gardens offer urban residents valuable opportunities for quiet contemplation away from the pressures of daily life.",
-    "zh": "公共花园为城市居民提供宝贵的机会，让他们远离日常生活的压力，静心沉思。"
+    "ja": "公共の庭園は、都市の住民に日常の重圧から離れて静かに思索する貴重な機会を与えてくれる。"
    }
   ],
   "col": [
-   "quiet contemplation｜静静的沉思",
-   "deep contemplation｜深思",
-   "in contemplation｜在沉思中"
+   "quiet contemplation｜静かな思索",
+   "deep contemplation｜深い熟考",
+   "in contemplation｜熟考中で"
   ],
   "fam": [
    "contemplate (v.)",
@@ -243197,11 +244866,17 @@
    "meditation"
   ],
   "ant": [],
-  "tip": "通常不可数；强调安静深思，不一定是痛苦思索。",
+  "tip": "ふつうは不可算。静かに深く考える意味で、苦悩とは限らない。",
   "cefr": "C1",
   "topic": "thinking",
   "note": "",
-  "id": "contemplation"
+  "id": "contemplation",
+  "syl": [
+   "con",
+   "tem",
+   "pla",
+   "tion"
+  ]
  },
  {
   "w": "threshold",
@@ -243210,35 +244885,41 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "阈值；界限",
-    "en": "the level at which something starts happening or changes"
+    "ja": "境界、限界点、しきい値",
+    "en": "the level or point at which something starts to happen or change",
+    "note": "痛みや収入など、数値や程度の境目を表す",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "门槛",
-    "en": "the bottom edge of a doorway"
+    "ja": "戸口、入り口",
+    "en": "the strip of floor at the bottom of a doorway",
+    "note": "cross the threshold の形でよく使う",
+    "gram": "可算"
    },
    {
     "pos": "n.",
-    "zh": "开端；起点",
-    "en": "the point just before a new experience or period begins"
+    "ja": "始まり、出発点",
+    "en": "the beginning of an important new stage or event",
+    "note": "on the threshold of の形で使う",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "My brother has a much higher pain threshold than me.",
-    "zh": "我哥哥比我耐疼得多。"
+    "ja": "兄は私よりずっと痛みに強い。"
    },
    {
     "en": "Raising the income threshold for financial assistance would allow more low-paid workers to receive support.",
-    "zh": "提高经济援助的收入门槛，将使更多低薪劳动者能够获得支持。"
+    "ja": "援助を受けられる所得の上限を引き上げれば、低賃金で働くより多くの人が支援を受けられるようになるだろう。"
    }
   ],
   "col": [
-   "pain threshold｜痛觉阈值",
-   "income threshold｜收入门槛",
-   "cross the threshold｜跨过门槛",
-   "on the threshold of｜即将进入"
+   "pain threshold｜痛みの限界点",
+   "income threshold｜所得の基準額",
+   "cross the threshold｜戸口をまたぐ",
+   "on the threshold of｜まさに〜の入り口にいて"
   ],
   "fam": [],
   "syn": [
@@ -243246,11 +244927,21 @@
    "boundary"
   ],
   "ant": [],
-  "tip": "on the threshold of表示即将进入某个新阶段。",
+  "tip": "on the threshold of は「新しい段階の入り口に立つ」という意味で、研究や人生の転機に使える。",
   "cefr": "C1",
   "topic": "science",
   "note": "",
-  "id": "threshold"
+  "id": "threshold",
+  "syl": [
+   "thresh",
+   "old"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "thresholds"
+   }
+  ]
  },
  {
   "w": "constitute",
@@ -243259,35 +244950,43 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "组成；构成",
-    "en": "To be the parts that form a whole"
+    "ja": "構成する、占める",
+    "en": "to be the parts that together form something",
+    "note": "部分が主語、全体が目的語になる",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    },
    {
     "pos": "v.",
-    "zh": "算作；构成",
-    "en": "To be considered a particular thing"
+    "ja": "〜に相当する、〜になる",
+    "en": "to be regarded as or amount to something",
+    "note": "threat や breach などの語と共に使う",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    },
    {
     "pos": "v.",
-    "zh": "正式设立",
-    "en": "To formally establish an organisation or governing body"
+    "ja": "設立する、設置する",
+    "en": "to officially set up a group or organization",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Vegetables constitute most of the food in our fridge.",
-    "zh": "我们冰箱里的食物大部分是蔬菜。"
+    "ja": "冷蔵庫の中の食べ物の大半は野菜だ。"
    },
    {
     "en": "Rising housing costs constitute a major barrier to financial independence for young adults in large cities.",
-    "zh": "不断上涨的住房成本构成了大城市年轻人实现经济独立的一大障碍。"
+    "ja": "住宅費の高騰は、大都市に住む若者が経済的に自立するうえでの大きな障壁となっている。"
    }
   ],
   "col": [
-   "constitute a majority｜占多数",
-   "constitute a threat｜构成威胁",
-   "constitute a breach｜构成违反",
-   "constitute a committee｜正式成立委员会"
+   "constitute a majority｜過半数を占める",
+   "constitute a threat｜脅威となる",
+   "constitute a breach｜違反にあたる",
+   "constitute a committee｜委員会を設立する"
   ],
   "fam": [
    "constitution (n.)",
@@ -243299,11 +244998,34 @@
    "form"
   ],
   "ant": [],
-  "tip": "表组成时通常以部分作主语，整体作宾语。",
+  "tip": "「部分 constitute 全体」の形。be 動詞 + made up of とは主語が逆になる。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "constitute"
+  "id": "constitute",
+  "syl": [
+   "con",
+   "sti",
+   "tute"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "constitutes"
+   },
+   {
+    "label": "過去形",
+    "form": "constituted"
+   },
+   {
+    "label": "過去分詞",
+    "form": "constituted"
+   },
+   {
+    "label": "現在分詞",
+    "form": "constituting"
+   }
+  ]
  },
  {
   "w": "preoperative",
@@ -243312,24 +245034,25 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "手术前的",
-    "en": "Happening or provided before a surgical operation."
+    "ja": "手術前の",
+    "en": "happening or done before a surgical operation",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "The nurse explained my preoperative checks before tomorrow's surgery.",
-    "zh": "护士向我解释了明天手术前要做的检查。"
+    "ja": "看護師は明日の手術に先立つ術前の検査について説明してくれた。"
    },
    {
     "en": "Thorough preoperative assessment helps medical teams identify potential risks and plan appropriate care for each patient.",
-    "zh": "全面的术前评估帮助医疗团队识别潜在风险，并为每位患者制定适当的护理计划。"
+    "ja": "手術前の丁寧な評価により、医療チームは潜在的なリスクを見つけ、各患者に適した治療を計画できる。"
    }
   ],
   "col": [
-   "preoperative assessment｜术前评估",
-   "preoperative care｜术前护理",
-   "preoperative preparation｜术前准备"
+   "preoperative assessment｜術前評価",
+   "preoperative care｜術前ケア",
+   "preoperative preparation｜術前準備"
   ],
   "fam": [
    "operative (adj.)",
@@ -243342,11 +245065,18 @@
   "ant": [
    "postoperative"
   ],
-  "tip": "pre- 表示之前；postoperative 则表示手术后的。",
+  "tip": "pre- は「前」。対義語は postoperative（手術後の）。",
   "cefr": "C1",
   "topic": "health",
   "note": "",
-  "id": "preoperative"
+  "id": "preoperative",
+  "syl": [
+   "pre",
+   "op",
+   "er",
+   "a",
+   "tive"
+  ]
  },
  {
   "w": "inherent",
@@ -243355,25 +245085,26 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "固有的；内在的",
-    "en": "Existing as a natural or essential part of something."
+    "ja": "固有の、本来備わっている",
+    "en": "existing as a natural and permanent part of something",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Even simple home repairs come with some inherent risks.",
-    "zh": "即使是简单的家居维修也有一些固有风险。"
+    "ja": "簡単な家の修理にも、ある程度の本質的な危険が伴う。"
    },
    {
     "en": "Policymakers must recognise the inherent limitations of economic growth as a measure of social progress and wellbeing.",
-    "zh": "政策制定者必须认识到，用经济增长衡量社会进步和福祉存在固有局限。"
+    "ja": "政策立案者は、社会の進歩や幸福の尺度としての経済成長が持つ本質的な限界を認識しなければならない。"
    }
   ],
   "col": [
-   "inherent risks｜固有风险",
-   "inherent limitations｜固有局限",
-   "inherent in｜内在于；固有于",
-   "inherent value｜内在价值"
+   "inherent risks｜固有のリスク",
+   "inherent limitations｜本質的な限界",
+   "inherent in｜～に内在する",
+   "inherent value｜内在的価値"
   ],
   "fam": [
    "inherently (adv.)"
@@ -243385,11 +245116,16 @@
   "ant": [
    "extrinsic"
   ],
-  "tip": "常用inherent in；强调本身具有，而非后来获得。",
+  "tip": "inherent in ～の形が多い。後から得たものではなく、もともと備わる性質を表す。",
   "cefr": "C1",
   "topic": "thinking",
   "note": "",
-  "id": "inherent"
+  "id": "inherent",
+  "syl": [
+   "in",
+   "her",
+   "ent"
+  ]
  },
  {
   "w": "empirical",
@@ -243398,24 +245134,25 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "实证的；基于观察的",
-    "en": "based on observation or experiments rather than theory alone"
+    "ja": "実証的な、経験的な",
+    "en": "based on what is observed or tested, not on theory alone",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Our garden trial provided empirical evidence that compost helps plants.",
-    "zh": "我们的花园试验提供了堆肥有益植物的实证依据。"
+    "ja": "庭での試験で、堆肥が植物の成長を助けるという実証的な証拠が得られた。"
    },
    {
     "en": "Education policies should be supported by empirical research rather than assumptions about how children learn.",
-    "zh": "教育政策应以实证研究为依据，而不是依赖对儿童学习方式的假设。"
+    "ja": "教育政策は、子どもの学び方についての思い込みではなく、実証的な研究に裏付けられるべきだ。"
    }
   ],
   "col": [
-   "empirical evidence｜实证证据",
-   "empirical research｜实证研究",
-   "empirical data｜实证数据"
+   "empirical evidence｜実証的証拠",
+   "empirical research｜実証研究",
+   "empirical data｜実証データ"
   ],
   "fam": [
    "empirically (adv.)",
@@ -243426,11 +245163,17 @@
   "ant": [
    "theoretical"
   ],
-  "tip": "强调观察或实验依据，不等于个人经验之谈。",
+  "tip": "観察や実験に基づくという意味。個人の体験談という意味ではない。",
   "cefr": "C1",
   "topic": "science",
   "note": "",
-  "id": "empirical"
+  "id": "empirical",
+  "syl": [
+   "em",
+   "pir",
+   "i",
+   "cal"
+  ]
  },
  {
   "w": "waterfront",
@@ -243439,33 +245182,45 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "滨水区；水岸地带",
-    "en": "An area beside a sea, lake, or river, especially in towns."
+    "ja": "水辺、ウォーターフロント",
+    "en": "the part of a town beside a river, lake or sea",
+    "gram": "可算"
    }
   ],
   "ex": [
    {
     "en": "We walked along the waterfront after an early dinner.",
-    "zh": "我们早早吃完晚饭后沿着水岸散步。"
+    "ja": "私たちは早めの夕食のあと、水辺沿いを歩いた。"
    },
    {
     "en": "Redeveloping the waterfront can create attractive public spaces, provided that existing residents are not forced to leave.",
-    "zh": "滨水区改造可以创造宜人的公共空间，前提是不迫使原有居民搬离。"
+    "ja": "ウォーターフロントの再開発は魅力的な公共空間を生みうるが、既存の住民が追い出されないことが条件だ。"
    }
   ],
   "col": [
-   "along the waterfront｜沿着水岸",
-   "waterfront development｜滨水区开发",
-   "a waterfront restaurant｜水边餐厅"
+   "along the waterfront｜水辺に沿って",
+   "waterfront development｜ウォーターフロント開発",
+   "a waterfront restaurant｜水辺のレストラン"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "指城镇临水地带，不一定是沙滩或海边。",
+  "tip": "川・湖・海に面した町の一帯を指す。砂浜や海岸とは限らない。",
   "cefr": "C1",
   "topic": "city",
   "note": "",
-  "id": "waterfront"
+  "id": "waterfront",
+  "syl": [
+   "wa",
+   "ter",
+   "front"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "waterfronts"
+   }
+  ]
  },
  {
   "w": "redistribute",
@@ -243474,24 +245229,25 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "重新分配；重新分布",
-    "en": "To share out or spread something again in a different way."
+    "ja": "再分配する、配り直す",
+    "en": "to share something out again in a different way",
+    "gram": "他動詞"
    }
   ],
   "ex": [
    {
     "en": "We redistributed the blankets so everyone had one.",
-    "zh": "我们重新分配了毯子，让每个人都有一条。"
+    "ja": "全員に行き渡るよう、毛布を配り直した。"
    },
    {
     "en": "Progressive taxation can redistribute wealth and help governments fund essential services for disadvantaged communities.",
-    "zh": "累进税制能够重新分配财富，并帮助政府为弱势社区的基本服务提供资金。"
+    "ja": "累進課税は富を再分配し、政府が恵まれない地域社会のための重要なサービスを支える助けになりうる。"
    }
   ],
   "col": [
-   "redistribute wealth｜重新分配财富",
-   "redistribute income｜重新分配收入",
-   "redistribute resources｜重新分配资源"
+   "redistribute wealth｜富を再分配する",
+   "redistribute income｜所得を再分配する",
+   "redistribute resources｜資源を再分配する"
   ],
   "fam": [
    "distribute (v.)",
@@ -243503,11 +245259,35 @@
    "reallocate"
   ],
   "ant": [],
-  "tip": "强调改变原有分配，不一定意味着平均分配。",
+  "tip": "従来の配分を変えるという意味で、必ずしも均等に分けるとは限らない。",
   "cefr": "C1",
   "topic": "economy",
   "note": "",
-  "id": "redistribute"
+  "id": "redistribute",
+  "syl": [
+   "re",
+   "dis",
+   "trib",
+   "ute"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "redistributes"
+   },
+   {
+    "label": "過去形",
+    "form": "redistributed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "redistributed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "redistributing"
+   }
+  ]
  },
  {
   "w": "compliance",
@@ -243516,24 +245296,26 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "遵守；服从",
-    "en": "the act of following a rule, law, or request"
+    "ja": "遵守、従うこと、コンプライアンス",
+    "en": "the act of obeying a rule, law or request",
+    "gram": "不可算",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "The inspector checked our kitchen for compliance with hygiene rules.",
-    "zh": "检查员查看了我们的厨房是否符合卫生规定。"
+    "ja": "検査官は、衛生規則を守っているか私たちの厨房を点検した。"
    },
    {
     "en": "Regular inspections can improve compliance with environmental regulations and reduce pollution from industrial facilities.",
-    "zh": "定期检查可以促进企业遵守环境法规，减少工业设施造成的污染。"
+    "ja": "定期的な検査は、環境規制の遵守を高め、工場による汚染を減らしうる。"
    }
   ],
   "col": [
-   "compliance with regulations｜遵守规定",
-   "ensure compliance｜确保合规",
-   "in compliance with｜按照；遵照"
+   "compliance with regulations｜規則の遵守",
+   "ensure compliance｜確実に遵守させる",
+   "in compliance with｜～に従って"
   ],
   "fam": [
    "comply (v.)",
@@ -243547,11 +245329,16 @@
   "ant": [
    "non-compliance"
   ],
-  "tip": "通常不可数；表示遵守某规定时用compliance with。",
+  "tip": "通常は不可算。「～の遵守」は compliance with ～と言う。",
   "cefr": "C1",
   "topic": "government",
   "note": "",
-  "id": "compliance"
+  "id": "compliance",
+  "syl": [
+   "com",
+   "pli",
+   "ance"
+  ]
  },
  {
   "w": "phony",
@@ -243560,29 +245347,32 @@
   "senses": [
    {
     "pos": "adj.",
-    "zh": "假的；虚伪的",
-    "en": "Not genuine, or intended to deceive people"
+    "ja": "偽の、うそくさい、いんちきな",
+    "en": "not genuine; pretending to be something real or sincere",
+    "reg": "口語"
    },
    {
     "pos": "n.",
-    "zh": "骗子；虚伪的人",
-    "en": "Someone who pretends to be something they are not"
+    "ja": "いかさま師、偽善者",
+    "en": "a person who pretends to be sincere or skilled but is not",
+    "gram": "可算",
+    "reg": "軽蔑"
    }
   ],
   "ex": [
    {
     "en": "His phony smile disappeared as soon as we left.",
-    "zh": "我们一走，他那虚假的笑容就消失了。"
+    "ja": "私たちが去るとすぐ、彼の作り笑いは消えた。"
    },
    {
     "en": "Consumers should be cautious about phony online reviews that exaggerate the benefits of health products.",
-    "zh": "消费者应警惕夸大保健产品功效的虚假网络评论。"
+    "ja": "消費者は、健康食品の効果を誇張する偽のオンラインレビューに注意すべきだ。"
    }
   ],
   "col": [
-   "phony smile｜假笑",
-   "phony excuse｜虚假的借口",
-   "phony claims｜虚假说法"
+   "phony smile｜作り笑い",
+   "phony excuse｜見え透いた言い訳",
+   "phony claims｜虚偽の主張"
   ],
   "fam": [
    "phoniness (n.)"
@@ -243596,11 +245386,25 @@
    "genuine",
    "authentic"
   ],
-  "tip": "偏口语；英式英语也常拼作phoney。",
+  "tip": "口語的な語。英国では phoney と綴ることも多い。",
   "cefr": "C1",
   "topic": "society",
   "note": "",
-  "id": "phony"
+  "id": "phony",
+  "syl": [
+   "pho",
+   "ny"
+  ],
+  "forms": [
+   {
+    "label": "比較級",
+    "form": "phonier"
+   },
+   {
+    "label": "最上級",
+    "form": "phoniest"
+   }
+  ]
  },
  {
   "w": "meticulously",
@@ -243609,24 +245413,24 @@
   "senses": [
    {
     "pos": "adv.",
-    "zh": "一丝不苟地；细致地",
-    "en": "with great care and attention to every detail"
+    "ja": "細心の注意を払って、念入りに",
+    "en": "in a way that shows great care about every small detail"
    }
   ],
   "ex": [
    {
     "en": "She meticulously cleaned each tiny part of the watch.",
-    "zh": "她一丝不苟地清洁手表的每个微小零件。"
+    "ja": "彼女は時計の小さな部品を一つ一つ念入りに掃除した。"
    },
    {
     "en": "Researchers must meticulously record their procedures so that other teams can reproduce and verify the results.",
-    "zh": "研究人员必须细致记录操作步骤，以便其他团队复现并验证结果。"
+    "ja": "研究者は、他のチームが結果を再現し検証できるよう、手順を細部まで丁寧に記録しなければならない。"
    }
   ],
   "col": [
-   "meticulously planned｜精心规划的",
-   "meticulously documented｜详尽记录的",
-   "meticulously examine｜仔细检查"
+   "meticulously planned｜綿密に計画された",
+   "meticulously documented｜詳細に記録された",
+   "meticulously examine｜入念に調べる"
   ],
   "fam": [
    "meticulous (adj.)",
@@ -243639,11 +245443,18 @@
   "ant": [
    "carelessly"
   ],
-  "tip": "强调关注每个细节，不表示“胆小地”。",
+  "tip": "細部への注意を強調する語。「臆病に」という意味ではない。",
   "cefr": "C1",
   "topic": "work",
   "note": "",
-  "id": "meticulously"
+  "id": "meticulously",
+  "syl": [
+   "me",
+   "tic",
+   "u",
+   "lous",
+   "ly"
+  ]
  },
  {
   "w": "spherical",
@@ -313210,34 +315021,59 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "为……报仇；雪耻",
-    "en": "to punish someone for harm done to yourself or others"
+    "ja": "復讐する、仇を討つ",
+    "en": "to punish someone in return for harm done to yourself or someone else",
+    "note": "受けた被害や不当な扱いを目的語にとる",
+    "gram": "他動詞",
+    "reg": "文語"
    }
   ],
   "ex": [
    {
     "en": "Our team hopes to avenge last year's defeat.",
-    "zh": "我们队希望一雪去年败北之耻。"
+    "ja": "私たちのチームは昨年の敗北の雪辱を果たしたいと思っている。"
    },
    {
     "en": "Historical narratives often portray leaders seeking to avenge past defeats rather than negotiate lasting peace.",
-    "zh": "历史叙事常描写领导者寻求报复过去的失败，而非通过谈判实现持久和平。"
+    "ja": "歴史の語りでは、指導者が恒久的な平和を交渉するよりも過去の敗北への復讐を求める姿がよく描かれる。"
    }
   ],
   "col": [
-   "avenge a defeat｜一雪败北之耻",
-   "avenge a wrong｜报复不公待遇"
+   "avenge a defeat｜敗北の雪辱を果たす",
+   "avenge a wrong｜不当な仕打ちに報復する"
   ],
   "fam": [
    "avenger (n.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "avenge是动词，常接所受伤害；revenge常作名词。",
+  "tip": "avengeは動詞で受けた害を目的語にとる。revengeは名詞が中心。",
   "cefr": "C2",
   "topic": "history",
   "note": "",
-  "id": "avenge"
+  "id": "avenge",
+  "syl": [
+   "a",
+   "venge"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "avenges"
+   },
+   {
+    "label": "過去形",
+    "form": "avenged"
+   },
+   {
+    "label": "過去分詞",
+    "form": "avenged"
+   },
+   {
+    "label": "現在分詞",
+    "form": "avenging"
+   }
+  ]
  },
  {
   "w": "bestow",
@@ -313246,24 +315082,27 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "授予；赐予",
-    "en": "To formally give someone an honour, gift, or benefit."
+    "ja": "授ける、贈る",
+    "en": "to give something valuable or important to someone, such as an honour",
+    "note": "bestow A on/upon Bの形で使う",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "The club bestowed a special award on our coach.",
-    "zh": "俱乐部向我们的教练颁发了一项特别奖。"
+    "ja": "クラブは私たちのコーチに特別な賞を贈った。"
    },
    {
     "en": "Universities often bestow honorary degrees on individuals who have made outstanding contributions to society.",
-    "zh": "大学常向为社会作出杰出贡献的人士授予荣誉学位。"
+    "ja": "大学は、社会に傑出した貢献をした人物に名誉学位を授与することがよくある。"
    }
   ],
   "col": [
-   "bestow an honour on｜授予……荣誉",
-   "bestow a gift on｜向……赠礼",
-   "bestow a title upon｜授予……称号"
+   "bestow an honour on｜〜に栄誉を授ける",
+   "bestow a gift on｜〜に贈り物をする",
+   "bestow a title upon｜〜に称号を与える"
   ],
   "fam": [
    "bestowal (n.)"
@@ -313273,11 +315112,33 @@
    "grant"
   ],
   "ant": [],
-  "tip": "正式用语：bestow sth on/upon sb。",
+  "tip": "改まった語。bestow 物 on/upon 人の形で使う。",
   "cefr": "C2",
   "topic": "society",
   "note": "",
-  "id": "bestow"
+  "id": "bestow",
+  "syl": [
+   "be",
+   "stow"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "bestows"
+   },
+   {
+    "label": "過去形",
+    "form": "bestowed"
+   },
+   {
+    "label": "過去分詞",
+    "form": "bestowed"
+   },
+   {
+    "label": "現在分詞",
+    "form": "bestowing"
+   }
+  ]
  },
  {
   "w": "deplore",
@@ -313286,24 +315147,26 @@
   "senses": [
    {
     "pos": "v.",
-    "zh": "强烈谴责；痛惜",
-    "en": "To strongly disapprove of something or deeply regret it"
+    "ja": "強く非難する、遺憾に思う",
+    "en": "to feel or express strong disapproval or deep regret about something",
+    "gram": "他動詞",
+    "reg": "フォーマル"
    }
   ],
   "ex": [
    {
     "en": "Our neighbours deplore the dumping of rubbish beside the river.",
-    "zh": "邻居们强烈谴责在河边倾倒垃圾的行为。"
+    "ja": "近所の人たちは、川のそばにごみが捨てられることを嘆かわしく思っている。"
    },
    {
     "en": "Many educators deplore funding cuts that limit access to music and art lessons in public schools.",
-    "zh": "许多教育工作者强烈反对削减经费，因为这限制了公立学校学生接受音乐和美术教育的机会。"
+    "ja": "多くの教育者は、公立学校で音楽や美術の授業を受ける機会を狭める予算削減を遺憾に思っている。"
    }
   ],
   "col": [
-   "deplore violence｜强烈谴责暴力",
-   "deplore the lack of｜对缺乏……深感遗憾",
-   "deplore the decision｜强烈反对该决定"
+   "deplore violence｜暴力を強く非難する",
+   "deplore the lack of｜〜の欠如を遺憾に思う",
+   "deplore the decision｜その決定を強く批判する"
   ],
   "fam": [
    "deplorable (adj.)",
@@ -313316,11 +315179,33 @@
   "ant": [
    "approve"
   ],
-  "tip": "正式及物动词，后直接接所谴责或痛惜的事。",
+  "tip": "改まった他動詞。非難や嘆きの対象を直接目的語にとる。",
   "cefr": "C2",
   "topic": "society",
   "note": "",
-  "id": "deplore"
+  "id": "deplore",
+  "syl": [
+   "de",
+   "plore"
+  ],
+  "forms": [
+   {
+    "label": "三人称単数現在",
+    "form": "deplores"
+   },
+   {
+    "label": "過去形",
+    "form": "deplored"
+   },
+   {
+    "label": "過去分詞",
+    "form": "deplored"
+   },
+   {
+    "label": "現在分詞",
+    "form": "deploring"
+   }
+  ]
  },
  {
   "w": "splint",
@@ -313329,38 +315214,67 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "固定伤肢的夹板",
-    "en": "A rigid support that keeps an injured body part still."
+    "ja": "添え木、副木",
+    "en": "a rigid support strapped to an injured limb to keep it still",
+    "gram": "可算",
+    "reg": "専門"
    },
    {
     "pos": "v.",
-    "zh": "用夹板固定",
-    "en": "To support an injured body part with a splint."
+    "ja": "添え木で固定する",
+    "en": "to support a broken or injured body part with a rigid support",
+    "gram": "他動詞",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "The nurse fitted a splint to my injured finger.",
-    "zh": "护士给我受伤的手指装上了夹板。"
+    "ja": "看護師は私のけがをした指に添え木を当てた。"
    },
    {
     "en": "Using a splint to stabilise an injured limb can prevent further damage while patients await medical treatment.",
-    "zh": "在患者等待医疗救治时，用夹板固定受伤的肢体可以防止进一步损伤。"
+    "ja": "添え木で負傷した手足を固定すれば、患者が治療を待つ間に悪化するのを防げる。"
    }
   ],
   "col": [
-   "wear a splint｜戴夹板",
-   "apply a splint｜上夹板",
-   "a wrist splint｜腕部夹板"
+   "wear a splint｜添え木をつけている",
+   "apply a splint｜添え木を当てる",
+   "a wrist splint｜手首用の添え木"
   ],
   "fam": [],
   "syn": [],
   "ant": [],
-  "tip": "指固定伤处的夹板；不同于石膏固定用的cast。",
+  "tip": "splint は取り外せることが多い固定具。ギプスは cast と言う。",
   "cefr": "C2",
   "topic": "health",
   "note": "",
-  "id": "splint"
+  "id": "splint",
+  "syl": [
+   "splint"
+  ],
+  "forms": [
+   {
+    "label": "複数形",
+    "form": "splints"
+   },
+   {
+    "label": "三人称単数現在",
+    "form": "splints"
+   },
+   {
+    "label": "過去形",
+    "form": "splinted"
+   },
+   {
+    "label": "過去分詞",
+    "form": "splinted"
+   },
+   {
+    "label": "現在分詞",
+    "form": "splinting"
+   }
+  ]
  },
  {
   "w": "infantry",
@@ -313369,35 +315283,43 @@
   "senses": [
    {
     "pos": "n.",
-    "zh": "步兵；步兵部队",
-    "en": "soldiers trained to fight on foot"
+    "ja": "歩兵、歩兵部隊",
+    "en": "soldiers who fight on foot rather than in vehicles or on horses",
+    "note": "集合的に歩兵全体を指す",
+    "gram": "不可算",
+    "reg": "専門"
    }
   ],
   "ex": [
    {
     "en": "The infantry marched past our village early this morning.",
-    "zh": "今天一大早，步兵部队行军经过了我们的村庄。"
+    "ja": "歩兵部隊が今朝早く私たちの村を行進していった。"
    },
    {
     "en": "Although military technology has changed considerably, infantry still play an important role in many countries' defence forces.",
-    "zh": "尽管军事技术发生了巨大变化，步兵在许多国家的国防力量中仍发挥着重要作用。"
+    "ja": "軍事技術は大きく変わったが、歩兵は今も多くの国の防衛力で重要な役割を果たしている。"
    }
   ],
   "col": [
-   "infantry unit｜步兵分队",
-   "infantry division｜步兵师",
-   "infantry training｜步兵训练"
+   "infantry unit｜歩兵部隊",
+   "infantry division｜歩兵師団",
+   "infantry training｜歩兵の訓練"
   ],
   "fam": [
    "infantryman (n.)"
   ],
   "syn": [],
   "ant": [],
-  "tip": "集合名词，指步兵整体，不用an infantry指一个人。",
+  "tip": "集合名詞なので an infantry で1人を指さない。1人は infantryman。",
   "cefr": "C2",
   "topic": "history",
   "note": "",
-  "id": "infantry"
+  "id": "infantry",
+  "syl": [
+   "in",
+   "fan",
+   "try"
+  ]
  },
  {
   "w": "staphylococcus",

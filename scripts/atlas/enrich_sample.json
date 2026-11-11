@@ -1,0 +1,89 @@
+[
+  {
+    "id": "dove",
+    "syl": ["dove"],
+    "senses": [
+      {"pos": "n.", "ja": "ハト（鳩）", "en": "a small plump bird, often used as a symbol of peace", "gram": "可算", "note": "白いハトは平和の象徴としてよく使われます"},
+      {"pos": "n.", "ja": "ハト派、穏健派", "en": "a person who prefers talks and compromise to military force", "gram": "可算", "reg": "比喩", "note": "政治用語。強硬派の hawk（タカ派）の反対"},
+      {"pos": "n.", "ja": "心優しく純真な人、愛する人", "en": "a gentle, innocent person, or a loving name for someone", "gram": "可算", "reg": "古風", "note": "文学作品や愛称で見られ、現代の会話ではまれ"},
+      {"pos": "v.", "ja": "dive の過去形（米）", "en": "the US past tense of dive: jumped or plunged head first", "gram": "他動詞/自動詞", "reg": "米", "note": "英国英語では dived が一般的"}
+    ],
+    "ex_ja": [
+      "白いハトが庭の塀にそっと降り立った。",
+      "政治的なハト派は、国際紛争は軍事介入ではなく交渉で解決すべきだと主張する。"
+    ],
+    "col": ["a white dove｜白いハト", "a symbol of peace｜平和の象徴", "a political dove｜政治的なハト派"],
+    "tip": "政治では、強硬策を主張する hawk（タカ派）の反対語。",
+    "forms": [{"label": "複数形", "form": "doves"}],
+    "gram": "動詞の dove は dive の米国式の過去形（He dove into the pool.）。英国英語やフォーマルな文では dived を使います。"
+  },
+  {
+    "id": "lead",
+    "syl": ["lead"],
+    "senses": [
+      {"pos": "v.", "ja": "導く、案内する、〜につながる", "en": "to guide people, or to cause something to happen", "gram": "他動詞/自動詞", "note": "lead to の後ろには結果が来ます: lead to problems"},
+      {"pos": "v.", "ja": "先頭に立つ、リードする", "en": "to be ahead of others in a race or competition", "gram": "他動詞/自動詞"},
+      {"pos": "n.", "ja": "首位、リード、優位", "en": "the position of being ahead of others", "gram": "可算", "note": "take / have / hold と一緒によく使われます"},
+      {"pos": "n.", "ja": "主役、主演", "en": "the main part in a play or film, or the person who plays it", "gram": "可算", "note": "lead role は「主役」"},
+      {"pos": "n.", "ja": "鉛", "en": "a soft, heavy, grey metal that can be poisonous", "gram": "不可算", "note": "発音は /led/。動詞の lead /liːd/ とは綴りが同じで発音が違います"}
+    ],
+    "ex_ja": [
+      "ガイドは私たちを無事に森の中へ案内してくれた。",
+      "公共交通機関の便が悪いと、自家用車への依存が高まるおそれがある。"
+    ],
+    "col": ["lead to｜〜につながる、〜を引き起こす", "lead a team｜チームを率いる", "take the lead｜主導権を握る、リードする", "lead poisoning｜鉛中毒"],
+    "tip": "名詞「鉛」は /led/、動詞は /liːd/。過去形・過去分詞 led は /led/。",
+    "forms": [
+      {"label": "三人称単数現在", "form": "leads"},
+      {"label": "現在分詞", "form": "leading"},
+      {"label": "過去形", "form": "led"},
+      {"label": "過去分詞", "form": "led"}
+    ],
+    "gram": "動詞は /liːd/、不規則変化の led は /led/ で、名詞「鉛」と同じ発音になります。"
+  },
+  {
+    "id": "bank",
+    "syl": ["bank"],
+    "senses": [
+      {"pos": "n.", "ja": "銀行", "en": "an organisation that holds money and provides financial services", "gram": "可算"},
+      {"pos": "n.", "ja": "土手、川岸、岸", "en": "land along the edge of a river or lake", "gram": "可算", "note": "river bank は「川岸」、on the bank は「岸辺で」"},
+      {"pos": "n.", "ja": "貯蔵所、バンク", "en": "a store of something kept ready for later use", "gram": "可算", "note": "blood bank、food bank、data bank などで使われます"},
+      {"pos": "v.", "ja": "預金する", "en": "to put money into an account at a bank", "gram": "他動詞/自動詞", "note": "bank with 〜 は「〜に口座を持つ」という口語表現"},
+      {"pos": "v.", "ja": "（飛行機が）傾いて旋回する", "en": "to tilt to one side while turning in the air", "gram": "自動詞", "reg": "専門"}
+    ],
+    "ex_ja": [
+      "私は口座を開くために銀行へ行った。",
+      "銀行は、小規模事業者や新しい起業家に低利の融資を行うことで、地域経済の発展を支えることができる。"
+    ],
+    "col": ["bank account｜銀行口座", "bank loan｜銀行ローン", "river bank｜川岸", "bank statement｜銀行取引明細書"],
+    "tip": "川岸は on the bank、銀行の中は at / in the bank。",
+    "forms": [
+      {"label": "複数形", "form": "banks"},
+      {"label": "三人称単数現在", "form": "banks"},
+      {"label": "現在分詞", "form": "banking"},
+      {"label": "過去形", "form": "banked"},
+      {"label": "過去分詞", "form": "banked"}
+    ]
+  },
+  {
+    "id": "learn",
+    "syl": ["learn"],
+    "senses": [
+      {"pos": "v.", "ja": "学ぶ、習う、身につける", "en": "to gain knowledge or a skill by study, practice or experience", "gram": "他動詞/自動詞", "note": "名詞、to do、how to do のいずれも後ろに続けられます"},
+      {"pos": "v.", "ja": "知る、聞き知る", "en": "to find out about something, often news", "gram": "他動詞", "reg": "フォーマル", "note": "learn that ... / learn of ... の形でよく使います"}
+    ],
+    "ex_ja": [
+      "祖父は近所のプールで泳ぎを習っている。",
+      "学生は、バラバラの事実を暗記するよりも、新しい知識を実際の問題に応用するときのほうが、効果的に学べることが多い。"
+    ],
+    "col": ["learn to drive｜運転を習う", "learn from mistakes｜失敗から学ぶ", "learn by heart｜暗記する", "learn about｜〜について知る"],
+    "tip": "learn to do は「〜できるようになる」。過去形は learnt も learned も可。",
+    "forms": [
+      {"label": "三人称単数現在", "form": "learns"},
+      {"label": "現在分詞", "form": "learning"},
+      {"label": "過去形", "form": "learned", "note": "英国英語では learnt も可"},
+      {"label": "過去分詞", "form": "learned", "note": "英国英語では learnt も可"}
+    ],
+    "gram": "learned と learnt はどちらも使えますが、米国英語ではほぼ learned のみ。形容詞の learned は /ˈlɜːnɪd/ と読み、「博学な」という意味です。"
+  }
+]

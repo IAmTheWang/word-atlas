@@ -23,4 +23,5 @@ The material above is offered under CC BY 4.0, to the extent of the rights the m
 - 单个英文单词与通用词表本身不主张专有权。This project claims no exclusive rights over English words or the bare headword list.
 - 内容由 AI 模型按项目规范生成（文本：大语言模型；插画：图像模型；录音：ElevenLabs 合成语音），经过自动校验，未逐条人工审校，按现状提供，不作准确性担保。Content was generated with AI models under the project's specifications, checked automatically, not proofread entry by entry, and is provided as-is without warranty.
 - 录音授权只涉及这些完成的音频文件，不包含底层声音模型、声音身份或任何人的肖像、人格权，也不表示声音提供方为本项目背书。英音声音为 ElevenLabs “Alice”，美音为 “Sarah”。The recording license covers the finished audio files only, not the underlying voice models or voice identities, and implies no endorsement. Voices: ElevenLabs "Alice" (UK) and "Sarah" (US).
+- 英、美音标取自有道词典（仅音标这一事实信息；释义与例句均为原创）。有道词典及其内容不在本项目授权范围内。Phonetic transcriptions (the bare IPA strings only) come from Youdao Dictionary; all definitions and sentences are original. Youdao and its content are outside this license.
 - 不是官方雅思（IELTS）词表，与雅思考试主办方无关。Not an official IELTS list and not affiliated with the IELTS partners.

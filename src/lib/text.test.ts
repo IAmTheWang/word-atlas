@@ -21,5 +21,5 @@ test("gaps the sentence for cloze questions", () => {
 
 test("normalizes typography from mobile keyboards", () => {
   assert.equal(normalize("  Don’t  "), "don't");
-  assert.deepEqual(splitPair("in principle｜原则上"), { en: "in principle", zh: "原则上" });
+  assert.deepEqual(splitPair("in principle｜原則として"), { en: "in principle", ja: "原則として" });
 });

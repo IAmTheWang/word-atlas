@@ -18,13 +18,14 @@ import shutil
 import subprocess
 
 from common import FORGE, ROOT
+from dataset import write_csv
 
 TOPICS = [
-    ("education", "教育"), ("work", "职场"), ("technology", "科技"), ("science", "科学"),
-    ("environment", "环境"), ("health", "健康"), ("society", "社会"), ("government", "政法"),
-    ("economy", "经济"), ("media", "媒体"), ("arts", "艺术"), ("travel", "旅行"),
-    ("city", "城市"), ("nature", "自然"), ("daily", "生活"), ("emotion", "情感"),
-    ("thinking", "思维"), ("sport", "运动"), ("history", "历史"),
+    ("education", "教育"), ("work", "仕事"), ("technology", "テクノロジー"), ("science", "科学"),
+    ("environment", "環境"), ("health", "健康"), ("society", "社会"), ("government", "政治・法律"),
+    ("economy", "経済"), ("media", "メディア"), ("arts", "芸術"), ("travel", "旅行"),
+    ("city", "都市"), ("nature", "自然"), ("daily", "生活"), ("emotion", "感情"),
+    ("thinking", "思考"), ("sport", "スポーツ"), ("history", "歴史"),
 ]
 TOPIC_INDEX = {k: i for i, (k, _) in enumerate(TOPICS)}
 CEFR = ["A1", "A2", "B1", "B2", "C1", "C2"]
@@ -40,17 +41,19 @@ def slugify(word):
 
 def clean_entry(e):
     senses = [
-        {"pos": (s.get("pos") or "").strip(), "zh": (s.get("zh") or "").strip(), "en": (s.get("en") or "").strip()}
+        {k: ((s.get("ja") or s.get("zh")) if k == "ja" else s.get(k) or "").strip() for k in ("pos", "ja", "en", "note", "gram", "reg") if k in ("pos", "ja", "en") or (s.get(k) or "").strip()}
         for s in (e.get("senses") or [])
-        if s.get("zh")
-    ][:3]
+        if s.get("ja") or s.get("zh")
+    ][:5]
     ex = [
-        {"en": (x.get("en") or "").strip(), "zh": (x.get("zh") or "").strip()}
+        {"en": (x.get("en") or "").strip(), "ja": (x.get("ja") or x.get("zh") or "").strip()}
         for x in (e.get("ex") or [])
         if x.get("en")
     ][:2]
     split = lambda xs: [x.strip() for x in (xs or []) if isinstance(x, str) and x.strip()]
+    extra = {k: e[k] for k in ("syl", "forms", "gram", "etym") if e.get(k)}
     return {
+        **extra,
         "w": (e.get("w") or e["src"]).strip(),
         "uk": (e.get("uk") or "").strip(),
         "us": (e.get("us") or "").strip(),
@@ -158,18 +161,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     public = [{k: v for k, v in c.items() if not k.startswith("_") and k != "m"} for c in entries]
     (DATA / "word-atlas.json").write_text(json.dumps(public, ensure_ascii=False, indent=1))
-    with open(DATA / "word-atlas.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["id", "word", "ipa_uk", "ipa_us", "cefr", "topic", "meanings_zh", "definition_en",
-                    "example1_en", "example1_zh", "example2_en", "example2_zh", "collocations", "word_family",
-                    "synonyms", "antonyms", "tip_zh"])
-        for c in public:
-            ex = c["ex"] + [{"en": "", "zh": ""}] * (2 - len(c["ex"]))
-            w.writerow([c["id"], c["w"], c["uk"], c["us"], c["cefr"], c["topic"],
-                        " | ".join(f'{s["pos"]} {s["zh"]}' for s in c["senses"]),
-                        " | ".join(s["en"] for s in c["senses"]),
-                        ex[0]["en"], ex[0]["zh"], ex[1]["en"], ex[1]["zh"],
-                        " ; ".join(c["col"]), " ; ".join(c["fam"]), ", ".join(c["syn"]), ", ".join(c["ant"]), c["tip"]])
+    write_csv(public)
     (FORGE / "build-warnings.json").write_text(json.dumps(warnings, ensure_ascii=False, indent=1))
     print(json.dumps({k: meta[k] for k in ("count", "examples", "illustrated", "voiced")}), "warnings", len(warnings))
 

@@ -2,17 +2,19 @@
  * Sound design: short UI cues and looping ambience, played through Web Audio so
  * loops are gapless and the ambience can duck under pronunciations.
  */
+import { store } from "../store/store";
+
 const BASE = `${import.meta.env.BASE_URL}sfx/`;
 
 export type Cue = "correct" | "wrong" | "flip" | "page" | "complete" | "streak" | "start" | "tap" | "key" | "twinkle" | "fly" | "ignite";
 export const AMBIENCE = [
-  { id: "stars", label: "星空音乐" },
-  { id: "rain", label: "雨天图书馆" },
-  { id: "sea", label: "清晨海岸" },
-  { id: "forest", label: "林间早晨" },
-  { id: "fire", label: "夜晚壁炉" },
-  { id: "voyage", label: "远航船舱" },
-  { id: "cafe", label: "安静咖啡馆" },
+  { id: "stars", label: "星空の音楽" },
+  { id: "rain", label: "雨の図書館" },
+  { id: "sea", label: "朝の海岸" },
+  { id: "forest", label: "森の朝" },
+  { id: "fire", label: "夜の暖炉" },
+  { id: "voyage", label: "航海の船室" },
+  { id: "cafe", label: "静かなカフェ" },
 ] as const;
 export type AmbienceId = (typeof AMBIENCE)[number]["id"];
 
@@ -74,6 +76,7 @@ export function preloadFiles(files: string[]) {
 
 /** Play any file from the sound folder; call from a user gesture so audio is allowed. */
 export async function playFile(file: string, gain = 0.6, delay = 0) {
+  if (store.get().settings.quiet) return;
   const c = audio();
   if (!c || !master) return;
   const buf = await load(file);
@@ -87,6 +90,7 @@ export async function playFile(file: string, gain = 0.6, delay = 0) {
 }
 
 export async function cue(name: Cue) {
+  if (store.get().settings.quiet) return;
   const c = audio();
   if (!c || !master) return;
   const buf = await load(`${name}.mp3`);

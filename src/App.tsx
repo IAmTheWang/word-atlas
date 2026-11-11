@@ -24,20 +24,27 @@ import { Toasts } from "./ui/Toast";
 
 const NAV: { page: Route["page"]; label: string; icon: typeof Compass }[] = [
   { page: "today", label: "今日", icon: Compass },
-  { page: "atlas", label: "图鉴", icon: BookOpen },
-  { page: "practice", label: "练习", icon: Keyboard },
-  { page: "me", label: "我的", icon: User },
+  { page: "atlas", label: "図鑑", icon: BookOpen },
+  { page: "practice", label: "練習", icon: Keyboard },
+  { page: "me", label: "マイページ", icon: User },
 ];
+
+const APP_TITLE = document.title;
 
 function useTheme() {
   const theme = useStore((s) => s.settings.theme);
+  const noArt = useStore((s) => s.settings.noArt);
   useEffect(() => {
     const root = document.documentElement;
     if (theme === "system") root.removeAttribute("data-theme");
     else root.setAttribute("data-theme", theme);
+    if (noArt) root.setAttribute("data-art", "off");
+    else root.removeAttribute("data-art");
     const dark = theme === "dark" || (theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#0D1120" : "#F6F1E7");
-  }, [theme]);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "quiet" ? "#FFFFFF" : dark ? "#0D1120" : "#F6F1E7");
+    // The quiet look is for the office: a plain tab title instead of the app name.
+    document.title = theme === "quiet" ? "Notes" : APP_TITLE;
+  }, [theme, noArt]);
   return theme;
 }
 
@@ -73,7 +80,7 @@ export default function App() {
         <Logo />
         <p>{error}</p>
         <button className="btn btn-primary" onClick={() => location.reload()}>
-          重新加载
+          再読み込み
         </button>
       </div>
     );
@@ -125,10 +132,10 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
     <div className={`app ${focus ? "is-focus" : ""}`}>
       {!focus && (
         <header className="topbar">
-          <a className="topbar-logo" href="#/" aria-label="词光 Word Atlas 首页">
+          <a className="topbar-logo" href="#/" aria-label="Word Atlas ホーム">
             <Logo />
           </a>
-          <nav className="topnav" aria-label="主导航">
+          <nav className="topnav" aria-label="メインナビゲーション">
             {NAV.map(({ page, label }) => (
               <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
                 {label}
@@ -136,16 +143,16 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             ))}
           </nav>
           <div className="topbar-tools">
-            <button className="search-pill" onClick={() => setPalette(true)} aria-label="搜索单词">
+            <button className="search-pill" onClick={() => setPalette(true)} aria-label="単語を検索">
               <Search size={17} />
-              <span>搜索单词</span>
+              <span>単語を検索</span>
               <kbd>⌘K</kbd>
             </button>
             <AmbiencePicker />
-            <button className="icon-btn" onClick={() => store.settings({ theme: dark ? "light" : "dark" })} aria-label={dark ? "切换到浅色" : "切换到深色"}>
+            <button className="icon-btn" onClick={() => store.settings({ theme: dark ? "light" : "dark" })} aria-label={dark ? "ライトモードに切り替え" : "ダークモードに切り替え"}>
               {dark ? <Sun size={19} /> : <Moon size={19} />}
             </button>
-            <a className="icon-btn hide-sm" href="#/about" aria-label="关于与开源" title="关于与开源">
+            <a className="icon-btn hide-sm" href="#/about" aria-label="概要とオープンソース" title="概要とオープンソース">
               <Github size={19} />
             </a>
           </div>
@@ -165,17 +172,17 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         <footer className="footer">
           <Logo compact />
           <p>
-            一词一画，点亮雅思 · 免费开源 ·{" "}
+            覚えるたびに、星がひとつ灯る。 · 無料・オープンソース ·{" "}
             <a href={REPO_URL} target="_blank" rel="noreferrer">
               GitHub
             </a>{" "}
-            · <a href="#/about">关于</a>
+            · <a href="#/about">概要</a>
           </p>
         </footer>
       )}
 
       {!focus && (
-        <nav className="tabbar" aria-label="主导航">
+        <nav className="tabbar" aria-label="メインナビゲーション">
           {NAV.map(({ page, label, icon: Icon }) => (
             <a key={page} href={page === "today" ? "#/" : `#/${page}`} className={route.page === page ? "is-on" : ""} aria-current={route.page === page ? "page" : undefined}>
               <Icon size={22} strokeWidth={route.page === page ? 2.1 : 1.7} />
@@ -222,7 +229,7 @@ function WordSheet({ id }: { id: string | null }) {
     return () => window.removeEventListener("keydown", on);
   }, [id, neighbor]);
   return (
-    <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 词条` : "词条"} wide>
+    <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 見出し語` : "見出し語"} wide>
       {entry ? (
         <EntryView key={entry.id} entry={entry} />
       ) : error ? (
@@ -231,14 +238,14 @@ function WordSheet({ id }: { id: string | null }) {
         <span className="spinner" />
       )}
       {ref && (
-        <nav className="sheet-nav" aria-label="切换词条">
-          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label="上一个">
+        <nav className="sheet-nav" aria-label="見出し語を切り替え">
+          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label="前へ">
             <ChevronLeft size={20} />
           </button>
           <span>
             {(ref.order + 1).toLocaleString()} / {atlas.count.toLocaleString()}
           </span>
-          <button className="icon-btn" onClick={() => neighbor(1)} disabled={ref.order >= atlas.count - 1} aria-label="下一个">
+          <button className="icon-btn" onClick={() => neighbor(1)} disabled={ref.order >= atlas.count - 1} aria-label="次へ">
             <ChevronRight size={20} />
           </button>
         </nav>

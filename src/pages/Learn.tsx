@@ -6,7 +6,7 @@ import { play, stopAudio } from "../lib/audio";
 import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
 import { go } from "../lib/router";
-import { gap, normalize } from "../lib/text";
+import { gap, hashSeed, normalize } from "../lib/text";
 import { answer, advance, buildSession, gradeFor, sessionStats } from "../store/session";
 import { Rating } from "../store/srs";
 import { store, useStore, type ActiveSession, type QuizKind, type Step } from "../store/store";
@@ -64,7 +64,7 @@ function Runner({ session }: { session: ActiveSession }) {
   return (
     <div className="learn">
       <header className="learn-top">
-        <button className="icon-btn" onClick={exit} aria-label="暂停并返回">
+        <button className="icon-btn" onClick={exit} aria-label="一時停止して戻る">
           <X size={22} />
         </button>
         <div className="learn-progress" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={session.index}>
@@ -94,8 +94,8 @@ function Intro({ step }: { step: Step }) {
   const settings = useStore((s) => s.settings);
   const elapsed = useStepTimer();
   useEffect(() => {
-    if (entry && settings.autoplay) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
-  }, [entry, atlas, settings.autoplay, settings.accent]);
+    if (entry && settings.autoplay && !settings.quiet) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
+  }, [entry, atlas, settings.autoplay, settings.quiet, settings.accent]);
   const next = useCallback(() => {
     stopAudio();
     if (store.get().settings.sfx) void cue("flip");
@@ -106,15 +106,15 @@ function Intro({ step }: { step: Step }) {
   return (
     <div className="intro">
       <p className="stage-label">
-        <span className="dot dot-new" /> 初次见面
+        <span className="dot dot-new" /> はじめまして
       </p>
       <EntryView entry={entry} mode="intro" />
       <footer className="learn-actions">
         <button className="btn btn-primary btn-xl" onClick={next} autoFocus>
-          认识了 <ArrowRight size={20} />
+          覚えた <ArrowRight size={20} />
         </button>
         <span className="hint-keys">
-          <kbd>Enter</kbd> 继续
+          <kbd>Enter</kbd> 次へ
         </span>
       </footer>
     </div>
@@ -122,10 +122,12 @@ function Intro({ step }: { step: Step }) {
 }
 
 const KIND_LABEL: Record<QuizKind, string> = {
-  meaning: "它是什么意思？",
-  picture: "看图，补全这句话",
-  listen: "听，是哪个词？",
-  spell: "拼出这个词",
+  meaning: "どんな意味？",
+  picture: "絵を見て、文を完成させてください",
+  listen: "聞こえた単語は？",
+  spell: "綴りを入力",
+  cloze: "文を完成させてください",
+  define: "どの単語の意味ですか？",
 };
 
 function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: ActiveSession }) {
@@ -149,7 +151,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
       }
       if (settings.sfx) void cue(correct ? "correct" : "wrong");
       answer(atlas, step, correct, gradeFor(step.kind, correct, ms, hints > 0), value);
-      if (entry) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
+      if (entry && !settings.quiet) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
     },
     [pending, elapsed, settings, atlas, step, hints, entry],
   );
@@ -160,8 +162,8 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
   }, [elapsed]);
 
   useEffect(() => {
-    if (step.kind === "listen" && entry && !pending) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
-  }, [step.kind, entry, atlas, settings.accent, pending]);
+    if (step.kind === "listen" && entry && !pending && !settings.quiet) void play(atlas.audio(entry, settings.accent), entry.w, settings.accent);
+  }, [step.kind, entry, atlas, settings.accent, settings.quiet, pending]);
 
   const keys: Record<string, () => void> = {};
   if (pending) {
@@ -174,12 +176,15 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
 
   if (!entry) return <span className="spinner" />;
   const sentence = entry.ex[0] ? gap(entry.ex[0].en, entry.w) : null;
+  // Definition questions rotate through a word's senses so each look tests a different meaning.
+  const defs = entry.senses.filter((s) => s.en);
+  const sense = defs.length ? defs[hashSeed(`${step.id}${session.id}${session.index}`) % defs.length] : entry.senses[0];
 
   return (
     <div className={`quiz quiz-${step.kind} ${pending ? (pending.correct ? "is-right" : "is-wrong") : ""}`}>
       <p className="stage-label">
         <span className={`dot ${step.retry ? "dot-retry" : "dot-review"}`} />
-        {step.retry ? "再见一面 · " : ""}
+        {step.retry ? "もう一度 · " : ""}
         {KIND_LABEL[step.kind]}
       </p>
 
@@ -203,20 +208,50 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
                   {sentence.after}
                 </>
               ) : (
-                entry.senses[0].zh
+                entry.senses[0].ja
               )}
             </p>
-            {sentence && pending && <p className="cloze-zh">{entry.ex[0].zh}</p>}
+            {sentence && pending && <p className="cloze-zh" lang="ja">{entry.ex[0].ja}</p>}
+          </div>
+        )}
+        {step.kind === "cloze" && (
+          <div className="prompt-cloze">
+            <p className="cloze cloze-lg" lang="en">
+              {sentence ? (
+                <>
+                  {sentence.before}
+                  <span className="blank">{pending ? sentence.hidden : "　　　"}</span>
+                  {sentence.after}
+                </>
+              ) : (
+                entry.senses[0].ja
+              )}
+            </p>
+            <p className="cloze-pos">
+              <span className="pos">{entry.senses[0].pos}</span>
+            </p>
+            {sentence && pending && <p className="cloze-zh" lang="ja">{entry.ex[0].ja}</p>}
+          </div>
+        )}
+        {step.kind === "define" && (
+          <div className="prompt-define">
+            <p className="define-en" lang={sense.en ? "en" : "ja"}>
+              {sense.en || sense.ja}
+            </p>
+            <p className="cloze-pos">
+              <span className="pos">{sense.pos}</span>
+              頭文字 <b lang="en">{entry.w[0]}</b>
+            </p>
           </div>
         )}
         {step.kind === "listen" && (
           <div className="prompt-listen">
-            <button className="listen-orb" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent)} aria-label="再听一遍">
+            <button className="listen-orb" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent)} aria-label="もう一度聞く">
               <Volume2 size={40} strokeWidth={1.6} />
               <span />
             </button>
             <button className="link" onClick={() => play(atlas.audio(entry, settings.accent), entry.w, settings.accent, 0.7)}>
-              慢速再听
+              ゆっくり再生
             </button>
           </div>
         )}
@@ -235,7 +270,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
               <li key={o.id}>
                 <button className={`option ${cls}`} data-option={o.id} onClick={() => submit(o.id, isAnswer)} disabled={!!pending}>
                   <kbd>{i + 1}</kbd>
-                  <span lang={step.kind === "meaning" ? "zh" : "en"}>{step.kind === "meaning" ? o.zh : o.word}</span>
+                  <span lang={step.kind === "meaning" ? "ja" : "en"}>{step.kind === "meaning" ? o.ja : o.word}</span>
                   {pending && isAnswer && <Check size={20} className="option-mark" />}
                   {pending && chosen && !isAnswer && <X size={20} className="option-mark" />}
                 </button>
@@ -260,7 +295,7 @@ function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hint
       <Illustration src={atlas.img(entry)} word={entry.w} topic={refw.topic} eager className="spell-art" />
       <div>
         <p className="spell-zh">
-          <span className="pos">{entry.senses[0].pos}</span> {entry.senses[0].zh}
+          <span className="pos">{entry.senses[0].pos}</span> {entry.senses[0].ja}
         </p>
         {sentence && (
           <p className="cloze cloze-sm" lang="en">
@@ -269,7 +304,7 @@ function SpellPrompt({ entry, refw, hints }: { entry: Entry; refw: WordRef; hint
             {sentence.after}
           </p>
         )}
-        <Speak url={atlas.audio(entry, accent)} text={entry.w} accent={accent} size="sm" label="听发音" />
+        <Speak url={atlas.audio(entry, accent)} text={entry.w} accent={accent} size="sm" label="発音を聞く" />
       </div>
     </div>
   );
@@ -315,16 +350,16 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
         autoComplete="off"
         spellCheck={false}
         enterKeyHint="done"
-        aria-label={`拼写，${target.length} 个字符`}
+        aria-label={`スペリング、${target.length}文字`}
         readOnly={!!pending}
       />
       {!pending && (
         <div className="spell-actions">
           <button type="button" className="btn btn-ghost" onClick={onHint} disabled={hints >= target.length - 1}>
-            <Lightbulb size={17} /> 提示字母
+            <Lightbulb size={17} /> ヒント
           </button>
           <button type="submit" className="btn btn-primary" disabled={!value.trim()}>
-            确认 <kbd>Enter</kbd>
+            確定 <kbd>Enter</kbd>
           </button>
         </div>
       )}
@@ -341,7 +376,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
       <div className="feedback-inner">
         <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={refw.topic} className="feedback-art" />
         <div className="feedback-text">
-          <p className="feedback-verdict">{correct ? "答对了" : "没关系，记住它"}</p>
+          <p className="feedback-verdict">{correct ? "正解です" : "大丈夫、覚えましょう"}</p>
           <p className="feedback-word">
             <b lang="en">{entry.w}</b>
             <span className="ipa">{entry.uk || entry.us}</span>
@@ -349,7 +384,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
           <p className="feedback-zh">
             {entry.senses
               .slice(0, 2)
-              .map((s) => `${s.pos} ${s.zh}`)
+              .map((s) => `${s.pos} ${s.ja}`)
               .join("　")}
           </p>
           {entry.ex[0] && (
@@ -359,7 +394,7 @@ function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRe
           )}
         </div>
         <button ref={btn} className={`btn btn-xl ${correct ? "btn-sage" : "btn-terra"}`} onClick={onNext}>
-          继续 <ArrowRight size={20} />
+          次へ <ArrowRight size={20} />
         </button>
       </div>
     </div>
@@ -388,29 +423,29 @@ function Summary({ session }: { session: ActiveSession }) {
       <div className="summary-card">
         <div className="summary-sky">
           <Galaxy mode="mini" highlight={words.map((w) => w.id)} ignite />
-          <p>今天点亮了 {words.length} 颗星</p>
+          <p>今日 {words.length} 個の星を灯しました</p>
         </div>
-        <p className="eyebrow">这一程结束了</p>
-        <h1 className="display">{stats.accuracy >= 90 ? "漂亮的一程。" : stats.accuracy >= 60 ? "稳稳向前。" : "错过的，会再相遇。"}</h1>
+        <p className="eyebrow">今日の学習は終了です</p>
+        <h1 className="display">{stats.accuracy >= 90 ? "すばらしい学習でした。" : stats.accuracy >= 60 ? "着実に前進しています。" : "間違えた語は、また出会えます。"}</h1>
         <div className="summary-stats">
           <Ring value={stats.accuracy / 100} size={128} tone={stats.accuracy >= 60 ? "sage" : "terra"}>
             <b>{stats.accuracy}%</b>
-            <small>首次正确</small>
+            <small>初回正解</small>
           </Ring>
           <dl>
             <div>
-              <dt>新词</dt>
+              <dt>新出語</dt>
               <dd>{session.newIds.length}</dd>
             </div>
             <div>
-              <dt>复习</dt>
+              <dt>復習</dt>
               <dd>{session.reviewIds.length}</dd>
             </div>
             <div>
-              <dt>用时</dt>
+              <dt>所要時間</dt>
               <dd>
                 {minutes}
-                <small>分钟</small>
+                <small>分</small>
               </dd>
             </div>
           </dl>
@@ -420,22 +455,22 @@ function Summary({ session }: { session: ActiveSession }) {
             <li key={w.id} className={session.graded[w.id] === Rating.Again ? "is-wrong" : ""}>
               <Illustration src={atlas.img(w, "thumb")} word={w.word} topic={w.topic} />
               <span lang="en">{w.word}</span>
-              <small>{w.zh}</small>
+              <small lang="ja">{w.ja}</small>
             </li>
           ))}
         </ul>
-        <p className="summary-note">FSRS 已为每个词排好下次相遇的时间。答错的词，会更早回来。</p>
+        <p className="summary-note">FSRSが各単語の次の出会いの時期を決めました。間違えた語は、より早く戻ってきます。</p>
         <div className="summary-actions">
           {wrong.length > 0 && (
             <button className="btn btn-ghost" onClick={again}>
-              <RotateCcw size={18} /> 再练 {wrong.length} 个错词
+              <RotateCcw size={18} /> 間違えた {wrong.length} 語をもう一度
             </button>
           )}
           <button className="btn btn-ghost" onClick={() => shareSession(atlas, session)}>
-            <Share2 size={18} /> 分享成绩卡
+            <Share2 size={18} /> 成績カードを共有
           </button>
           <button className="btn btn-primary btn-xl" onClick={done} ref={(b) => b?.focus({ preventScroll: true })}>
-            完成 <ArrowRight size={20} />
+            完了 <ArrowRight size={20} />
           </button>
         </div>
       </div>

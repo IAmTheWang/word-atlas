@@ -70,6 +70,8 @@ Explore 19 topic groups, rotate and zoom the galaxy, and select a star to open i
 | **Review** | Let FSRS schedule reviews based on your history. Only the first answer counts toward accuracy. |
 | **Keep** | Track progress in the galaxy, practise typing separately, and export or restore your local progress. |
 
+**Study at work.** Under Me → Settings, one switch turns on work mode: silent study (no listening questions, nothing plays on its own), no illustrations (words are learned from text alone) and a plain white theme (no animation, tab title shows "Notes"). Today also offers a 3-minute session that reviews only the 10 most overdue words.
+
 **Local first.** Visited entries and media can be cached for offline use. Export a progress backup before moving to another device.
 
 Listen to a sample: **abandon** — [UK](public/atlas/audio/uk/abandon.mp3) · [US](public/atlas/audio/us/abandon.mp3) · [Example](public/atlas/audio/ex/abandon.mp3).

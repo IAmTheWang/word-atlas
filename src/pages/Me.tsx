@@ -33,6 +33,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
   }, [progress]);
 
   const set = (patch: Partial<Settings>) => store.settings(patch);
+  const work = settings.quiet && settings.noArt && settings.theme === "quiet";
   const download = () => {
     const blob = new Blob([exportBackup()], { type: "application/json" });
     const a = document.createElement("a");
@@ -42,74 +43,79 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   };
   const restore = async (f: File) => {
-    if (f.size > 30 * 1024 * 1024) return toast("文件太大，不像是学习备份。", "warn");
+    if (f.size > 30 * 1024 * 1024) return toast("ファイルが大きすぎます。学習バックアップではないようです。", "warn");
     const r = importBackup(await f.text());
-    toast(r.ok ? `已恢复 ${r.cards} 个词的记忆` : r.error, r.ok ? "ok" : "warn");
+    toast(r.ok ? `${r.cards} 語の記憶を復元しました` : r.error, r.ok ? "ok" : "warn");
   };
   const maxF = Math.max(1, ...stats.forecast);
 
   return (
     <div className="page me">
       <header className="page-head">
-        <p className="eyebrow">我的</p>
-        <h1 className="display">你的星空</h1>
+        <p className="eyebrow">マイページ</p>
+        <h1 className="display">あなたの星空</h1>
       </header>
 
       <section className="stat-strip">
         <div>
-          <dt>连续学习</dt>
+          <dt>連続学習</dt>
           <dd>
             {streakOf(progress.days)}
-            <small>天</small>
+            <small>日</small>
           </dd>
         </div>
         <div>
-          <dt>已点亮</dt>
+          <dt>点灯済み</dt>
           <dd>{stats.learned.toLocaleString()}</dd>
         </div>
         <div>
-          <dt>长期记住</dt>
+          <dt>長期記憶</dt>
           <dd>{stats.mastered.toLocaleString()}</dd>
         </div>
         <div>
-          <dt>首次正确率</dt>
+          <dt>初回正答率</dt>
           <dd>
             {stats.accuracy}
             <small>%</small>
           </dd>
         </div>
         <div>
-          <dt>学习时长</dt>
+          <dt>学習時間</dt>
           <dd>
             {stats.minutes}
-            <small>分钟</small>
+            <small>分</small>
           </dd>
         </div>
       </section>
 
       <div className="me-grid">
         <section className="panel">
-          <h3 className="eyebrow">过去 20 周</h3>
+          <h3 className="eyebrow">過去 20 週間</h3>
           <Heatmap days={progress.days} />
-          <p className="muted">一格是一天，颜色越深，那天答得越多。「长期记住」指记忆稳定度超过 21 天。</p>
+          <p className="muted">1 マスが 1 日で、色が濃いほどその日の回答数が多くなります。「長期記憶」は記憶の安定度が 21 日を超えた状態です。</p>
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">未来 7 天的复习量</h3>
+          <h3 className="eyebrow">今後 7 日間の復習量</h3>
           <ol className="forecast">
             {stats.forecast.map((n, i) => (
               <li key={i}>
                 <span style={{ height: `${(n / maxF) * 100}%` }} />
                 <b>{n}</b>
-                <small>{i === 0 ? "今天" : i === 1 ? "明天" : `+${i}`}</small>
+                <small>{i === 0 ? "今日" : i === 1 ? "明日" : `+${i}`}</small>
               </li>
             ))}
           </ol>
         </section>
 
         <section className="panel settings">
-          <h3 className="eyebrow">学习设置</h3>
-          <Field label="每日新词" hint="复习不设上限，算法只安排快要遗忘的词。">
+          <h3 className="eyebrow">学習設定</h3>
+          <Field label="仕事モード" hint="サイレント、イラストなし、シンプルな外観をワンタップでオンにします。個別に調整するには下のスイッチを使ってください。">
+            <button className={`btn ${work ? "btn-ghost" : "btn-primary"}`} onClick={() => set(work ? { quiet: false, noArt: false, theme: "system" } : { quiet: true, noArt: true, theme: "quiet" })}>
+              {work ? "オン（タップでオフ）" : "ワンタップでオン"}
+            </button>
+          </Field>
+          <Field label="1 日の新出語" hint="復習に上限はなく、忘れかけの単語だけがアルゴリズムで出題されます。">
             <div className="segmented">
               {[5, 10, 15, 20, 30].map((n) => (
                 <button key={n} className={settings.dailyNew === n ? "is-on" : ""} onClick={() => set({ dailyNew: n })}>
@@ -118,7 +124,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
               ))}
             </div>
           </Field>
-          <Field label="从哪个难度开始" hint="跳过已经熟悉的低级别词。">
+          <Field label="開始レベル" hint="すでに身についている下のレベルの単語を飛ばします。">
             <div className="segmented">
               {atlas.cefr.map((l, i) => (
                 <button key={l} className={settings.startLevel === i ? "is-on" : ""} onClick={() => set({ startLevel: i })}>
@@ -127,7 +133,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
               ))}
             </div>
           </Field>
-          <Field label="目标记忆率" hint="越高复习越频繁。90% 是大多数人的甜点。">
+          <Field label="目標記憶率" hint="高いほど復習の頻度が増えます。90% が多くの人にちょうどよい設定です。">
             <div className="segmented">
               {[0.85, 0.9, 0.95].map((n) => (
                 <button key={n} className={settings.retention === n ? "is-on" : ""} onClick={() => set({ retention: n })}>
@@ -136,23 +142,24 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
               ))}
             </div>
           </Field>
-          <Field label="发音">
+          <Field label="発音">
             <div className="segmented">
               <button className={settings.accent === "uk" ? "is-on" : ""} onClick={() => set({ accent: "uk" })}>
-                英式
+                イギリス英語
               </button>
               <button className={settings.accent === "us" ? "is-on" : ""} onClick={() => set({ accent: "us" })}>
-                美式
+                アメリカ英語
               </button>
             </div>
           </Field>
-          <Field label="外观">
+          <Field label="外観">
             <div className="segmented">
               {(
                 [
-                  ["system", "跟随系统"],
-                  ["light", "浅色"],
-                  ["dark", "深色"],
+                  ["system", "システムに合わせる"],
+                  ["light", "ライト"],
+                  ["dark", "ダーク"],
+                  ["quiet", "シンプル"],
                 ] as const
               ).map(([k, l]) => (
                 <button key={k} className={settings.theme === k ? "is-on" : ""} onClick={() => set({ theme: k })}>
@@ -161,18 +168,20 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
               ))}
             </div>
           </Field>
-          <Toggle label="自动播放发音" on={settings.autoplay} set={(v) => set({ autoplay: v })} />
-          <Toggle label="界面音效" on={settings.sfx} set={(v) => set({ sfx: v })} />
-          <Toggle label="开屏动画（每天一次）" on={settings.splash} set={(v) => set({ splash: v })} />
-          <Toggle label="复习时加入拼写题" on={settings.spell} set={(v) => set({ spell: v })} />
+          <Toggle label="サイレント学習" hint="リスニング問題を出さず、発音・操作音・環境音も自動では鳴りません。スピーカーをタップすれば手動で聞けます。" on={settings.quiet} set={(v) => set({ quiet: v })} />
+          <Toggle label="イラストを使わない" hint="すべてのイラストを隠し、絵を見る問題も出さず、文字だけで覚えます。" on={settings.noArt} set={(v) => set({ noArt: v })} />
+          <Toggle label="発音を自動再生" on={settings.autoplay} set={(v) => set({ autoplay: v })} />
+          <Toggle label="操作音" on={settings.sfx} set={(v) => set({ sfx: v })} />
+          <Toggle label="オープニングアニメーション（1 日 1 回）" on={settings.splash} set={(v) => set({ splash: v })} />
+          <Toggle label="復習にスペリング問題を加える" on={settings.spell} set={(v) => set({ spell: v })} />
           {privateAvailable && (
-            <Field label="词库" hint="私人词库只在本机开发服务器中可用，不会被打包发布。">
+            <Field label="語彙データ" hint="非公開の語彙データはローカルの開発サーバーでのみ使え、パッケージには含まれません。">
               <div className="segmented">
                 <button className={settings.dataset === "open" ? "is-on" : ""} onClick={() => set({ dataset: "open" })}>
-                  开放图鉴
+                  公開図鑑
                 </button>
                 <button className={settings.dataset === "private" ? "is-on" : ""} onClick={() => set({ dataset: "private" })}>
-                  私人 8000
+                  非公開 8000
                 </button>
               </div>
             </Field>
@@ -180,27 +189,27 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">数据</h3>
-          <p className="muted">进度只存在这台设备的浏览器里：没有账号，没有服务器。换设备时，导出备份再导入即可。</p>
-          {saveError && <p className="warn-text">浏览器拒绝保存（可能是隐私模式或空间已满）。请尽快导出备份。</p>}
+          <h3 className="eyebrow">データ</h3>
+          <p className="muted">進捗はこの端末のブラウザ内にだけ保存されます。アカウントもサーバーもありません。端末を替えるときは、バックアップをエクスポートしてインポートしてください。</p>
+          {saveError && <p className="warn-text">ブラウザが保存を拒否しました（プライベートモードか、空き容量不足の可能性があります）。早めにバックアップをエクスポートしてください。</p>}
           <div className="data-actions">
             <button className="btn btn-ghost" onClick={download}>
-              <Download size={18} /> 导出备份
+              <Download size={18} /> バックアップをエクスポート
             </button>
             <button className="btn btn-ghost" onClick={() => file.current?.click()}>
-              <Upload size={18} /> 导入备份
+              <Upload size={18} /> バックアップをインポート
             </button>
             <input ref={file} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && restore(e.target.files[0]).finally(() => (e.target.value = ""))} />
             <button
               className="btn btn-ghost btn-danger"
               onClick={() => {
-                if (confirm("确定清空这个词库的全部学习记录？此操作无法撤销，建议先导出备份。")) {
+                if (confirm("この語彙データの学習記録をすべて消去しますか？ この操作は取り消せません。先にバックアップをエクスポートすることをおすすめします。")) {
                   resetProgress();
-                  toast("学习记录已清空");
+                  toast("学習記録を消去しました");
                 }
               }}
             >
-              <RotateCcw size={18} /> 清空记录
+              <RotateCcw size={18} /> 記録を消去
             </button>
           </div>
         </section>
@@ -221,10 +230,13 @@ function Field({ label, hint, children }: { label: string; hint?: string; childr
   );
 }
 
-function Toggle({ label, on, set }: { label: string; on: boolean; set: (v: boolean) => void }) {
+function Toggle({ label, hint, on, set }: { label: string; hint?: string; on: boolean; set: (v: boolean) => void }) {
   return (
     <label className="field toggle">
-      <b>{label}</b>
+      <div>
+        <b>{label}</b>
+        {hint && <small>{hint}</small>}
+      </div>
       <input type="checkbox" role="switch" checked={on} onChange={(e) => set(e.target.checked)} />
       <span className="switch" aria-hidden="true" />
     </label>
@@ -245,9 +257,9 @@ function Heatmap({ days }: { days: Record<string, { r: number }> }) {
   }
   const lvl = (v: number) => (v === 0 ? 0 : v < 10 ? 1 : v < 25 ? 2 : v < 50 ? 3 : 4);
   return (
-    <div className="heatmap" role="img" aria-label="学习热力图">
+    <div className="heatmap" role="img" aria-label="学習ヒートマップ">
       {cells.map((c) => (
-        <span key={c.k} className={`h${c.future ? "x" : lvl(c.v)}`} title={`${c.k} · ${c.v} 题`} />
+        <span key={c.k} className={`h${c.future ? "x" : lvl(c.v)}`} title={`${c.k} · ${c.v} 問`} />
       ))}
     </div>
   );

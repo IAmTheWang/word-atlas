@@ -4,8 +4,8 @@ import { Rating } from "../store/srs";
 import type { ActiveSession } from "../store/store";
 import { toast } from "./Toast";
 
-const SERIF = '"Fraunces Variable", "Songti SC", "Noto Serif SC", Georgia, serif';
-const SANS = '-apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif';
+const SERIF = '"Fraunces Variable", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Songti SC", "Noto Serif SC", Georgia, serif';
+const SANS = '-apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif';
 
 const load = (src: string) =>
   new Promise<HTMLImageElement | null>((r) => {
@@ -59,22 +59,22 @@ export async function shareSession(atlas: Atlas, s: ActiveSession) {
     const d = new Date();
     ctx.fillStyle = "#8A8C96";
     ctx.font = `500 28px ${SANS}`;
-    ctx.fillText(`${d.getMonth() + 1}月${d.getDate()}日 · 今天点亮了 ${ids.length} 颗星`, pad, top - 24);
+    ctx.fillText(`${d.getMonth() + 1}月${d.getDate()}日 · 今日は ${ids.length} 個の星を灯しました`, pad, top - 24);
     ctx.fillStyle = "#1E2640";
     ctx.font = `600 64px ${SERIF}`;
-    ctx.fillText(`学了 ${ids.length} 个词，首次正确 ${st.accuracy}%`, pad, top + 52, W - pad * 2);
+    ctx.fillText(`${ids.length} 語を学習、初回正答率 ${st.accuracy}%`, pad, top + 52, W - pad * 2);
     const wrong = Object.values(s.graded).filter((g) => g === Rating.Again).length;
     ctx.font = `400 30px ${SANS}`;
     ctx.fillStyle = "#5A6075";
-    ctx.fillText(`新词 ${s.newIds.length} · 复习 ${s.reviewIds.length} · 需要再见面 ${wrong}`, pad, top + 112);
+    ctx.fillText(`新出 ${s.newIds.length} · 復習 ${s.reviewIds.length} · もう一度会う語 ${wrong}`, pad, top + 112);
     ctx.fillStyle = "rgba(30,38,64,.14)";
     ctx.fillRect(pad, H - 116, W - pad * 2, 2);
     ctx.fillStyle = "#1E2640";
     ctx.font = `600 34px ${SERIF}`;
-    ctx.fillText("词光 · Word Atlas", pad, H - 58);
+    ctx.fillText("Word Atlas", pad, H - 58);
     ctx.font = `400 26px ${SANS}`;
     ctx.fillStyle = "#8A8C96";
-    const tag = "一词一画，点亮雅思";
+    const tag = "覚えるたびに、星がひとつ灯る。";
     ctx.fillText(tag, W - pad - ctx.measureText(tag).width, H - 60);
     const blob = await new Promise<Blob | null>((r) => c.toBlob(r, "image/png"));
     if (!blob) throw new Error();
@@ -88,8 +88,8 @@ export async function shareSession(atlas: Atlas, s: ActiveSession) {
     a.download = file.name;
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    toast("成绩卡已保存", "ok");
+    toast("成績カードを保存しました", "ok");
   } catch {
-    toast("成绩卡生成失败", "warn");
+    toast("成績カードを作成できませんでした", "warn");
   }
 }

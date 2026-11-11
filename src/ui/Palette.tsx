@@ -8,13 +8,13 @@ import { Illustration } from "./Illustration";
 export function searchAtlas(atlas: Atlas, raw: string, limit = 40): WordRef[] {
   const q = raw.trim().toLowerCase();
   if (!q) return [];
-  const zh = /[一-鿿]/.test(q);
+  const jp = /[\u3040-\u30ff\u4e00-\u9fff]/.test(q);
   const hits: [number, WordRef][] = [];
   for (const w of atlas.words) {
     let score = 0;
-    if (zh) {
-      const i = w.zh.indexOf(q);
-      if (i >= 0) score = 60 - Math.min(40, i) - w.zh.length * 0.2;
+    if (jp) {
+      const i = w.ja.indexOf(q);
+      if (i >= 0) score = 60 - Math.min(40, i) - w.ja.length * 0.2;
     } else {
       const word = w.word.toLowerCase();
       if (word === q) score = 1000;
@@ -48,13 +48,13 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
   };
   return (
     <div className="palette-root" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="palette" role="dialog" aria-modal="true" aria-label="搜索单词">
+      <div className="palette" role="dialog" aria-modal="true" aria-label="単語を検索">
         <label className="palette-input">
           <Search size={20} />
           <input
             ref={input}
             value={q}
-            placeholder="搜索英文或中文，例如 serendipity / 环境"
+            placeholder="英語または日本語で検索（例：serendipity / 環境）"
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Escape") onClose();
@@ -90,15 +90,15 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
               <span className="palette-word" lang="en">
                 {w.word}
               </span>
-              <span className="palette-zh">{w.zh}</span>
+              <span className="palette-zh" lang="ja">{w.ja}</span>
               {i === sel && <CornerDownLeft size={15} className="palette-enter" />}
             </li>
           ))}
-          {q && !results.length && <li className="palette-empty">没有找到「{q}」</li>}
+          {q && !results.length && <li className="palette-empty">「{q}」は見つかりませんでした</li>}
           {!q && (
             <li className="palette-hint">
-              {atlas.count.toLocaleString()} 个词条 · 支持英文前缀与中文释义搜索 · <kbd>↑</kbd>
-              <kbd>↓</kbd> 选择 <kbd>↵</kbd> 打开
+              {atlas.count.toLocaleString()} 件の見出し語 · 英語の前方一致と日本語の意味で検索できます · <kbd>↑</kbd>
+              <kbd>↓</kbd> 選択 <kbd>↵</kbd> 開く
             </li>
           )}
         </ul>

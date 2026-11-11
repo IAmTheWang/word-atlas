@@ -16,14 +16,27 @@ interface IndexFile {
   words: IndexRow[];
 }
 
+/**
+ * Entries not yet translated still carry the old `zh` fields. Until the dataset is fully Japanese,
+ * show them as they are rather than leaving blanks; `ja` always wins when present.
+ */
+type Legacy<T> = T & { zh?: string };
+export function withJapanese(e: Entry): Entry {
+  return {
+    ...e,
+    senses: e.senses.map((s) => ({ ...s, ja: s.ja ?? (s as Legacy<typeof s>).zh ?? "" })),
+    ex: e.ex.map((x) => ({ ...x, ja: x.ja ?? (x as Legacy<typeof x>).zh ?? "" })),
+  };
+}
+
 export async function loadOpenAtlas(): Promise<Atlas> {
   const res = await fetch(url("index.json"));
-  if (!res.ok) throw new Error(`词库索引加载失败（${res.status}）`);
+  if (!res.ok) throw new Error(`語彙データの索引を読み込めませんでした（${res.status}）`);
   const idx = (await res.json()) as IndexFile;
   const words: WordRef[] = idx.words.map((r, order) => ({
     id: r[0],
     word: r[1],
-    zh: r[2],
+    ja: r[2],
     ipa: r[3],
     cefr: r[4],
     topic: r[5],
@@ -39,10 +52,10 @@ export async function loadOpenAtlas(): Promise<Atlas> {
     if (!p) {
       p = fetch(url(`entries/${n}.json`))
         .then((r) => {
-          if (!r.ok) throw new Error(`词条加载失败（${r.status}）`);
+          if (!r.ok) throw new Error(`見出し語を読み込めませんでした（${r.status}）`);
           return r.json() as Promise<Entry[]>;
         })
-        .then((list) => list.forEach((e) => cache.set(e.id, e)))
+        .then((list) => list.forEach((e) => cache.set(e.id, withJapanese(e))))
         .catch((e) => {
           pending.delete(n);
           throw e;
@@ -68,10 +81,10 @@ export async function loadOpenAtlas(): Promise<Atlas> {
       const hit = cache.get(id);
       if (hit) return hit;
       const ref = byId.get(id);
-      if (!ref) throw new Error(`没有找到词条 ${id}`);
+      if (!ref) throw new Error(`見出し語 ${id} が見つかりません`);
       await loadChunk(Math.floor(ref.order / idx.chunk));
       const e = cache.get(id);
-      if (!e) throw new Error(`没有找到词条 ${id}`);
+      if (!e) throw new Error(`見出し語 ${id} が見つかりません`);
       return e;
     },
     img: (ref, size = "full") =>
@@ -116,14 +129,14 @@ export async function loadPrivateAtlas(open: Atlas | null): Promise<Atlas | null
   const words: WordRef[] = cat.words.map((w, order) => {
     const twin = twins.get(w.word.toLowerCase());
     const pos = (w.meaning.match(/·\s*([a-z]+\.)\s*$/) || [])[1] || "";
-    const zh = w.meaning.replace(/\s*·\s*[a-z]+\.\s*$/, "");
+    const ja = w.meaning.replace(/\s*·\s*[a-z]+\.\s*$/, "");
     entries.set(w.id, {
       id: w.id,
       w: w.word,
       uk: w.phonetic,
       us: "",
-      senses: [{ pos, zh, en: "" }],
-      ex: w.sentence ? [{ en: w.sentence, zh: w.translation }] : [],
+      senses: [{ pos, ja, en: "" }],
+      ex: w.sentence ? [{ en: w.sentence, ja: w.translation }] : [],
       col: [],
       fam: [],
       syn: [],
@@ -137,7 +150,7 @@ export async function loadPrivateAtlas(open: Atlas | null): Promise<Atlas | null
     return {
       id: w.id,
       word: w.word,
-      zh: `${pos} ${zh}`.trim(),
+      ja: `${pos} ${ja}`.trim(),
       ipa: w.phonetic,
       cefr: twin?.cefr ?? 2,
       topic: twin?.topic ?? 16,
@@ -154,14 +167,14 @@ export async function loadPrivateAtlas(open: Atlas | null): Promise<Atlas | null
     count: words.length,
     examples: [...entries.values()].reduce((n, e) => n + e.ex.length, 0),
     illustrated: words.filter((w) => w.media & MEDIA.img).length,
-    topics: open?.topics ?? [["thinking", "综合"]],
+    topics: open?.topics ?? [["thinking", "総合"]],
     cefr: open?.cefr ?? ["A1", "A2", "B1", "B2", "C1", "C2"],
     words,
     byId,
     peek: (id) => entries.get(id),
     entry: async (id) => {
       const e = entries.get(id);
-      if (!e) throw new Error(`没有找到词条 ${id}`);
+      if (!e) throw new Error(`見出し語 ${id} が見つかりません`);
       return e;
     },
     img: (ref) => pick(ref)?.img ?? null,

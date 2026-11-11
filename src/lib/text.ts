@@ -57,10 +57,10 @@ export function hashSeed(s: string) {
   return h >>> 0;
 }
 
-/** Collocations are stored as "english｜中文". */
+/** Collocations are stored as "english｜日本語". */
 export const splitPair = (s: string) => {
-  const [en, zh] = s.split(/[｜|]/);
-  return { en: (en || "").trim(), zh: (zh || "").trim() };
+  const [en, ja] = s.split(/[｜|]/);
+  return { en: (en || "").trim(), ja: (ja || "").trim() };
 };
 
 export const plural = (n: number) => n.toLocaleString("en-US");
