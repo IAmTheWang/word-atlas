@@ -34,8 +34,13 @@ test("work-mode settings default to off and reject bad values", () => {
   const d = sanitizeSettings({});
   assert.equal(d.quiet, false);
   assert.equal(d.noArt, true);
-  const s = sanitizeSettings({ quiet: "yes", noArt: false, theme: "quiet" });
+  const s = sanitizeSettings({ quiet: "yes", noArt: false, artChoice: true, theme: "quiet" });
   assert.equal(s.quiet, false);
   assert.equal(s.noArt, false);
   assert.equal(s.theme, "quiet");
+});
+
+test("an old saved noArt: false that nobody chose does not bring illustrations back", () => {
+  assert.equal(sanitizeSettings({ noArt: false }).noArt, true);
+  assert.equal(sanitizeSettings({ noArt: false, artChoice: true }).noArt, false);
 });

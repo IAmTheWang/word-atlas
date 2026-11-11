@@ -56,6 +56,8 @@ export interface Settings {
   quiet: boolean;
   /** Hide every illustration and skip picture questions, so the word itself is what sticks. */
   noArt: boolean;
+  /** True once the learner has chosen for themselves; before that, `noArt` follows the app default. */
+  artChoice: boolean;
   sfx: boolean;
   spell: boolean;
   startLevel: number;
@@ -74,6 +76,7 @@ export const defaultSettings: Settings = {
   theme: "dark",
   quiet: false,
   noArt: true,
+  artChoice: false,
   sfx: true,
   spell: true,
   startLevel: 0,
@@ -172,7 +175,11 @@ export function sanitizeSettings(v: unknown): Settings {
   if (num(v.retention, 0.7, 0.97)) s.retention = v.retention as number;
   if (v.theme === "system" || v.theme === "light" || v.theme === "dark" || v.theme === "quiet") s.theme = v.theme;
   if (typeof v.quiet === "boolean") s.quiet = v.quiet;
-  if (typeof v.noArt === "boolean") s.noArt = v.noArt;
+  // Settings saved before illustrations were off by default carry noArt: false that nobody chose.
+  if (v.artChoice === true) {
+    s.artChoice = true;
+    if (typeof v.noArt === "boolean") s.noArt = v.noArt;
+  }
   if (typeof v.sfx === "boolean") s.sfx = v.sfx;
   if (typeof v.spell === "boolean") s.spell = v.spell;
   if (num(v.startLevel, 0, 5)) s.startLevel = Math.round(v.startLevel as number);

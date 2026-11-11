@@ -111,7 +111,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
         <section className="panel settings">
           <h3 className="eyebrow">学習設定</h3>
           <Field label="仕事モード" hint="サイレント、イラストなし、シンプルな外観をワンタップでオンにします。個別に調整するには下のスイッチを使ってください。">
-            <button className={`btn ${work ? "btn-ghost" : "btn-primary"}`} onClick={() => set(work ? { quiet: false, noArt: false, theme: "system" } : { quiet: true, noArt: true, theme: "quiet" })}>
+            <button className={`btn ${work ? "btn-ghost" : "btn-primary"}`} onClick={() => set(work ? { quiet: false, noArt: false, artChoice: true, theme: "system" } : { quiet: true, noArt: true, artChoice: true, theme: "quiet" })}>
               {work ? "オン（タップでオフ）" : "ワンタップでオン"}
             </button>
           </Field>
@@ -169,7 +169,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
             </div>
           </Field>
           <Toggle label="サイレント学習" hint="リスニング問題を出さず、発音・操作音・環境音も自動では鳴りません。スピーカーをタップすれば手動で聞けます。" on={settings.quiet} set={(v) => set({ quiet: v })} />
-          <Toggle label="イラストを使わない" hint="すべてのイラストを隠し、絵を見る問題も出さず、文字だけで覚えます。" on={settings.noArt} set={(v) => set({ noArt: v })} />
+          <Toggle label="イラストを使わない" hint="すべてのイラストを隠し、絵を見る問題も出さず、文字だけで覚えます。" on={settings.noArt} set={(v) => set({ noArt: v, artChoice: true })} />
           <Toggle label="発音を自動再生" on={settings.autoplay} set={(v) => set({ autoplay: v })} />
           <Toggle label="操作音" on={settings.sfx} set={(v) => set({ sfx: v })} />
           <Toggle label="オープニングアニメーション（1 日 1 回）" on={settings.splash} set={(v) => set({ splash: v })} />
