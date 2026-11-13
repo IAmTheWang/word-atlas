@@ -1,0 +1,108 @@
+{
+ "app": "word-atlas",
+ "version": 2,
+ "exported": "2026-11-13T08:08:51.488Z",
+ "progress": {
+  "version": 2,
+  "datasetId": "word-atlas-open",
+  "cards": {
+   "hut": {
+    "due": 1794362121518,
+    "s": 2.3065,
+    "d": 2.11810397,
+    "el": 0,
+    "sd": 0,
+    "ls": 1,
+    "reps": 1,
+    "lapses": 0,
+    "st": 1,
+    "last": 1794361521518,
+    "seen": 1794361521518
+   },
+   "currency": {
+    "due": 1794361895637,
+    "s": 1.2931,
+    "d": 5.11217071,
+    "el": 0,
+    "sd": 0,
+    "ls": 0,
+    "reps": 1,
+    "lapses": 0,
+    "st": 1,
+    "last": 1794361535637,
+    "seen": 1794361535637
+   },
+   "issue": {
+    "due": 1794362142342,
+    "s": 2.3065,
+    "d": 2.11810397,
+    "el": 0,
+    "sd": 0,
+    "ls": 1,
+    "reps": 1,
+    "lapses": 0,
+    "st": 1,
+    "last": 1794361542342,
+    "seen": 1794361542342
+   },
+   "qualification": {
+    "due": 1794362145454,
+    "s": 2.3065,
+    "d": 2.11810397,
+    "el": 0,
+    "sd": 0,
+    "ls": 1,
+    "reps": 1,
+    "lapses": 0,
+    "st": 1,
+    "last": 1794361545454,
+    "seen": 1794361545454
+   },
+   "sour": {
+    "due": 1794362153147,
+    "s": 2.3065,
+    "d": 2.11810397,
+    "el": 0,
+    "sd": 0,
+    "ls": 1,
+    "reps": 1,
+    "lapses": 0,
+    "st": 1,
+    "last": 1794361553147,
+    "seen": 1794361553147
+   }
+  },
+  "bookmarks": [
+   "breeding"
+  ],
+  "days": {
+   "2026-11-11": {
+    "n": 5,
+    "r": 5,
+    "c": 5,
+    "t": 55
+   }
+  },
+  "typing": [],
+  "session": null,
+  "mistakes": []
+ },
+ "settings": {
+  "accent": "us",
+  "autoplay": true,
+  "dailyNew": 10,
+  "retention": 0.9,
+  "theme": "light",
+  "quiet": true,
+  "noArt": true,
+  "artChoice": false,
+  "sfx": true,
+  "spell": true,
+  "startLevel": 4,
+  "onboarded": true,
+  "dataset": "open",
+  "ambience": "off",
+  "ambienceVolume": 0.45,
+  "splash": true
+ }
+}

@@ -72,6 +72,36 @@ export function retryKind(step: QuizKind, ref: Pick<WordRef, "media">, s: Pick<S
   return order.find((k) => k !== step && kindAllowed(k, ref, s)) ?? "meaning";
 }
 
+/**
+ * A session is built ahead of time, so switching work mode on mid-way must also rewrite the questions still
+ * to come: any step this learner can no longer get is swapped for an allowed kind. Returns null when nothing changed.
+ */
+export function adaptSteps(atlas: Atlas, steps: Step[], from: number, s: Pick<Settings, "quiet" | "noArt" | "spell">): Step[] | null {
+  let changed = false;
+  const next = steps.map((st, i) => {
+    if (i < from || st.kind === "intro") return st;
+    const ref = atlas.byId.get(st.id);
+    if (!ref || kindAllowed(st.kind, ref, s)) return st;
+    // A listening question tests recalling the word, so swap in questions of similar weight first and
+    // keep the easy meaning question as the rarest substitute. The number of questions never changes.
+    const weighted: [QuizKind, number][] = [["cloze", 3], ["define", 3], ["spell", 2], ["picture", 2], ["meaning", 1]];
+    const pool = weighted.filter(([k]) => k !== st.kind && kindAllowed(k, ref, s));
+    const total = pool.reduce((n, [, w]) => n + w, 0);
+    let at = hashSeed(`${st.id}${i}`) % Math.max(1, total);
+    let kind: QuizKind = "meaning";
+    for (const [k, w] of pool) {
+      if (at < w) {
+        kind = k;
+        break;
+      }
+      at -= w;
+    }
+    changed = true;
+    return { ...st, kind, options: kind === "spell" ? undefined : distractors(atlas, ref, kind, hashSeed(`${st.id}${i}`)) };
+  });
+  return changed ? next : null;
+}
+
 /** Distractors that look plausible: same level, similar spelling or length, different meaning. */
 export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: number) {
   const target = normalize(ref.word);

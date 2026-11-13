@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Lightbulb, RotateCcw, Share2, Volume2, X } from "lucide-react";
+import { ArrowRight, Check, Lightbulb, RotateCcw, Share2, Volume2, VolumeX, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { prefetch, useAtlas, useEntry } from "../atlas/context";
 import type { Entry, WordRef } from "../atlas/types";
@@ -7,7 +7,7 @@ import { burst } from "../lib/burst";
 import { cue } from "../lib/sound";
 import { go } from "../lib/router";
 import { gap, hashSeed, normalize } from "../lib/text";
-import { answer, advance, buildSession, gradeFor, sessionStats } from "../store/session";
+import { adaptSteps, answer, advance, buildSession, gradeFor, sessionStats } from "../store/session";
 import { Rating } from "../store/srs";
 import { store, useStore, type ActiveSession, type QuizKind, type Step } from "../store/store";
 import { EntryView, Highlight } from "../ui/EntryView";
@@ -49,12 +49,25 @@ export function Learn() {
 
   useEffect(() => () => stopAudio(), []);
 
+  // Work mode can be switched on while a session is already built: rewrite the questions still to come.
+  const quiet = useStore((s) => s.settings.quiet);
+  const noArt = useStore((s) => s.settings.noArt);
+  const sid = session?.id;
+  useEffect(() => {
+    const { progress, settings } = store.get();
+    const cur = progress.session;
+    if (!cur || cur.finished) return;
+    const steps = adaptSteps(atlas, cur.steps, cur.pending ? cur.index + 1 : cur.index, settings);
+    if (steps) store.progress((p) => (p.session ? { ...p, session: { ...p.session, steps } } : p));
+  }, [atlas, quiet, noArt, sid]);
+
   if (!session || !ready) return <div className="learn learn-loading"><span className="spinner" /></div>;
   if (session.finished || session.index >= session.steps.length) return <Summary session={session} />;
   return <Runner session={session} />;
 }
 
 function Runner({ session }: { session: ActiveSession }) {
+  const quiet = useStore((s) => s.settings.quiet);
   const step = session.steps[session.index];
   const total = session.steps.length;
   const exit = () => {
@@ -74,6 +87,9 @@ function Runner({ session }: { session: ActiveSession }) {
           {session.index + 1}
           <small>/{total}</small>
         </span>
+        <button className={`icon-btn ${quiet ? "is-on" : ""}`} onClick={() => store.settings({ quiet: !quiet })} aria-pressed={quiet} aria-label="サイレント学習（音声なし）" title={quiet ? "サイレント学習：オン" : "サイレント学習：オフ"}>
+          {quiet ? <VolumeX size={20} /> : <Volume2 size={20} />}
+        </button>
         <AmbiencePicker />
       </header>
       <main className="learn-stage" key={`${session.id}-${session.index}`}>
