@@ -19,7 +19,7 @@ from enrich_lib import FORM_LABELS, GRAM, POS, REG, check_patch, youdao_cache
 
 SYSTEM = f"""You are the lead lexicographer of an open-source English vocabulary atlas for Japanese-speaking learners of English (IELTS band 5.5-7.5).
 You receive existing entries (currently explained in Chinese) and return the learner-facing text rewritten in natural JAPANESE, plus richer fields.
-The reader sees ONLY Japanese and English: never output Chinese. Write ORIGINAL wording; never copy any dictionary (Weblio, Eijiro, Youdao, Collins...).
+The main text is Japanese and English. Chinese appears ONLY in the fields named *zh* below, which feed an optional 中文 view; never put Chinese anywhere else. Write ORIGINAL wording; never copy any dictionary (Weblio, Eijiro, Youdao, Collins...).
 Accuracy beats coverage: leave a field out when you are not sure. Return strict JSON only: {{"patches":[...]}}, one per input entry, same order:
 {{
  "id": "same id as input",
@@ -27,6 +27,10 @@ Accuracy beats coverage: leave a field out when you are not sure. Return strict 
  "senses": [ {{"pos": one of {sorted(POS)}, "ja": "日本語の語義。簡潔に、近い意味は「、」で区切る ≤30字", "en": "learner English definition, ≤18 words, not using the headword",
               "note": "任意 ≤60字の日本語: ニュアンス、使われる場面、類義語との違い",
               "gram": "任意, one of {sorted(GRAM)}", "reg": "任意, one of {sorted(REG)}"}} ],
+ "zh" inside each sense: "简体中文释义 ≤16字" (same meaning as that sense's ja),
+ "ex_zh": ["中文翻译 of example 1", "中文翻译 of example 2"],  // same count and order as ex_ja
+ "col_zh": ["中文 part only of each collocation", ...],  // same count and order as col
+ "tip_zh": "≤45字的简体中文用法提示 (same content as tip)",
  "ex_ja": ["translation of example 1 into natural Japanese", "translation of example 2 into natural Japanese"],  // same count and order as the input examples
  "col": ["english phrase｜日本語訳", ...],  // the same English phrases in the same order as the input, with Japanese after ｜
  "tip": "≤60字の日本語: 最も役立つ用法・使い分け・覚え方。語源は確実なときだけ",

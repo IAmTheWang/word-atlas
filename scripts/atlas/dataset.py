@@ -17,7 +17,7 @@ DATA = ROOT / "data"
 CEFR = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
 # Fields added after the first release; kept in this order after the original ones.
-NEW_FIELDS = ("syl", "forms", "gram", "etym")
+NEW_FIELDS = ("syl", "forms", "gram", "etym", "colZh", "tipZh")
 
 
 def load():
@@ -56,7 +56,8 @@ def write_csv(public):
         w = csv.writer(f)
         w.writerow(["id", "word", "ipa_uk", "ipa_us", "cefr", "topic", "meanings_ja", "definition_en",
                     "example1_en", "example1_ja", "example2_en", "example2_ja", "collocations", "word_family",
-                    "synonyms", "antonyms", "tip_ja", "syllables", "forms", "grammar_note", "etymology"])
+                    "synonyms", "antonyms", "tip_ja", "syllables", "forms", "grammar_note", "etymology",
+                    "meanings_zh", "example1_zh", "example2_zh", "collocations_zh", "tip_zh"])
         for c in public:
             ex = c["ex"] + [{"en": "", "ja": ""}] * (2 - len(c["ex"]))
             jp = lambda x: x.get("ja") or x.get("zh", "")
@@ -68,4 +69,7 @@ def write_csv(public):
                         ", ".join(c["syn"]), ", ".join(c["ant"]), c["tip"],
                         "·".join(c.get("syl") or []),
                         " | ".join(f'{x["label"]}: {x["form"]}' for x in c.get("forms") or []),
-                        c.get("gram") or "", c.get("etym") or ""])
+                        c.get("gram") or "", c.get("etym") or "",
+                        " | ".join(f'{s["pos"]} {s["zh"]}' for s in c["senses"] if s.get("zh")),
+                        ex[0].get("zh", ""), ex[1].get("zh", ""),
+                        " ; ".join(c.get("colZh") or []), c.get("tipZh") or ""])

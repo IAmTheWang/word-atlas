@@ -7,6 +7,8 @@ export interface Sense {
   pos: string;
   /** Japanese meaning. */
   ja: string;
+  /** Chinese meaning, for the optional 中文 view. */
+  zh?: string;
   en: string;
   /** Shade of meaning, scope or typical context. */
   note?: string;
@@ -27,6 +29,8 @@ export interface Example {
   en: string;
   /** Japanese translation. */
   ja: string;
+  /** Chinese translation, for the optional 中文 view. */
+  zh?: string;
 }
 
 export interface Entry {
@@ -45,6 +49,10 @@ export interface Entry {
   topic: string;
   /** Usage caution (register, offensiveness, spelling), shown with the entry. */
   note?: string;
+  /** Chinese part of each collocation, same order as `col`. */
+  colZh?: string[];
+  /** Chinese usage tip. */
+  tipZh?: string;
   /** Syllable split of the headword, e.g. ["a", "ban", "don"]. */
   syl?: string[];
   /** Inflections: plural, past tense, comparative... */

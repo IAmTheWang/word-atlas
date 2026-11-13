@@ -4325,3 +4325,32 @@ a:hover .mark-needle,
 .logo-text small {
   white-space: nowrap;
 }
+
+/* ---------- per-word language tabs: 日本語 / 中文 ---------- */
+
+.lang-tabs {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 8px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+}
+.lang-tabs button {
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-3);
+  font: 600 12.5px/1.6 var(--sans);
+  cursor: pointer;
+}
+.lang-tabs button.is-on {
+  background: var(--ink);
+  color: var(--paper);
+}
+:root[data-theme="quiet"] .lang-tabs button.is-on {
+  background: var(--ink);
+  color: #fff;
+}

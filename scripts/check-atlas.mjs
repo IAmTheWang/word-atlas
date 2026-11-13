@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pub = path.join(root, "public/atlas");
 const index = JSON.parse(fs.readFileSync(path.join(pub, "index.json"), "utf8"));
 const errors = [];
-const warn = { headwordNotInExample: 0, missingIpa: 0, oneExample: 0, withSyllables: 0, withForms: 0, multiSense: 0, legacyChinese: 0 };
+const warn = { headwordNotInExample: 0, missingIpa: 0, oneExample: 0, withSyllables: 0, withForms: 0, multiSense: 0, legacyChinese: 0, withChinese: 0 };
 const fail = (msg) => errors.length < 50 && errors.push(msg);
 
 if (index.words.length !== index.count) fail(`count ${index.count} != rows ${index.words.length}`);
@@ -41,8 +41,13 @@ for (let n = 0; n * index.chunk < index.count; n++) {
     entries++;
     if (!Array.isArray(e.senses) || !e.senses.length || e.senses.some((s) => !(s.ja || s.zh))) fail(`no senses: ${e.id}`);
     if (!Array.isArray(e.ex) || !e.ex.length || e.ex.some((x) => !x.en || !(x.ja || x.zh))) fail(`bad examples: ${e.id}`);
-    // Entries are moving from Chinese to Japanese: `zh` is legacy, `ja` is current.
-    if (e.senses.some((s) => "zh" in s) || e.ex.some((x) => "zh" in x)) warn.legacyChinese++;
+    // Entries are moving from Chinese to Japanese: an entry without `ja` is still legacy. `zh` next to `ja`
+    // is the optional 中文 view and is fine.
+    if (e.senses.some((s) => !s.ja) || e.ex.some((x) => !x.ja)) warn.legacyChinese++;
+    if (e.colZh !== undefined && (!Array.isArray(e.colZh) || e.colZh.length !== e.col.length)) fail(`colZh does not match col: ${e.id}`);
+    if (e.tipZh !== undefined && typeof e.tipZh !== "string") fail(`bad tipZh: ${e.id}`);
+    if (e.senses.some((s) => s.zh !== undefined && typeof s.zh !== "string")) fail(`bad sense zh: ${e.id}`);
+    if (e.senses.some((s) => s.zh) || e.tipZh) warn.withChinese++;
     examples += e.ex.length;
     if (e.ex.length < 2) warn.oneExample++;
     if (!e.uk && !e.us) warn.missingIpa++;

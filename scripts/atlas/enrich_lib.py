@@ -34,6 +34,17 @@ def _japanese(text, need_kana=True):
     return None
 
 
+def _chinese(text):
+    """Return an error string when `text` is not plausibly Chinese (the optional 中文 view)."""
+    if not text or not text.strip():
+        return "empty"
+    if KANA.search(text):
+        return "contains kana (looks Japanese)"
+    if not HAN.search(text):
+        return "no Chinese characters"
+    return None
+
+
 def check_patch(entry, patch, youdao=None):
     """Return (errors, warnings). Errors mean the patch must not be applied."""
     errs, warns = [], []
@@ -56,6 +67,10 @@ def check_patch(entry, patch, youdao=None):
                 e = _japanese(s.get("ja"), need_kana=False)
                 if e or len(s.get("ja", "")) > 40:
                     errs.append(f"sense {i}: ja {e or 'longer than 40 chars'}")
+                if s.get("zh"):
+                    e = _chinese(s["zh"])
+                    if e or len(s["zh"]) > 30:
+                        errs.append(f"sense {i}: zh {e or 'longer than 30 chars'}")
                 if not s.get("en") or len(s["en"].split()) > 22:
                     errs.append(f"sense {i}: en missing or longer than 22 words")
                 if s.get("note"):
@@ -78,6 +93,28 @@ def check_patch(entry, patch, youdao=None):
                 e = _japanese(t)
                 if e:
                     errs.append(f"ex_ja {i}: {e}")
+    exz = patch.get("ex_zh")
+    if exz is not None:
+        if not (isinstance(exz, list) and len(exz) == len(entry["ex"])):
+            errs.append(f"ex_zh must have {len(entry['ex'])} items")
+        else:
+            for i, t in enumerate(exz):
+                e = _chinese(t)
+                if e:
+                    errs.append(f"ex_zh {i}: {e}")
+    colz = patch.get("col_zh")
+    if colz is not None:
+        if not (isinstance(colz, list) and len(colz) == len(entry["col"])):
+            errs.append(f"col_zh must have {len(entry['col'])} items")
+        else:
+            for i, t in enumerate(colz):
+                e = _chinese(t)
+                if e:
+                    errs.append(f"col_zh {i}: {e}")
+    if patch.get("tip_zh"):
+        e = _chinese(patch["tip_zh"])
+        if e or len(patch["tip_zh"]) > 90:
+            errs.append(f"tip_zh: {e or 'longer than 90 chars'}")
     col = patch.get("col")
     if col is not None:
         if not isinstance(col, list) or len(col) != len(entry["col"]):
@@ -133,7 +170,7 @@ def merge_patch(entry, patch):
     if patch.get("syl"):
         entry["syl"] = patch["syl"]
     if patch.get("senses"):
-        keep = ("pos", "ja", "en", "note", "gram", "reg")
+        keep = ("pos", "ja", "zh", "en", "note", "gram", "reg")
         entry["senses"] = [{k: s[k].strip() for k in keep if s.get(k) and s[k].strip()} for s in patch["senses"]]
     elif any("zh" in s for s in entry["senses"]):
         pass  # not translated yet; keep the legacy text until a patch with senses arrives
@@ -141,6 +178,13 @@ def merge_patch(entry, patch):
         entry["ex"] = [{"en": x["en"], "ja": ja.strip()} for x, ja in zip(entry["ex"], patch["ex_ja"])]
     if patch.get("col"):
         entry["col"] = [c.strip() for c in patch["col"]]
+    if patch.get("ex_zh") and "ja" in entry["ex"][0]:
+        for x, zh in zip(entry["ex"], patch["ex_zh"]):
+            x["zh"] = zh.strip()
+    if patch.get("col_zh"):
+        entry["colZh"] = [c.strip() for c in patch["col_zh"]]
+    if patch.get("tip_zh"):
+        entry["tipZh"] = patch["tip_zh"].strip()
     for key in ("tip", "note"):
         if patch.get(key) is not None and patch[key].strip():
             entry[key] = patch[key].strip()
@@ -157,8 +201,8 @@ def merge_patch(entry, patch):
 
 
 def is_japanese_entry(e):
-    """True once no legacy Chinese `zh` field is left in the entry."""
-    return not any("zh" in s for s in e["senses"]) and not any("zh" in x for x in e["ex"])
+    """True once every sense and example has Japanese text (`zh` beside it is the optional Chinese view)."""
+    return all("ja" in s for s in e["senses"]) and all("ja" in x for x in e["ex"])
 
 
 def load_patches(path):

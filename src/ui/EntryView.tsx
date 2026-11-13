@@ -1,7 +1,8 @@
 import { Bookmark, BookmarkCheck, Lightbulb, Share2 } from "lucide-react";
+import { useState } from "react";
 import type { Entry, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
-import { groupSenses, senseTags, syllables } from "../lib/entry";
+import { formLabel, groupSenses, hasChinese, senseTags, syllables, tagText, type Lang } from "../lib/entry";
 import { splitHighlight, splitPair } from "../lib/text";
 import { formatInterval, isMastered } from "../store/srs";
 import { toggleBookmark, useStore } from "../store/store";
@@ -65,6 +66,11 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
     const hit = atlas.words.find((x) => x.word.toLowerCase() === w);
     return { label: f, id: hit?.id };
   });
+  // Japanese by default; a word with Chinese text can be switched to 中文 on its own card.
+  const [pickedLang, setLang] = useState<Lang>("ja");
+  const canZh = hasChinese(entry);
+  const lang: Lang = canZh ? pickedLang : "ja";
+  const zh = lang === "zh";
   const syl = syllables(entry.w, entry.syl);
   const forms = (entry.forms ?? []).filter((f) => f.form.trim());
   const status = card ? (isMastered(card) ? "習得済み" : "学習中") : null;
@@ -81,6 +87,16 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             {topic && <span className="chip">{topic[1]}</span>}
             {status && <span className={`chip chip-status ${status === "習得済み" ? "is-done" : ""}`}>{status}</span>}
           </div>
+          {canZh && mode !== "reveal" && (
+            <div className="lang-tabs" role="group" aria-label="説明の言語">
+              <button className={!zh ? "is-on" : ""} aria-pressed={!zh} onClick={() => setLang("ja")}>
+                日本語
+              </button>
+              <button className={zh ? "is-on" : ""} aria-pressed={zh} onClick={() => setLang("zh")}>
+                中文
+              </button>
+            </div>
+          )}
           {mode === "detail" && (
             <div className="entry-actions">
               <button className={`icon-btn ${saved ? "is-on" : ""}`} onClick={() => toggleBookmark(entry.id)} aria-pressed={saved} aria-label={saved ? "お気に入りを解除" : "お気に入りに追加"} title={saved ? "お気に入りを解除" : "お気に入りに追加"}>
@@ -114,57 +130,71 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             g.senses.map((s, i) => (
               <li key={`${g.pos}-${i}-${s.ja}`} className={i === 0 ? "is-first" : ""}>
                 <span className="pos">{i === 0 ? g.pos : ""}</span>
-                <span className="zh" lang="ja">
-                  {s.ja}
-                  {senseTags(s).map((t) => (
-                    <em key={t} className="sense-tag">
-                      {t}
-                    </em>
-                  ))}
-                </span>
-                {s.en && (
-                  <span className="en" lang="en">
+                {/* A meaning with no Chinese yet shows its English definition alone in the 中文 view. */}
+                {zh && !s.zh ? (
+                  <span className="zh" lang="en">
                     {s.en}
+                    {senseTags(s).map((t) => (
+                      <em key={t} className="sense-tag">
+                        {tagText(t, lang)}
+                      </em>
+                    ))}
                   </span>
+                ) : (
+                  <>
+                    <span className="zh" lang={zh ? "zh" : "ja"}>
+                      {zh ? s.zh : s.ja}
+                      {senseTags(s).map((t) => (
+                        <em key={t} className="sense-tag">
+                          {tagText(t, lang)}
+                        </em>
+                      ))}
+                    </span>
+                    {s.en && (
+                      <span className="en" lang="en">
+                        {s.en}
+                      </span>
+                    )}
+                  </>
                 )}
-                {s.note && <span className="sense-note">{s.note}</span>}
+                {!zh && s.note && <span className="sense-note">{s.note}</span>}
               </li>
             )),
           )}
         </ol>
 
-        {(forms.length > 0 || entry.gram) && (
+        {(forms.length > 0 || (!zh && entry.gram)) && (
           <section className="block grammar">
-            <h3 className="eyebrow">語形変化と文法</h3>
+            <h3 className="eyebrow">{zh ? "词形变化" : "語形変化と文法"}</h3>
             {forms.length > 0 && (
               <dl className="forms">
                 {forms.map((f) => (
                   <div key={`${f.label}-${f.form}`}>
-                    <dt>{f.label}</dt>
+                    <dt>{formLabel(f.label, lang)}</dt>
                     <dd lang="en">
                       {f.form}
-                      {f.note && <small>{f.note}</small>}
+                      {!zh && f.note && <small>{f.note}</small>}
                     </dd>
                   </div>
                 ))}
               </dl>
             )}
-            {entry.gram && <p className="gram-note">{entry.gram}</p>}
+            {!zh && entry.gram && <p className="gram-note">{entry.gram}</p>}
           </section>
         )}
 
         {entry.ex.length > 0 && (
           <section className="block">
-            <h3 className="eyebrow">例文</h3>
+            <h3 className="eyebrow">{zh ? "例句" : "例文"}</h3>
             <ul className="examples">
               {entry.ex.map((x, i) => (
                 <li key={i}>
-                  {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "IELTS 向け" : "日常"}</span>}
+                  {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{zh ? (i ? "雅思语境" : "日常") : i ? "IELTS 向け" : "日常"}</span>}
                   <p className="ex-en" lang="en">
                     <Highlight text={x.en} word={entry.w} />
                     <Speak url={exUrls[i] ?? null} text={x.en} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />
                   </p>
-                  <p className="ex-zh" lang="ja">{x.ja}</p>
+                  <p className="ex-zh" lang={zh && x.zh ? "zh" : "ja"}>{zh && x.zh ? x.zh : x.ja}</p>
                 </li>
               ))}
             </ul>
@@ -173,14 +203,16 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
 
         {entry.col.length > 0 && (
           <section className="block">
-            <h3 className="eyebrow">よく使うコロケーション</h3>
+            <h3 className="eyebrow">{zh ? "常用搭配" : "よく使うコロケーション"}</h3>
             <ul className="collocations">
-              {entry.col.map((c) => {
+              {entry.col.map((c, i) => {
                 const { en, ja } = splitPair(c);
+                const zhText = zh ? entry.colZh?.[i] : undefined;
+                const gloss = zhText ?? ja;
                 return (
                   <li key={c}>
                     <span lang="en">{en}</span>
-                    {ja && <small lang="ja">{ja}</small>}
+                    {gloss && <small lang={zhText ? "zh" : "ja"}>{gloss}</small>}
                   </li>
                 );
               })}
@@ -192,7 +224,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           <section className="block relations">
             {famLinks.length > 0 && (
               <div>
-                <h3 className="eyebrow">語族</h3>
+                <h3 className="eyebrow">{zh ? "词族" : "語族"}</h3>
                 <p>
                   {famLinks.map((f) =>
                     f.id && mode === "detail" ? (
@@ -208,20 +240,20 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             )}
             {entry.syn.length > 0 && (
               <div>
-                <h3 className="eyebrow">類義語</h3>
+                <h3 className="eyebrow">{zh ? "近义" : "類義語"}</h3>
                 <p>{entry.syn.map((s) => <span key={s}>{s}</span>)}</p>
               </div>
             )}
             {entry.ant.length > 0 && (
               <div>
-                <h3 className="eyebrow">対義語</h3>
+                <h3 className="eyebrow">{zh ? "反义" : "対義語"}</h3>
                 <p>{entry.ant.map((s) => <span key={s}>{s}</span>)}</p>
               </div>
             )}
           </section>
         )}
 
-        {entry.etym && (
+        {!zh && entry.etym && (
           <section className="block">
             <h3 className="eyebrow">語源</h3>
             <p className="etym">{entry.etym}</p>
@@ -231,11 +263,11 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
         {entry.tip && (
           <aside className="tip">
             <Lightbulb size={17} strokeWidth={1.8} />
-            <p>{entry.tip}</p>
+            <p lang={zh && entry.tipZh ? "zh" : "ja"}>{zh && entry.tipZh ? entry.tipZh : entry.tip}</p>
           </aside>
         )}
 
-        {entry.note && <p className="usage-note">使い方の注意：{entry.note}</p>}
+        {!zh && entry.note && <p className="usage-note">使い方の注意：{entry.note}</p>}
 
         {mode === "detail" && card && (
           <p className="memory-note">
