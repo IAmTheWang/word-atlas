@@ -1,114 +1,111 @@
 <div align="center">
 
-<a href="https://0xlei.tech/words/"><img src="docs/assets/cover-v2.jpg" alt="词光 Word Atlas — 一词一画，点亮雅思" width="100%"></a>
+<a href="https://0xlei.tech/words/"><img src="docs/assets/cover-v2.jpg" alt="词光 · Word Atlas — 絵で覚える、ことばの世界" width="100%"></a>
 
-# 词光 · Word Atlas
+# Word Atlas · 词光
 
-**把单词变成画面，让复习有迹可循。**
+**見て、聞いて、自分のものにする。**
 
-7,298 个雅思词条 · 原创插画 · 英美发音 · FSRS 间隔复习
+IELTS 単語 7,298 語 · オリジナルイラスト · 英米音声 · 間隔反復
 
-[**立即体验 ↗**](https://0xlei.tech/words/)　 /　 [48 秒介绍](docs/assets/launch.mp4)　 /　 [下载词库](data/)　 /　 [English](README.en.md)　 /　 [日本語](README.ja.md)
+[**Word Atlas を開く ↗**](https://0xlei.tech/words/)　 /　 [48 秒の紹介動画](docs/assets/launch.mp4)　 /　 [データセットを入手](data/)　 /　 [English](README.en.md)　 /　 [简体中文](README.zh.md)
 
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/Dataset-CC_BY_4.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
 
 <br>
 
-**词光 iOS App 测试版已开放，免费下载：[api.billswise.cn/app](https://api.billswise.cn/app/)**
+**Word Atlas の iOS アプリのベータ版を無料で公開中：[api.billswise.cn/app](https://api.billswise.cn/app/)**
 
-[![关注 @yangleiocx3](https://img.shields.io/badge/%E5%85%B3%E6%B3%A8%E6%88%91-@yangleiocx3-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yangleiocx3)
+[![Follow @yangleiocx3](https://img.shields.io/badge/Follow_me-@yangleiocx3-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yangleiocx3)
 
 </div>
 
 ---
 
-词光是一款以插画和语境为核心的雅思背词应用。看画面理解词义，听发音建立联系，再用主动回忆和间隔复习巩固记忆。无需账号，学习进度保存在自己的设备上。
+Word Atlas（词光）は、イラストと文脈を軸にした IELTS 単語学習アプリです。絵で意味をつかみ、発音を聞いて結びつけ、思い出す練習と FSRS の間隔反復で定着させます。アカウント登録は不要で、学習の進捗は自分の端末に保存されます。
 
-词条默认以**日语 + 英语**显示；释义、例句、搭配和用法提示另有中文视图，可在词卡的标签页中随时切换。
+表示は **日本語＋英語が標準** です。語義・例文・コロケーション・使い方のヒントには中国語の表示も用意されており、語彙カードのタブでいつでも切り替えられます。
 
-> **版本说明**：这个仓库提供词光的开源基础版及配套数据集。在线网站独立迭代，功能与仓库可能不同；仓库里的代码和内容分别遵循下方的 MIT / CC BY 4.0 授权。
+> **バージョンについて：** このリポジトリには、Word Atlas のオープンソース基本版とデータセットが入っています。公開中の Web サイトは別に更新されており、機能がこのリポジトリと異なる場合があります。ここにあるコードとコンテンツは、それぞれ MIT / CC BY 4.0 で利用できます。
 
-[产品预览](#产品预览) · [学习方式](#学习方式) · [本地运行](#本地运行) · [开放数据](#开放数据) · [参与贡献](#参与贡献)
+[プレビュー](#プレビュー) · [学習の流れ](#学習の流れ) · [ローカルで動かす](#ローカルで動かす) · [オープンデータ](#オープンデータ) · [コントリビュート](#コントリビュート)
 
-## 产品预览
+## プレビュー
 
-### 一本可以听、可以练的单词图鉴
+### 聞いて、練習できる単語図鑑
 
-<img src="docs/assets/atlas-desktop.jpg" alt="开源版桌面图鉴：插画词卡和词汇浏览" width="100%">
+<img src="docs/assets/atlas-desktop.jpg" alt="オープンソース版のデスクトップ画面：イラスト付き単語カードと語彙の一覧" width="100%">
 
 <table>
 <tr>
-<td width="50%"><img src="docs/assets/today-mobile.jpg" alt="手机端今日学习页" width="100%"></td>
-<td width="50%"><img src="docs/assets/word-mobile.jpg" alt="手机端词卡，展示插画、英美发音与例句" width="100%"></td>
+<td width="50%"><img src="docs/assets/today-mobile.jpg" alt="スマホの「今日の学習」画面" width="100%"></td>
+<td width="50%"><img src="docs/assets/word-mobile.jpg" alt="イラスト・英米発音・例文を載せたスマホの単語カード" width="100%"></td>
 </tr>
-<tr><td align="center">每日计划，把注意力放在今天</td><td align="center">插画、词义、发音，在一张词卡里</td></tr>
+<tr><td align="center">今日やることに集中できる学習プラン</td><td align="center">イラスト・語義・発音が 1 枚のカードに</td></tr>
 </table>
 
-<sub>以上为仓库开源版的实际界面。页首为品牌概念插画。</sub>
+<sub>上はリポジトリのオープンソース版の実際の画面です。ページ冒頭の画像はブランドのコンセプトイラストです。</sub>
 
-### 学过的词，汇成自己的星图
+### 覚えた単語が、自分だけの星図になる
 
-<img src="docs/assets/galaxy.jpg" alt="词汇星图界面：按话题组织单词，展示学习进度" width="100%">
+<img src="docs/assets/galaxy.jpg" alt="語彙の星図：トピック別に単語を並べ、学習の進み具合を表示" width="100%">
 
-19 个话题组成词汇星图。拖动旋转、滚动缩放，点击星星打开词卡；学习状态用不同亮度呈现。采用 WebGL2 渲染，不支持的设备提供降级显示。
+19 のトピックが語彙の星図を作ります。ドラッグで回転、スクロールで拡大縮小、星をタップすると単語カードが開きます。学習状況は星の明るさで表されます。WebGL2 で描画しており、非対応の端末には代替表示を用意しています。
 
 <details>
-<summary><b>看 48 秒宣传片</b></summary>
+<summary><b>48 秒の紹介動画を見る</b></summary>
 
-<a href="docs/assets/launch.mp4"><img src="docs/assets/launch-preview.webp" alt="点击观看词光宣传片" width="100%"></a>
+<a href="docs/assets/launch.mp4"><img src="docs/assets/launch-preview.webp" alt="クリックして Word Atlas の紹介動画を再生" width="100%"></a>
 
-[播放完整视频（含声音）](docs/assets/launch.mp4)
+[音声つきでフル再生](docs/assets/launch.mp4)
 
 </details>
 
-## 学习方式
+## 学習の流れ
 
-| 环节 | 你会做什么 |
+| ステップ | できること |
 | :--- | :--- |
-| **看见** | 每个词配一幅插画、日英释义（可切换为中文）、两条原创例句，以及搭配、词族和用法提示。 |
-| **听见** | 切换英音、美音，听日常例句朗读；部分词条另含第二条例句录音。 |
-| **想起** | 看义选词、看图补句、听音辨词、拼写，逐步练习主动回忆。 |
-| **复习** | FSRS 根据学习记录安排复习，目标记忆率可调。只有首次作答计入正确率。 |
-| **积累** | 星图展示学习进度；打字练习独立统计；支持导出和恢复本地进度。 |
+| **見る** | 1 語ごとにイラスト、日本語と英語の語義、オリジナルの例文 2 つ、コロケーション、語族、使い方のヒントを確認できます。中国語表示に切り替えることもできます。 |
+| **聞く** | 英音と米音を切り替え、例文の朗読を聞けます。一部の単語は 2 つ目の例文の録音も付いています。 |
+| **思い出す** | 語義から単語を選ぶ、イラストを見て穴埋め、聞き取り、スペリングで、能動的な想起を練習します。 |
+| **復習する** | FSRS が学習履歴からタイミングを決めて復習を出題します。目標とする記憶率は調整できます。正答率に数えるのは最初の解答だけです。 |
+| **積み上げる** | 星図で進捗を確認でき、タイピング練習は別に集計されます。ローカルの進捗はエクスポート・復元ができます。 |
 
-**上班也能背。** 在「我的 → 学习设置」里可以一键开启上班模式：静音学习（不出听音题，发音、音效、环境声都不会自动响）、不使用插画（只靠文字记词）和素净外观（白底、无动画、标签页显示为 Notes）。首页还有「碎片 3 分钟」，只复习最该复习的 10 个词。
+**仕事の合間にも学べます。** 「マイページ → 学習設定」から、ワンタップで仕事モードに切り替えられます。音を出さない学習（リスニング問題を出さず、発音・効果音・環境音が自動再生されない）、イラストなし（文字だけで覚える）、シンプルな外観（白背景・アニメーションなし・タブのタイトルは Notes）が揃っています。ホーム画面の「3 分でサクッと」では、最も復習が必要な 10 語だけを復習します。
 
-**本地优先。** 无需注册；看过的词条与媒体可缓存供离线使用。换设备前，请先导出进度备份。
+**ローカル優先。** 登録は不要で、見た単語や音声・画像はオフライン用にキャッシュできます。端末を変える前に、進捗のバックアップをエクスポートしてください。
 
 <details>
-<summary><b>听发音、例句与环境声样本</b></summary>
+<summary><b>発音・例文・環境音のサンプル</b></summary>
 
-
-
-拿 *abandon* 举例，点开就能听（在线播放）：
+*abandon* を例に、クリックして聞けます（オンライン再生）：
 
 | | |
 |---|---|
 | 🇬🇧 英音 | [abandon /əˈbændən/](https://0xlei.tech/words/atlas/audio/uk/abandon.mp3) |
-| 🇺🇸 美音 | [abandon /əˈbændən/](https://0xlei.tech/words/atlas/audio/us/abandon.mp3) |
-| 📖 例句朗读 | [We had to abandon our car in the snow.](https://0xlei.tech/words/atlas/audio/ex/abandon.mp3) |
+| 🇺🇸 米音 | [abandon /əˈbændən/](https://0xlei.tech/words/atlas/audio/us/abandon.mp3) |
+| 📖 例文の朗読 | [We had to abandon our car in the snow.](https://0xlei.tech/words/atlas/audio/ex/abandon.mp3) |
 
-全部 7,298 个词都有英音、美音和例句朗读，还有 1,011 个重点词的第二条例句也配了朗读。
+7,298 語すべてに英音・米音・例文の朗読が付いています。さらに、重点語 1,011 語には 2 つ目の例文の朗読もあります。
 
-### 环境声与交互声音
+### 環境音とインタラクションのサウンド
 
 | | |
 |---|---|
-| 🎙 **开屏配音** | [「欢迎打开雅思大门」](https://0xlei.tech/words/sfx/splash-voice.mp3)：星尘汇聚成“词光”，大门打开 |
-| 🌌 **星图配音** | [「这是你的词汇星图。每学会一个词，就点亮一颗星。」](https://0xlei.tech/words/sfx/voice-galaxy-hello.mp3) |
-| 🎵 **星空音乐** | [一段可无缝循环的原创配乐](https://0xlei.tech/words/sfx/amb-stars.mp3)，默认陪你背词 |
-| 🌧 **6 段环境声** | [雨天图书馆](https://0xlei.tech/words/sfx/amb-rain.mp3) · [清晨海岸](https://0xlei.tech/words/sfx/amb-sea.mp3) · [林间早晨](https://0xlei.tech/words/sfx/amb-forest.mp3) · [夜晚壁炉](https://0xlei.tech/words/sfx/amb-fire.mp3) · [远航船舱](https://0xlei.tech/words/sfx/amb-voyage.mp3) · [安静咖啡馆](https://0xlei.tech/words/sfx/amb-cafe.mp3) |
-| ✨ **界面音效** | 答对、答错、翻卡、打字、连胜、点亮星星……每个操作都有自己的声音；读单词时背景音会自动压低 |
+| 🎙 **オープニングのナレーション** | [「欢迎打开雅思大门」](https://0xlei.tech/words/sfx/splash-voice.mp3)（中国語）：星屑が集まって「词光」になり、扉が開きます |
+| 🌌 **星図のナレーション** | [「这是你的词汇星图。每学会一个词，就点亮一颗星。」](https://0xlei.tech/words/sfx/voice-galaxy-hello.mp3)（中国語） |
+| 🎵 **星空の音楽** | [継ぎ目なくループするオリジナル曲](https://0xlei.tech/words/sfx/amb-stars.mp3)。標準の BGM として流れます |
+| 🌧 **6 種類の環境音** | [雨の日の図書館](https://0xlei.tech/words/sfx/amb-rain.mp3) · [朝の海岸](https://0xlei.tech/words/sfx/amb-sea.mp3) · [朝の森](https://0xlei.tech/words/sfx/amb-forest.mp3) · [夜の暖炉](https://0xlei.tech/words/sfx/amb-fire.mp3) · [航海の船室](https://0xlei.tech/words/sfx/amb-voyage.mp3) · [静かなカフェ](https://0xlei.tech/words/sfx/amb-cafe.mp3) |
+| ✨ **UI の効果音** | 正解・不正解、カードをめくる、タイピング、連続正解、星が灯る……操作ごとに専用の音があります。単語の読み上げ中は BGM が自動で小さくなります |
 
-全部素材都在仓库里：插画在 `public/atlas/img/`，录音在 `public/atlas/audio/`，这两类按 CC BY 4.0 开放；界面声音和配乐在 `public/sfx/`，随应用一起提供。
-
+素材はすべてリポジトリに入っています。イラストは `public/atlas/img/`、録音は `public/atlas/audio/` にあり、この 2 種類は CC BY 4.0 で公開しています。UI の効果音と音楽は `public/sfx/` にあり、アプリと一緒に配布されます。
 
 </details>
 
-## 本地运行
+## ローカルで動かす
 
-需要 [**Bun 1.2+**](https://bun.sh) 和 **Node.js 20+**（Vite 与 Playwright 脚本仍在 Node 上运行）。仓库含完整图片与录音，首次下载可能较久。
+[**Bun 1.2+**](https://bun.sh) と **Node.js 20+** が必要です（Vite と Playwright のスクリプトは引き続き Node 上で動きます）。リポジトリには画像と録音がすべて入っているため、最初のダウンロードには時間がかかることがあります。
 
 ```bash
 git clone --depth 1 https://github.com/designfuchen/word-atlas.git
@@ -117,28 +114,28 @@ bun install --frozen-lockfile
 bun run dev
 ```
 
-打开 **http://localhost:5188**。
+**http://localhost:5188** を開いてください。
 
 ```bash
-bun run test         # 单元测试
-bun run check:atlas  # 词库结构与媒体校验
-bun run build        # 构建到 dist/
+bun run test         # ユニットテスト
+bun run check:atlas  # 語彙データとメディアの検証
+bun run build        # dist/ にビルド
 ```
 
-子路径部署：`ATLAS_BASE=/words/ bun run build`。完整说明见 [部署文档](docs/deployment.md)。
+サブパスに配置する場合：`ATLAS_BASE=/words/ bun run build`。詳しくは[デプロイガイド](docs/deployment.md)をご覧ください。
 
-**技术栈**：React 19 · TypeScript · Vite · ts-fsrs · WebGL2
+**技術スタック**：React 19 · TypeScript · Vite · ts-fsrs · WebGL2
 
-## 开放数据
+## オープンデータ
 
-不仅可以直接使用应用，也可以把词库用于自己的学习工具、Anki 牌组或研究项目。
+アプリをそのまま使うだけでなく、語彙データを自作の学習ツール、Anki デッキ、研究プロジェクトに使うこともできます。
 
-| 资源 | 开源版内容 | 入口 |
+| リソース | オープンソース版の内容 | 入口 |
 | :--- | :--- | :--- |
-| 词条 | **7,298** 条，CEFR A1–C2、19 个话题 | [JSON](data/word-atlas.json) · [CSV](data/word-atlas.csv) |
-| 例句 | **14,596** 条，日常与雅思语境，附日语翻译，另有可选的中文翻译 | [字段说明](docs/dataset.md) |
-| 插画 | **7,298** 幅，512 px WebP，另有缩略图 | [图片目录](public/atlas/img/) |
-| 录音 | **22,905** 段，英音、美音与例句朗读 | [音频目录](public/atlas/audio/) |
+| 単語 | **7,298** 語。CEFR A1–C2、19 トピック | [JSON](data/word-atlas.json) · [CSV](data/word-atlas.csv) |
+| 例文 | **14,596** 文。日常と IELTS の文脈。日本語訳付きで、中国語訳も選べます | [フィールド説明](docs/dataset.md) |
+| イラスト | **7,298** 枚。512 px の WebP、サムネイルもあり | [画像ディレクトリ](public/atlas/img/) |
+| 録音 | **22,905** 本。英音・米音と例文の朗読 | [音声ディレクトリ](public/atlas/audio/) |
 
 ```python
 import json
@@ -149,21 +146,23 @@ b2_environment = [w for w in words if w["cefr"] == "B2" and w["topic"] == "envir
 ```
 
 <details>
-<summary><b>查看一条词条的数据结构</b></summary>
+<summary><b>1 語分のデータ構造を見る</b></summary>
 
 ```json
 {
   "id": "principle",
   "w": "principle",
-  "uk": "/ˈprɪnsəpəl/",
-  "us": "/ˈprɪnsəpəl/",
-  "senses": [{
-    "pos": "n.",
-    "ja": "原則、信条、行動の指針",
-    "en": "a personal rule or belief that guides how someone behaves",
-    "gram": "可算",
-    "zh": "原则；行为准则"
-  }],
+  "uk": "/ˈprɪnsəp(ə)l/",
+  "us": "/ˈprɪnsəp(ə)l/",
+  "senses": [
+    {
+      "pos": "n.",
+      "ja": "原則、信条、行動の指針",
+      "en": "a personal rule or belief that guides how someone behaves",
+      "gram": "可算",
+      "zh": "原则；行为准则"
+    }
+  ],
   "ex": [
     {
       "en": "I refused the extra money as a matter of principle.",
@@ -181,34 +180,34 @@ b2_environment = [w for w in words if w["cefr"] == "B2" and w["topic"] == "envir
 }
 ```
 
-日语和英语为默认字段；`zh`、`colZh`、`tipZh` 是可选的中文视图字段。
+日本語と英語が標準のフィールドです。`zh` / `colZh` / `tipZh` は、中国語表示用のオプションのフィールドです。
 
 </details>
 
-### 内容来源与局限
+### コンテンツの出典と限界
 
-释义、例句、插画和录音为本项目生成：文字与插画使用生成式 AI，语音使用 ElevenLabs。内容经过自动结构与一致性校验，**尚未逐条人工审校**，可能出现释义、例句、插画或发音错误。它不是官方雅思词表，也不承诺提分。
+語義、例文、イラスト、録音は本プロジェクトのために作成しました。文章とイラストは生成 AI、音声は ElevenLabs を使っています。構造と一貫性の自動チェックは行っていますが、**1 件ずつの人手による校閲は済んでいません**。語義、例文、イラスト、発音に誤りが含まれている可能性があります。公式の IELTS 単語リストではなく、スコアアップを保証するものでもありません。
 
-[内容生成流程](docs/pipeline.md) · [记忆模型](docs/learning-model.md) · [生成脚本](scripts/atlas/)
+[コンテンツ生成の流れ](docs/pipeline.md) · [記憶モデル](docs/learning-model.md) · [生成スクリプト](scripts/atlas/)
 
-## 参与贡献
+## コントリビュート
 
-发现问题时，请附上**词条 ID、复现步骤和预期结果**。内容纠错如有词典或其他可靠依据，也请一并提供。
+問題を報告するときは、**単語の ID、再現手順、期待する結果**を添えてください。語彙の修正は、辞書などの信頼できる根拠もあわせてもらえると助かります。
 
-- [报告问题](https://github.com/designfuchen/word-atlas/issues/new/choose)：词条纠错、界面问题或使用建议。
-- [贡献指南](CONTRIBUTING.md)：数据同步、代码规范和提交前检查。
-- [安全政策](SECURITY.md)：安全问题的反馈方式。
+- [Issue を報告する](https://github.com/designfuchen/word-atlas/issues/new/choose)：単語の修正、画面の不具合、使い方の提案など。
+- [コントリビューションガイド](CONTRIBUTING.md)：データの同期、コードの規約、提出前のチェック。
+- [セキュリティポリシー](SECURITY.md)：セキュリティ上の問題の報告方法。
 
-## 授权
+## ライセンス
 
-| 范围 | 许可 |
+| 対象 | ライセンス |
 | :--- | :--- |
-| 应用代码 | [MIT](LICENSE) |
-| 词库文本、插画与词条录音 | [CC BY 4.0](CONTENT_LICENSE.md)，署名 Word Atlas contributors（词光） |
-| 第三方依赖与字体 | 遵循各自许可，详见相应文件 |
+| アプリのコード | [MIT](LICENSE) |
+| 語彙テキスト、イラスト、単語の録音 | [CC BY 4.0](CONTENT_LICENSE.md)。クレジットは Word Atlas contributors（词光） |
+| 依存ライブラリとフォント | それぞれのライセンスに従います。詳細は各ファイルをご覧ください |
 
 ---
 
-由 [@designfuchen](https://github.com/designfuchen) 制作。产品进展与制作过程见 [X · @yangleiocx3](https://x.com/yangleiocx3)。
+制作：[@designfuchen](https://github.com/designfuchen)。進捗や制作の様子は [X · @yangleiocx3](https://x.com/yangleiocx3) で公開しています。
 
-如果词光对你有用，欢迎 Star，或把它分享给正在学英语的朋友。
+Word Atlas が役に立ったら、ぜひ Star を付けたり、英語を学んでいる友達に紹介したりしてください。

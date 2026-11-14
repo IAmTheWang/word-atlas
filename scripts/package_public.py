@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TOP = {
-    "README.md", "README.en.md", "README.ja.md", "LICENSE", "CONTENT_LICENSE.md", "CONTRIBUTING.md", "SECURITY.md",
+    "README.md", "README.en.md", "README.zh.md", "LICENSE", "CONTENT_LICENSE.md", "CONTRIBUTING.md", "SECURITY.md",
     ".gitignore", "package.json", "bun.lock", "tsconfig.json", "vite.config.ts", "index.html",
 }
 SCRIPTS = {"check-atlas.mjs", "render-cards.mjs", "record-demo.mjs", "package_public.py"}
