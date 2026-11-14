@@ -8,7 +8,7 @@
 
 7,298 IELTS words · Original illustrations · UK & US audio · Spaced repetition
 
-[**Try Word Atlas ↗**](https://0xlei.tech/words/)　 /　 [48-second film](docs/assets/launch.mp4)　 /　 [Get the dataset](data/)　 /　 [简体中文](README.md)
+[**Try Word Atlas ↗**](https://0xlei.tech/words/)　 /　 [48-second film](docs/assets/launch.mp4)　 /　 [Get the dataset](data/)　 /　 [简体中文](README.md)　 /　 [日本語](README.ja.md)
 
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/Dataset-CC_BY_4.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
@@ -23,7 +23,9 @@
 
 ---
 
-Word Atlas is an illustrated IELTS vocabulary app for Chinese-speaking learners. Connect words with scenes and pronunciation, practise active recall, and return to them with FSRS spaced repetition. No account required. Learning progress stays on your device.
+Word Atlas is an illustrated IELTS vocabulary app. Connect words with scenes and pronunciation, practise active recall, and return to them with FSRS spaced repetition. No account required. Learning progress stays on your device.
+
+Entries are shown in **Japanese and English** by default. Definitions, examples, collocations and usage tips also have a Chinese view that you can switch to at any time from the tabs on a word card.
 
 > **Version scope:** This repository contains the open-source foundation of Word Atlas and its dataset. The hosted website evolves separately and may have different features. The code and dataset here remain available under their respective MIT and CC BY 4.0 licenses.
 
@@ -64,7 +66,7 @@ Explore 19 topic groups, rotate and zoom the galaxy, and select a star to open i
 
 | Step | What you do |
 | :--- | :--- |
-| **See** | Explore an illustration, bilingual definitions, two original examples, collocations and usage notes. |
+| **See** | Explore an illustration, Japanese and English definitions (switchable to Chinese), two original examples, collocations and usage notes. |
 | **Hear** | Switch between UK and US pronunciation and listen to example sentences. A subset includes audio for the second example. |
 | **Recall** | Practise meaning-to-word, illustrated cloze, listening recognition and spelling. |
 | **Review** | Let FSRS schedule reviews based on your history. Only the first answer counts toward accuracy. |
@@ -106,7 +108,7 @@ Use the app as it is, or build your own learning tools, Anki decks and research 
 | Resource | Repository edition | Download / documentation |
 | :--- | :--- | :--- |
 | Entries | **7,298**, CEFR A1–C2, 19 topics | [JSON](data/word-atlas.json) · [CSV](data/word-atlas.csv) |
-| Examples | **14,596**, everyday and IELTS contexts, with Chinese translations | [Schema](docs/dataset.md) |
+| Examples | **14,596**, everyday and IELTS contexts, with Japanese translations and an optional Chinese view | [Schema](docs/dataset.md) |
 | Illustrations | **7,298**, 512 px WebP plus thumbnails | [Images](public/atlas/img/) |
 | Recordings | **22,905**, UK/US words and example sentences | [Audio](public/atlas/audio/) |
 

@@ -8,7 +8,7 @@
 
 7,298 个雅思词条 · 原创插画 · 英美发音 · FSRS 间隔复习
 
-[**立即体验 ↗**](https://0xlei.tech/words/)　 /　 [48 秒介绍](docs/assets/launch.mp4)　 /　 [下载词库](data/)　 /　 [English](README.en.md)
+[**立即体验 ↗**](https://0xlei.tech/words/)　 /　 [48 秒介绍](docs/assets/launch.mp4)　 /　 [下载词库](data/)　 /　 [English](README.en.md)　 /　 [日本語](README.ja.md)
 
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-17283B?style=flat-square)](LICENSE)
 [![Dataset: CC BY 4.0](https://img.shields.io/badge/Dataset-CC_BY_4.0-AD5038?style=flat-square)](CONTENT_LICENSE.md)
@@ -24,6 +24,8 @@
 ---
 
 词光是一款以插画和语境为核心的雅思背词应用。看画面理解词义，听发音建立联系，再用主动回忆和间隔复习巩固记忆。无需账号，学习进度保存在自己的设备上。
+
+词条默认以**日语 + 英语**显示；释义、例句、搭配和用法提示另有中文视图，可在词卡的标签页中随时切换。
 
 > **版本说明**：这个仓库提供词光的开源基础版及配套数据集。在线网站独立迭代，功能与仓库可能不同；仓库里的代码和内容分别遵循下方的 MIT / CC BY 4.0 授权。
 
@@ -64,7 +66,7 @@
 
 | 环节 | 你会做什么 |
 | :--- | :--- |
-| **看见** | 每个词配一幅插画、中英释义、两条原创例句，以及搭配、词族和用法提示。 |
+| **看见** | 每个词配一幅插画、日英释义（可切换为中文）、两条原创例句，以及搭配、词族和用法提示。 |
 | **听见** | 切换英音、美音，听日常例句朗读；部分词条另含第二条例句录音。 |
 | **想起** | 看义选词、看图补句、听音辨词、拼写，逐步练习主动回忆。 |
 | **复习** | FSRS 根据学习记录安排复习，目标记忆率可调。只有首次作答计入正确率。 |
@@ -134,7 +136,7 @@ bun run build        # 构建到 dist/
 | 资源 | 开源版内容 | 入口 |
 | :--- | :--- | :--- |
 | 词条 | **7,298** 条，CEFR A1–C2、19 个话题 | [JSON](data/word-atlas.json) · [CSV](data/word-atlas.csv) |
-| 例句 | **14,596** 条，日常与雅思语境，附中文翻译 | [字段说明](docs/dataset.md) |
+| 例句 | **14,596** 条，日常与雅思语境，附日语翻译，另有可选的中文翻译 | [字段说明](docs/dataset.md) |
 | 插画 | **7,298** 幅，512 px WebP，另有缩略图 | [图片目录](public/atlas/img/) |
 | 录音 | **22,905** 段，英音、美音与例句朗读 | [音频目录](public/atlas/audio/) |
 
@@ -155,18 +157,31 @@ b2_environment = [w for w in words if w["cefr"] == "B2" and w["topic"] == "envir
   "w": "principle",
   "uk": "/ˈprɪnsəpəl/",
   "us": "/ˈprɪnsəpəl/",
-  "senses": [{ "pos": "n.", "zh": "原则；行为准则", "en": "A belief or rule that guides decisions and behaviour." }],
+  "senses": [{
+    "pos": "n.",
+    "ja": "原則、信条、行動の指針",
+    "en": "a personal rule or belief that guides how someone behaves",
+    "gram": "可算",
+    "zh": "原则；行为准则"
+  }],
   "ex": [
-    { "en": "I refused the extra money as a matter of principle.", "zh": "出于原则，我拒绝了那笔额外的钱。" },
-    { "en": "The principle of equal opportunity should guide policies designed to improve access to higher education.", "zh": "…" }
+    {
+      "en": "I refused the extra money as a matter of principle.",
+      "ja": "私は原則の問題として、その追加の報酬を断った。",
+      "zh": "出于原则，我拒绝了那笔额外的钱。"
+    }
   ],
-  "col": ["in principle｜原则上", "basic principle｜基本原则"],
+  "col": ["in principle｜原則として、理論上は", "on principle｜主義として"],
+  "colZh": ["原则上；理论上", "出于原则"],
   "fam": ["principled (adj.)"],
-  "tip": "principle 是原则；principal 是校长、主要的。",
+  "tip": "principal（主要な、校長）と綴りが紛らわしい。「原則」は -ple で終わる。",
+  "tipZh": "勿混principal：它可指“主要的”或“校长”。",
   "cefr": "B2",
   "topic": "thinking"
 }
 ```
+
+日语和英语为默认字段；`zh`、`colZh`、`tipZh` 是可选的中文视图字段。
 
 </details>
 
