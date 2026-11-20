@@ -1,13 +1,15 @@
 import csv
 import re
+import sys
 import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 # 默认抓取英式英语词表；如需美式英语可改为 "https://englishprofile.org/?menu=evp-online&dict=us"
 TARGET_URL = "https://englishprofile.org/?menu=evp-online"
-OUTPUT_CSV = Path("evp_c1_c2_vocabulary.csv")
-TARGET_LEVELS = ["C1", "C2"]
+# 用法: python evp_playwright_scraper.py [等级 ...]，例如 B2 或 C1 C2（默认 C1 C2）
+TARGET_LEVELS = [a.upper() for a in sys.argv[1:]] or ["C1", "C2"]
+OUTPUT_CSV = Path("evp_" + "_".join(l.lower() for l in TARGET_LEVELS) + "_vocabulary.csv")
 
 HEADLESS = True
 PAGE_DELAY = 0.8
@@ -398,7 +400,7 @@ def main():
 
         browser.close()
 
-    print(f"\n全部完成！共保存 {total_saved} 条 C1/C2 词条至: {OUTPUT_CSV.resolve()}")
+    print(f"\n全部完成！共保存 {total_saved} 条 {'/'.join(TARGET_LEVELS)} 词条至: {OUTPUT_CSV.resolve()}")
 
 
 if __name__ == "__main__":
