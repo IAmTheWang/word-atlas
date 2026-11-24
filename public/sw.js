@@ -1,14 +1,17 @@
 /* Word Atlas offline cache: app shell network-first, everything else cache-first. */
-const VERSION = "atlas-v1";
-const SHELL = `${VERSION}-shell`;
-const MEDIA = `${VERSION}-media`;
+// Bump SHELL_VERSION whenever entries/<n>.json chunk contents shift (e.g. words inserted mid-list); media files are
+// keyed by word id and never shift, so MEDIA_VERSION stays put and the offline media cache survives.
+const SHELL_VERSION = "atlas-v3";
+const MEDIA_VERSION = "atlas-v1";
+const SHELL = `${SHELL_VERSION}-shell`;
+const MEDIA = `${MEDIA_VERSION}-media`;
 
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => !k.startsWith(VERSION)).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k !== SHELL && k !== MEDIA).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });
